@@ -41,7 +41,6 @@ namespace Projet
                     TotalFilesSize = filesize.ToString(),
                     NbFilesLeftToDo = "0",
                     Progression = "0"
-
                 });
 
                 string strResultJson = JsonConvert.SerializeObject(stateList);
@@ -59,7 +58,14 @@ namespace Projet
             var jsonData = File.ReadAllText(filePath);
             var stateList = JsonConvert.DeserializeObject<List<Etat>>(jsonData) ?? new List<Etat>();
 
-            ConsoleTable.From(stateList).Write();
+            var dt = new ConsoleTable("index", "Name", "SourceFilePath", "TargetFilePath", "Type", "State", "TotalFilesToCopy", "TotalFilesSize", "NbFilesLeftToDo", "Progression");
+            foreach(var (state, i) in stateList.Select((el, i) => (el, i)))
+            {
+                dt.AddRow(i+1, state.Name, state.SourceFilePath, state.TargetFilePath, state.Type, state.State, state.TotalFilesToCopy, state.TotalFilesSize, state.NbFilesLeftToDo, state.Progression);
+            }
+
+            dt.Write();
+
         }
         public void ExecuteWork(string inputUtilisateur)
         {
@@ -71,18 +77,19 @@ namespace Projet
                 string sourceDir = stateList.ElementAt(Convert.ToInt32(inputUtilisateur) - 1).SourceFilePath;
                 string backupDir = stateList.ElementAt(Convert.ToInt32(inputUtilisateur) - 1).TargetFilePath;
 
+                if (stateList.ElementAt(Convert.ToInt32(inputUtilisateur) - 1).Type == "Différentielle")
+                {
+
+                }
+                else
+                {
+                    Console.WriteLine("En cours de développement");
+                }
+
             }
             else
             {
-                Console.WriteLine("Aucun travail de sauvegarde avec l'entrée " + inputUtilisateur + "trouvée\n");
-            }
-
-            if (stateList.ElementAt(Convert.ToInt32(inputUtilisateur) - 1).Type == "Différentielle") 
-            {
-
-            }else
-            {
-                Console.WriteLine("En cours de développement");
+                Console.WriteLine("Aucun travail de sauvegarde avec l'entrée " + inputUtilisateur + " trouvée\n");
             }
 
             /*   try

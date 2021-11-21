@@ -91,7 +91,7 @@ namespace Projet
                     if (input == "1")
                     {
                         travail.displayWorks();
-                        Console.WriteLine("Veuillez sélectionner le numéro de la ligne correspondante au travail de sauvegarde souhaité \n");
+                        Console.WriteLine("Veuillez sélectionner l'index correspondant au travail de sauvegarde souhaité \n");
 
                         input = Console.ReadLine();
 
@@ -135,7 +135,7 @@ namespace Projet
                 }
                 else
                 {
-                    Console.WriteLine("Mauvaise entrée vous pouvez sélectionner <1> ou <2>\n");
+                    Console.WriteLine("Mauvaise entrée vous pouvez sélectionner <1> ou <2> ou <3>\n");
                 }
             }
         }

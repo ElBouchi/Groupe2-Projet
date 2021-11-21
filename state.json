@@ -1,1 +1,35 @@
-[{"Name":"travail1","SourceFilePath":"D:/Source","TargetFilePath":"D:/Destination","Type":"Differentielle","State":"INACTIVE","TotalFilesToCopy":"4","TotalFilesSize":"22","NbFilesLeftToDo":"0","Progression":"0"},{"Name":"travail2","SourceFilePath":"D:/Source","TargetFilePath":"D:/Destination","Type":"Differentielle","State":"INACTIVE","TotalFilesToCopy":"4","TotalFilesSize":"22","NbFilesLeftToDo":"0","Progression":"0"},{"Name":"travail3","SourceFilePath":"D:/Source","TargetFilePath":"D:/Destination","Type":"Differentielle","State":"INACTIVE","TotalFilesToCopy":"4","TotalFilesSize":"22","NbFilesLeftToDo":"0","Progression":"0"},{"Name":"travail4","SourceFilePath":"D:/Source","TargetFilePath":"D:/Diagrammes","Type":"Differentielle","State":"INACTIVE","TotalFilesToCopy":"4","TotalFilesSize":"22","NbFilesLeftToDo":"0","Progression":"0"},{"Name":"travail5","SourceFilePath":"D:/Source","TargetFilePath":"D:/Destination","Type":"Differentielle","State":"INACTIVE","TotalFilesToCopy":"4","TotalFilesSize":"22","NbFilesLeftToDo":"0","Progression":"0"}]
+[
+  {
+    "Name": "travail1",
+    "SourceFilePath": "D:/Source",
+    "TargetFilePath": "D:/Destination",
+    "Type": "Differentielle",
+    "State": "INACTIVE",
+    "TotalFilesToCopy": "4",
+    "TotalFilesSize": "22",
+    "NbFilesLeftToDo": "0",
+    "Progression": "0"
+  },
+  {
+    "Name": "travail2",
+    "SourceFilePath": "D:/Source",
+    "TargetFilePath": "D:/Destination",
+    "Type": "Differentielle",
+    "State": "INACTIVE",
+    "TotalFilesToCopy": "4",
+    "TotalFilesSize": "22",
+    "NbFilesLeftToDo": "0",
+    "Progression": "0"
+  },
+  {
+    "Name": "travail3",
+    "SourceFilePath": "D:/Source",
+    "TargetFilePath": "D:/Destination",
+    "Type": "Differentielle",
+    "State": "INACTIVE",
+    "TotalFilesToCopy": "4",
+    "TotalFilesSize": "22",
+    "NbFilesLeftToDo": "0",
+    "Progression": "0"
+  }
+]
