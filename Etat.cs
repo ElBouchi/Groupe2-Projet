@@ -6,7 +6,7 @@ namespace Projet
 {
     class Etat
     {
-        protected string filePath = @"C:\Users\deada\source\repos\Projet\state.json";
+        protected string filePath = @"C:\Users\Zizou\Source\Repos\Groupe2-EasySave\state.json";
 
         public string Name { get; set; }
         public string SourceFilePath { get; set; }

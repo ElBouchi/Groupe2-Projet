@@ -78,7 +78,7 @@ namespace Projet
                 else if (input == "2")
                 {
                     Travail travail = new Travail();
-                    travail.displayWorks();
+                    travail.ExecuteWork();
                 }
                 else if (input == "3")
                 {
