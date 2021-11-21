@@ -26,8 +26,8 @@ namespace Projet
         public void addWork(long filesize, int countfile)
         {
             var jsonData = File.ReadAllText(filePath);
-            var stateList = JsonConvert.DeserializeObject<List<Etat>>(jsonData)
-                      ?? new List<Etat>();
+            var stateList = JsonConvert.DeserializeObject<List<Etat>>(jsonData) ?? new List<Etat>();
+
             if (stateList.Count < 5)
             {
                 stateList.Add(new Etat()
@@ -58,7 +58,89 @@ namespace Projet
         {
             var jsonData = File.ReadAllText(filePath);
             var stateList = JsonConvert.DeserializeObject<List<Etat>>(jsonData) ?? new List<Etat>();
+
             ConsoleTable.From(stateList).Write();
+        }
+        public void ExecuteWork(string inputUtilisateur)
+        {
+            var jsonData = File.ReadAllText(filePath);
+            var stateList = JsonConvert.DeserializeObject<List<Etat>>(jsonData) ?? new List<Etat>();
+
+            if (stateList.Count >= Convert.ToInt32(inputUtilisateur))
+            {
+                string sourceDir = stateList.ElementAt(Convert.ToInt32(inputUtilisateur) - 1).SourceFilePath;
+                string backupDir = stateList.ElementAt(Convert.ToInt32(inputUtilisateur) - 1).TargetFilePath;
+
+            }
+            else
+            {
+                Console.WriteLine("Aucun travail de sauvegarde avec l'entrée " + inputUtilisateur + "trouvée\n");
+            }
+
+            if (stateList.ElementAt(Convert.ToInt32(inputUtilisateur) - 1).Type == "Différentielle") 
+            {
+
+            }else
+            {
+                Console.WriteLine("En cours de développement");
+            }
+
+            /*   try
+               {
+                   string[] txtList = Directory.GetFiles(sourceDir);
+
+                   // Copy text files.
+                   foreach (string f in txtList)
+                   {
+
+                       // Remove path from the file name.
+                       string fName = f.Substring(sourceDir.Length + 1);
+
+                       // Will not overwrite if the destination file already exists.
+                       File.Copy(Path.Combine(sourceDir, fName), Path.Combine(backupDir, fName), true);
+                   }
+               }
+
+               catch (DirectoryNotFoundException dirNotFound)
+               {
+                   Console.WriteLine(dirNotFound.Message);
+               }
+               DirectoryCopy(sourceDir, backupDir, true);
+               static void DirectoryCopy(string src, string dest, bool copySubDir)
+               {
+                   // Get the subdirectories for the specified directory.
+                   DirectoryInfo dir = new DirectoryInfo(src);
+
+                   if (!dir.Exists)
+                   {
+                       throw new DirectoryNotFoundException(
+                           "Source directory does not exist or could not be found: "
+                           + src);
+                   }
+
+                   DirectoryInfo[] dirs = dir.GetDirectories();
+
+                   // If the destination directory doesn't exist, create it.       
+                   Directory.CreateDirectory(dest);
+
+                   // Get the files in the directory and copy them to the new location.
+                   FileInfo[] files = dir.GetFiles();
+                   foreach (FileInfo file in files)
+                   {
+                       string tempPath = Path.Combine(dest, file.Name);
+                       file.CopyTo(tempPath, true);
+                   }
+
+                   // If copying subdirectories, copy them and their contents to new location.
+                   if (copySubDir)
+                   {
+                       foreach (DirectoryInfo subdir in dirs)
+                       {
+                           string tempPath = Path.Combine(dest, subdir.Name);
+                           DirectoryCopy(subdir.FullName, tempPath, copySubDir);
+                       }
+                   }
+               } */
         }
         public long GetFileSizeSumFromDirectory(string searchDirectory)
         {
