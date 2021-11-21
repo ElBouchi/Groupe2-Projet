@@ -7,42 +7,69 @@ namespace Projet
     {
         static void Main(string[] args)
         {
-            // Copy from the current directory, include subdirectories.
-            DirectoryCopy(@"D:\Source", @"D:\Destination", true);
-        }
-
-        private static void DirectoryCopy(string src, string dest, bool copySubDir)
-        {
-            // Get the subdirectories for the specified directory.
-            DirectoryInfo dir = new DirectoryInfo(src);
-
-            if (!dir.Exists)
+            while (true)
             {
-                throw new DirectoryNotFoundException(
-                    "Source directory does not exist or could not be found: "
-                    + src);
-            }
+                string input = "";
 
-            DirectoryInfo[] dirs = dir.GetDirectories();
+                Console.Write("1. Ajouter un travail de sauvegarde \t");
+                Console.Write("2. Executer un travail de sauvegarde\n");
+                Console.WriteLine("3. Quittez l'application\n");
 
-            // If the destination directory doesn't exist, create it.       
-            Directory.CreateDirectory(dest);
 
-            // Get the files in the directory and copy them to the new location.
-            FileInfo[] files = dir.GetFiles();
-            foreach (FileInfo file in files)
-            {
-                string tempPath = Path.Combine(dest, file.Name);
-                file.CopyTo(tempPath, false);
-            }
+                input = Console.ReadLine();
 
-            // If copying subdirectories, copy them and their contents to new location.
-            if (copySubDir)
-            {
-                foreach (DirectoryInfo subdir in dirs)
+                if (input == "1")
                 {
-                    string tempPath = Path.Combine(dest, subdir.Name);
-                    DirectoryCopy(subdir.FullName, tempPath, copySubDir);
+                    Console.Write("Entrez le nom d'un travail de sauvegarde :");
+                    string inputName = Console.ReadLine();
+                    Console.WriteLine("");
+                    Console.Write("Entrer le chemin répertoire source :");
+                    string inputSourcePath = Console.ReadLine();
+                    Console.WriteLine("");
+                    Console.Write("Entrer le chemin répertoire cible :");
+                    string inputDestinationPath = Console.ReadLine();
+                    Console.WriteLine("");
+                    Console.WriteLine("Choisissez un type de sauvegarde :\n");
+                    Console.Write("1. Sauvegarde complète \t");
+                    Console.WriteLine("2. Sauvegarde Différentielle\n");
+
+                    input = Console.ReadLine();
+
+                    if (input == "1")
+                    {
+
+                        string inputType = "Complète";
+                        Travail travail = new Travail(inputName, inputSourcePath, inputDestinationPath, inputType);
+                        travail.addWork();
+
+                    }
+                    else if (input == "2")
+                    {
+
+                        string inputType = "Différentielle";
+                        Travail travail = new Travail(inputName, inputSourcePath, inputDestinationPath, inputType);
+                        travail.addWork();
+
+                    }
+                    else
+                    {
+
+                        Console.WriteLine("Mauvaise entrée vous pouvez sélectionner <1> ou <2> ou <3>\n");
+
+                    }
+
+                }
+                else if (input == "2")
+                {
+                    Console.WriteLine("En cours de développement\n");
+                }
+                else if (input == "3")
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Mauvaise entrée vous pouvez sélectionner <1> ou <2>\n");
                 }
             }
         }
