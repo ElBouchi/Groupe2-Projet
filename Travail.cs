@@ -3,15 +3,11 @@ using System;
 using System.IO;
 using System.Collections.Generic;
 using System.Text;
-using ConsoleTables;
-using System.Linq;
 
 namespace Projet
 {
     class Travail : Etat
     {
-        public Travail()
-        {}
         public Travail(string theName, string therepS, string therepC, string theType)
         {
             name = theName;
@@ -25,6 +21,7 @@ namespace Projet
         private string type { get; set; }
         public void addWork(long filesize, int countfile)
         {
+            var filePath = @"C:\Users\deada\source\repos\Projet\state.json";
             var jsonData = File.ReadAllText(filePath);
             var stateList = JsonConvert.DeserializeObject<List<Etat>>(jsonData)
                       ?? new List<Etat>();
@@ -53,6 +50,20 @@ namespace Projet
             {
                 Console.WriteLine("Nombre maximal de travaux atteint\n");
             }
+        }
+        public long GetFileSizeSumFromDirectory(string searchDirectory)
+        {
+            var files = Directory.EnumerateFiles(searchDirectory);
+
+            // get the sizeof all files in the current directory
+            var currentSize = (from file in files let fileInfo = new FileInfo(file) select fileInfo.Length).Sum();
+
+            var directories = Directory.EnumerateDirectories(searchDirectory);
+
+            // get the size of all files in all subdirectories
+            var subDirSize = (from directory in directories select GetFileSizeSumFromDirectory(directory)).Sum();
+
+            return currentSize + subDirSize;
         }
         public void displayWorks()
         {

@@ -1,14 +1,18 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
 
 namespace Projet
 {
     class Program
     {
+        
         static void Main(string[] args)
         {
             while (true)
             {
+                string input = "";
+
                 Console.Write("1. Ajouter un travail de sauvegarde \t");
                 Console.Write("2. Executer un travail de sauvegarde\n");
                 Console.WriteLine("3. Quittez l'application\n");
@@ -23,6 +27,13 @@ namespace Projet
                     Console.WriteLine("");
                     Console.Write("Entrer le chemin répertoire source :");
                     string inputSourcePath = Console.ReadLine();
+                    int fCount = Directory.GetFiles(inputSourcePath, "*", SearchOption.AllDirectories).Length;
+                    Console.Write("la taille du repertoire est de : ");
+                    Travail sizeF = new Travail();
+                    var size = sizeF.GetFileSizeSumFromDirectory(inputSourcePath);
+                    Console.WriteLine(size);
+                    Console.Write("Le nombre de fichier a l'interieur du répertoire est de : ");
+                    Console.WriteLine(fCount);
                     Console.WriteLine("");
                     Console.Write("Entrer le chemin répertoire cible :");
                     string inputDestinationPath = Console.ReadLine();
@@ -35,37 +46,19 @@ namespace Projet
 
                     if (input == "1")
                     {
-                        try
-                        {
-                            var verifDest = Directory.GetFiles(inputDestinationPath, "*", SearchOption.AllDirectories);
-                            int fCount = Directory.GetFiles(inputSourcePath, "*", SearchOption.AllDirectories).Length;
-                            Travail sizeF = new Travail();
-                            long size = sizeF.GetFileSizeSumFromDirectory(inputSourcePath);
-                            string inputType = "Complète";
-                            Travail travail = new Travail(inputName, inputSourcePath, inputDestinationPath, inputType);
-                            travail.addWork(size, fCount);
-                        }
-                        catch
-                        {
-                            Console.Write("Le répertoire source ou de destination précisé est erroné");
-                        }
+
+                        string inputType = "Complète";
+                        Travail travail = new Travail(inputName, inputSourcePath, inputDestinationPath, inputType);
+                        travail.addWork();
+
                     }
                     else if (input == "2")
                     {
-                        try
-                        {
-                            var verifDest = Directory.GetFiles(inputDestinationPath, "*", SearchOption.AllDirectories);
-                            int fCount = Directory.GetFiles(inputSourcePath, "*", SearchOption.AllDirectories).Length;
-                            Travail sizeF = new Travail();
-                            long size = sizeF.GetFileSizeSumFromDirectory(inputSourcePath);
-                            string inputType = "Différentielle";
-                            Travail travail = new Travail(inputName, inputSourcePath, inputDestinationPath, inputType);
-                            travail.addWork(size, fCount);
-                        }
-                        catch
-                        {
-                            Console.WriteLine("Le répertoire source ou de destination précisé est erroné\n");
-                        }
+
+                        string inputType = "Différentielle";
+                        Travail travail = new Travail(inputName, inputSourcePath, inputDestinationPath, inputType);
+                        travail.addWork();
+
                     }
                     else
                     {
