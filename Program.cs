@@ -9,14 +9,12 @@ namespace Projet
         {
             while (true)
             {
-                string input = "";
-
                 Console.Write("1. Ajouter un travail de sauvegarde \t");
                 Console.Write("2. Executer un travail de sauvegarde\n");
                 Console.WriteLine("3. Quittez l'application\n");
 
 
-                input = Console.ReadLine();
+                    string input = Console.ReadLine();
 
                 if (input == "1")
                 {
@@ -37,19 +35,37 @@ namespace Projet
 
                     if (input == "1")
                     {
-
-                        string inputType = "Complète";
-                        Travail travail = new Travail(inputName, inputSourcePath, inputDestinationPath, inputType);
-                        travail.addWork();
-
+                        try
+                        {
+                            var verifDest = Directory.GetFiles(inputDestinationPath, "*", SearchOption.AllDirectories);
+                            int fCount = Directory.GetFiles(inputSourcePath, "*", SearchOption.AllDirectories).Length;
+                            Travail sizeF = new Travail();
+                            long size = sizeF.GetFileSizeSumFromDirectory(inputSourcePath);
+                            string inputType = "Complète";
+                            Travail travail = new Travail(inputName, inputSourcePath, inputDestinationPath, inputType);
+                            travail.addWork(size, fCount);
+                        }
+                        catch
+                        {
+                            Console.Write("Le répertoire source ou de destination précisé est erroné");
+                        }
                     }
                     else if (input == "2")
                     {
-
-                        string inputType = "Différentielle";
-                        Travail travail = new Travail(inputName, inputSourcePath, inputDestinationPath, inputType);
-                        travail.addWork();
-
+                        try
+                        {
+                            var verifDest = Directory.GetFiles(inputDestinationPath, "*", SearchOption.AllDirectories);
+                            int fCount = Directory.GetFiles(inputSourcePath, "*", SearchOption.AllDirectories).Length;
+                            Travail sizeF = new Travail();
+                            long size = sizeF.GetFileSizeSumFromDirectory(inputSourcePath);
+                            string inputType = "Différentielle";
+                            Travail travail = new Travail(inputName, inputSourcePath, inputDestinationPath, inputType);
+                            travail.addWork(size, fCount);
+                        }
+                        catch
+                        {
+                            Console.WriteLine("Le répertoire source ou de destination précisé est erroné\n");
+                        }
                     }
                     else
                     {
@@ -61,7 +77,8 @@ namespace Projet
                 }
                 else if (input == "2")
                 {
-                    Console.WriteLine("En cours de développement\n");
+                    Travail travail = new Travail();
+                    travail.displayWorks();
                 }
                 else if (input == "3")
                 {
