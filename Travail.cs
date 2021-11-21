@@ -3,11 +3,16 @@ using System;
 using System.IO;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 
 namespace Projet
 {
     class Travail
     {
+        public Travail()
+        {
+            
+        }
         public Travail(string theName, string therepS, string therepC, string theType)
         {
             name = theName;
@@ -50,6 +55,20 @@ namespace Projet
             {
                 Console.WriteLine("Nombre maximal de travaux atteint\n");
             }
+        }
+        public long GetFileSizeSumFromDirectory(string searchDirectory)
+        {
+            var files = Directory.EnumerateFiles(searchDirectory);
+
+            // get the sizeof all files in the current directory
+            var currentSize = (from file in files let fileInfo = new FileInfo(file) select fileInfo.Length).Sum();
+
+            var directories = Directory.EnumerateDirectories(searchDirectory);
+
+            // get the size of all files in all subdirectories
+            var subDirSize = (from directory in directories select GetFileSizeSumFromDirectory(directory)).Sum();
+
+            return currentSize + subDirSize;
         }
         public void displayWorks()
         {

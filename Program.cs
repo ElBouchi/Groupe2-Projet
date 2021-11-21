@@ -6,20 +6,7 @@ namespace Projet
 {
     class Program
     {
-        public static long GetFileSizeSumFromDirectory(string searchDirectory)
-        {
-            var files = Directory.EnumerateFiles(searchDirectory);
-
-            // get the sizeof all files in the current directory
-            var currentSize = (from file in files let fileInfo = new FileInfo(file) select fileInfo.Length).Sum();
-
-            var directories = Directory.EnumerateDirectories(searchDirectory);
-
-            // get the size of all files in all subdirectories
-            var subDirSize = (from directory in directories select GetFileSizeSumFromDirectory(directory)).Sum();
-
-            return currentSize + subDirSize;
-        }
+        
         static void Main(string[] args)
         {
             while (true)
@@ -43,7 +30,9 @@ namespace Projet
                     string inputSourcePath = Console.ReadLine();
                     int fCount = Directory.GetFiles(inputSourcePath, "*", SearchOption.AllDirectories).Length;
                     Console.Write("la taille du repertoire est de : ");
-                    Console.WriteLine(GetFileSizeSumFromDirectory(inputSourcePath));
+                    Travail sizeF = new Travail();
+                    var size = sizeF.GetFileSizeSumFromDirectory(inputSourcePath);
+                    Console.WriteLine(size);
                     Console.Write("Le nombre de fichier a l'interieur du répertoire est de : ");
                     Console.WriteLine(fCount);
                     Console.WriteLine("");
@@ -61,7 +50,7 @@ namespace Projet
 
                         string inputType = "Complète";
                         Travail travail = new Travail(inputName, inputSourcePath, inputDestinationPath, inputType);
-                        travail.addWork(GetFileSizeSumFromDirectory(inputSourcePath), fCount );
+                        travail.addWork(size, fCount );
 
                     }
                     else if (input == "2")
@@ -69,7 +58,7 @@ namespace Projet
 
                         string inputType = "Différentielle";
                         Travail travail = new Travail(inputName, inputSourcePath, inputDestinationPath, inputType);
-                        travail.addWork(GetFileSizeSumFromDirectory(inputSourcePath), fCount );
+                        travail.addWork(size, fCount );
 
                     }
                     else
