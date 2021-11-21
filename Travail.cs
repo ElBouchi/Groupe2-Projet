@@ -19,9 +19,9 @@ namespace Projet
         private string repS { get; set; }
         private string repC { get; set; }
         private string type { get; set; }
-        public void addWork()
+        public void addWork(long filesize, int countfile)
         {
-            var filePath = @"C:\Users\deada\source\repos\Projet\state.json";
+            var filePath = @"C:\Users\Zizou\Source\Repos\Groupe2-EasySave\state.json";
             var jsonData = File.ReadAllText(filePath);
             var stateList = JsonConvert.DeserializeObject<List<Etat>>(jsonData)
                       ?? new List<Etat>();
@@ -34,8 +34,8 @@ namespace Projet
                     TargetFilePath = repC,
                     Type = type,
                     State = "INACTIVE",
-                    TotalFilesToCopy= "0",
-                    TotalFilesSize= "0",
+                    TotalFilesToCopy= countfile.ToString(),
+                    TotalFilesSize= filesize.ToString(),
                     NbFilesLeftToDo= "0",
                     Progression= "0"
 
