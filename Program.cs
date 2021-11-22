@@ -39,11 +39,10 @@ namespace Projet
                         {
                             var verifDest = Directory.GetFiles(inputDestinationPath, "*", SearchOption.AllDirectories);
                             int fCount = Directory.GetFiles(inputSourcePath, "*", SearchOption.AllDirectories).Length;
-                            Travail sizeF = new Travail();
-                            long size = sizeF.GetFileSizeSumFromDirectory(inputSourcePath);
+                            Backup backup = new Backup();
+                            long size = backup.GetFileSizeSumFromDirectory(inputSourcePath);
                             string inputType = "Complete";
-                            Travail travail = new Travail(inputName, inputSourcePath, inputDestinationPath, inputType);
-                            travail.addWork(size, fCount);
+                            backup.addWork(size, fCount, inputName, inputSourcePath, inputDestinationPath, inputType);
                         }
                         catch
                         {
@@ -56,11 +55,10 @@ namespace Projet
                         {
                             var verifDest = Directory.GetFiles(inputDestinationPath, "*", SearchOption.AllDirectories);
                             int fCount = Directory.GetFiles(inputSourcePath, "*", SearchOption.AllDirectories).Length;
-                            Travail sizeF = new Travail();
-                            long size = sizeF.GetFileSizeSumFromDirectory(inputSourcePath);
-                            string inputType = "Differentielle";
-                            Travail travail = new Travail(inputName, inputSourcePath, inputDestinationPath, inputType);
-                            travail.addWork(size, fCount);
+                            Backup backup = new Backup();
+                            long size = backup.GetFileSizeSumFromDirectory(inputSourcePath);
+                            string inputType = "Différentielle";
+                            backup.addWork(size, fCount, inputName, inputSourcePath, inputDestinationPath, inputType);
                         }
                         catch
                         {
@@ -79,8 +77,8 @@ namespace Projet
                 {
                     Console.WriteLine("Voici les différents travaux de sauvegardes :");
 
-                    Travail travail = new Travail();
-                    travail.displayWorks();
+                    Backup backup = new Backup();
+                    backup.displayWorks();
                     Console.WriteLine("");
 
                     Console.Write("1. Execution d'un des travaux de sauvegarde \t");
@@ -90,41 +88,43 @@ namespace Projet
 
                     if (input == "1")
                     {
-                        travail.displayWorks();
+                        backup.displayWorks();
                         Console.WriteLine("Veuillez sélectionner l'index correspondant au travail de sauvegarde souhaité \n");
 
                         input = Console.ReadLine();
 
                         switch (input)
                         {
-                            case "1" :
+                            case "1":
                                 Console.WriteLine("Vous avez choisis le travail de sauvegarde numéro 1");
-                                travail.ExecuteWork(input);
+                                backup.ExecuteWork(input);
                                 break;
-                            case "2" :
+                            case "2":
                                 Console.WriteLine("Vous avez choisis le travail de sauvegarde numéro 2");
-                                travail.ExecuteWork(input);
+                                backup.ExecuteWork(input);
                                 break;
-                            case "3" :
+                            case "3":
                                 Console.WriteLine("Vous avez choisis le travail de sauvegarde numéro 3");
-                                travail.ExecuteWork(input);
+                                backup.ExecuteWork(input);
                                 break;
-                            case "4" :
+                            case "4":
                                 Console.WriteLine("Vous avez choisis le travail de sauvegarde numéro 4");
-                                travail.ExecuteWork(input);
+                                backup.ExecuteWork(input);
                                 break;
-                            case "5" :
+                            case "5":
                                 Console.WriteLine("Vous avez choisis le travail de sauvegarde numéro 5\n");
-                                travail.ExecuteWork(input);
+                                backup.ExecuteWork(input);
                                 break;
                             default:
                                 Console.WriteLine("Mauvaise entrée vous pouvez sélectionner <1> ou <2> ou <3> ou <4> ou <5>");
                                 break;
                         }
                     }
-                    else if(input == "2"){
+                    else if (input == "2")
+                    {
                         Console.WriteLine("En Cours de développement\n");
-                    }else
+                    }
+                    else
                     {
                         Console.WriteLine("Mauvaise entrée vous pouvez sélectionner <1> ou <2>\n");
                     }
