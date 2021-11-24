@@ -21,10 +21,10 @@ namespace Projet
                     Console.Write("Entrez le nom d'un travail de sauvegarde :");
                     string inputName = Console.ReadLine();
                     Console.WriteLine("");
-                    Console.Write("Entrer le chemin répertoire source :");
+                    Console.Write("Entrer le chemin répertoire source : (Exemple de format: D:\\Source)");
                     string inputSourcePath = Console.ReadLine();
                     Console.WriteLine("");
-                    Console.Write("Entrer le chemin répertoire cible :");
+                    Console.Write("Entrer le chemin répertoire cible : (Exemple de format: D:\\Destination)");
                     string inputDestinationPath = Console.ReadLine();
                     Console.WriteLine("");
                     Console.WriteLine("Choisissez un type de sauvegarde :\n");
@@ -39,7 +39,7 @@ namespace Projet
                         {
                             var verifDest = Directory.GetFiles(inputDestinationPath, "*", SearchOption.AllDirectories);
                             int fCount = Directory.GetFiles(inputSourcePath, "*", SearchOption.AllDirectories).Length;
-                            Backup backup = new Backup();
+                            EasySave backup = new EasySave();
                             long size = backup.GetFileSizeSumFromDirectory(inputSourcePath);
                             string inputType = "Complete";
                             backup.addWork(size, fCount, inputName, inputSourcePath, inputDestinationPath, inputType);
@@ -55,9 +55,9 @@ namespace Projet
                         {
                             var verifDest = Directory.GetFiles(inputDestinationPath, "*", SearchOption.AllDirectories);
                             int fCount = Directory.GetFiles(inputSourcePath, "*", SearchOption.AllDirectories).Length;
-                            Backup backup = new Backup();
+                            EasySave backup = new EasySave();
                             long size = backup.GetFileSizeSumFromDirectory(inputSourcePath);
-                            string inputType = "Différentielle";
+                            string inputType = "Differentielle";
                             backup.addWork(size, fCount, inputName, inputSourcePath, inputDestinationPath, inputType);
                         }
                         catch
@@ -77,7 +77,7 @@ namespace Projet
                 {
                     Console.WriteLine("Voici les différents travaux de sauvegardes :");
 
-                    Backup backup = new Backup();
+                    EasySave backup = new EasySave();
                     backup.displayWorks();
                     Console.WriteLine("");
 
@@ -96,19 +96,19 @@ namespace Projet
                         switch (input)
                         {
                             case "1":
-                                Console.WriteLine("Vous avez choisis le travail de sauvegarde numéro 1");
+                                Console.WriteLine("Vous avez choisis le travail de sauvegarde numéro 1\n");
                                 backup.ExecuteWork(input);
                                 break;
                             case "2":
-                                Console.WriteLine("Vous avez choisis le travail de sauvegarde numéro 2");
+                                Console.WriteLine("Vous avez choisis le travail de sauvegarde numéro 2\n");
                                 backup.ExecuteWork(input);
                                 break;
                             case "3":
-                                Console.WriteLine("Vous avez choisis le travail de sauvegarde numéro 3");
+                                Console.WriteLine("Vous avez choisis le travail de sauvegarde numéro 3\n");
                                 backup.ExecuteWork(input);
                                 break;
                             case "4":
-                                Console.WriteLine("Vous avez choisis le travail de sauvegarde numéro 4");
+                                Console.WriteLine("Vous avez choisis le travail de sauvegarde numéro 4\n");
                                 backup.ExecuteWork(input);
                                 break;
                             case "5":

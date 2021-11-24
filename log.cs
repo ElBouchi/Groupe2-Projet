@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Projet
 {
-    class log
+    class Log
     {
-        public static string filePath = @"C:\Users\Nazim GAOUA\source\repos\Groupe2-Projett\state.json";
+        public static string filePath = @"..\..\..\log.json";
 
         public string Name { get; set; }
         public string FileSource { get; set; }
