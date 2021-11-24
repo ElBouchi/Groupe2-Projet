@@ -13,8 +13,8 @@ namespace Projet
         // a method that will allow to create a backupwork
         public void addWork(long filesize, int countfile, string theName, string theRepS, string theRepC, string theType)
         {
-            var jsonDataWork = File.ReadAllText(Travail.filePath); //Read the JSON file
-            var workList = JsonConvert.DeserializeObject<List<Travail>>(jsonDataWork) ?? new List<Travail>(); //convert a string into an object for JSON
+            var jsonDataWork = File.ReadAllText(Work.filePath); //Read the JSON file
+            var workList = JsonConvert.DeserializeObject<List<Work>>(jsonDataWork) ?? new List<Work>(); //convert a string into an object for JSON
 
             var jsonDataWork2 = File.ReadAllText(Etat.filePath); //Read the JSON file
             var stateList2 = JsonConvert.DeserializeObject<List<Etat>>(jsonDataWork2) ?? new List<Etat>();
@@ -37,7 +37,7 @@ namespace Projet
             {
                 if (workList.Count < 5) // this condition limits the number of backupwork that can be created (5 max)
                 {
-                    workList.Add(new Travail() //parameter that the JSON file will contains
+                    workList.Add(new Work() //parameter that the JSON file will contains
                     {
                         name = theName,
                         repS = theRepS,
@@ -46,8 +46,8 @@ namespace Projet
                     });
 
 
-                    string strResultJsonWork = JsonConvert.SerializeObject(workList, Formatting.Indented); //convert an object into a string for JSON
-                    File.WriteAllText(Travail.filePath, strResultJsonWork); // write in the JSON file
+                    string strResultJsonWork = JsonConvert.SerializeObject(workList, Formatting.Indented);  //convert an object into a string for JSON
+                    File.WriteAllText(Work.filePath, strResultJsonWork); // write in the JSON file
 
                     var jsonDataState = File.ReadAllText(Etat.filePath); //Read the JSON file
                     var stateList = JsonConvert.DeserializeObject<List<Etat>>(jsonDataState) ?? new List<Etat>(); //convert a string into an object for JSON
@@ -69,7 +69,7 @@ namespace Projet
                     string strResultJsonState = JsonConvert.SerializeObject(stateList, Formatting.Indented); //convert an object into a string for JSON
                     File.WriteAllText(Etat.filePath, strResultJsonState); // write in the JSON file
 
-
+                    // Switch the language of the outpoot according to the choice of the user when he started the program
                     if (Language.language == "FR")
                     {
 
@@ -84,7 +84,7 @@ namespace Projet
                     }
                 }
                 else
-                {
+                {   // Switch the language of the outpoot according to the choice of the user when he started the program
                     if (Language.language == "FR")
                     {
 
@@ -100,7 +100,7 @@ namespace Projet
                 }
             }
             else
-            {
+            {   // Switch the language of the outpoot according to the choice of the user when he started the program
                 if (Language.language == "FR")
                 {
 
@@ -116,8 +116,8 @@ namespace Projet
         }
         public void displayWorks() // a method that will allow to display all our backupwork
         {
-            var jsonData = File.ReadAllText(Travail.filePath); //Read the JSON file
-            var stateList = JsonConvert.DeserializeObject<List<Travail>>(jsonData) ?? new List<Travail>(); //convert a string into an object for JSON
+            var jsonData = File.ReadAllText(Work.filePath); //Read the JSON file
+            var stateList = JsonConvert.DeserializeObject<List<Work>>(jsonData) ?? new List<Work>(); //convert a string into an object for JSON
 
             var dt = new ConsoleTable("index", "Name", "SourceFilePath", "TargetFilePath", "Type");
             foreach (var (state, i) in stateList.Select((el, i) => (el, i)))
@@ -129,8 +129,8 @@ namespace Projet
         }
         public void ExecuteWork(string inputUtilisateur) // a method that will allow to execute a backupwork created
         {
-            var jsonData = File.ReadAllText(Travail.filePath); //Read the JSON file
-            var workList = JsonConvert.DeserializeObject<List<Travail>>(jsonData) ?? new List<Travail>(); //convert a string into an object for JSON
+            var jsonData = File.ReadAllText(Work.filePath); //Read the JSON file
+            var workList = JsonConvert.DeserializeObject<List<Work>>(jsonData) ?? new List<Work>(); //convert a string into an object for JSON
 
             if (workList.Count >= Convert.ToInt32(inputUtilisateur)) //this condition allow to the user to choose the exact row in order to execute the backupwork chosen
             {
@@ -161,7 +161,7 @@ namespace Projet
                     string strResultJsonState2 = JsonConvert.SerializeObject(stateList2, Formatting.Indented);
                     File.WriteAllText(Etat.filePath, strResultJsonState2);
                     // differential backup
-                    SauvegardeDifferentielle SD = new SauvegardeDifferentielle();
+                    DifferentialBackup SD = new DifferentialBackup();
                     SD.Sauvegarde(sourceDir, backupDir, true, indexState, filesNum, index, name);
 
                 }
@@ -185,14 +185,14 @@ namespace Projet
                     string strResultJsonState2 = JsonConvert.SerializeObject(stateList2, Formatting.Indented);
                     File.WriteAllText(Etat.filePath, strResultJsonState2);
                     // complete backup
-                    SauvegardeComplete SD = new SauvegardeComplete();
+                    FullBackup SD = new FullBackup();
                     SD.Sauvegarde(sourceDir, backupDir, true, indexState, filesNum, index, name);
 
                 }
 
             }
             else
-            {
+            {   // Switch the language of the outpoot according to the choice of the user when he started the program
                 if (Language.language == "FR")
                 {
 
@@ -209,8 +209,8 @@ namespace Projet
         }
         public void ExecuteAllWork()
         {
-            var jsonData = File.ReadAllText(Travail.filePath);
-            var workList = JsonConvert.DeserializeObject<List<Travail>>(jsonData) ?? new List<Travail>();
+            var jsonData = File.ReadAllText(Work.filePath);
+            var workList = JsonConvert.DeserializeObject<List<Work>>(jsonData) ?? new List<Work>();
 
             for (int i = 0; i < workList.Count; i++)
             {

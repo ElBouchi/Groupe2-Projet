@@ -1,0 +1,13 @@
+[
+  {
+    "Name": "travail1",
+    "SourceFilePath": "C:\\Users\\Zizou\\Desktop\\destination",
+    "TargetFilePath": "C:\\Users\\Zizou\\Desktop\\source",
+    "Time": "24-11-2021 19:10:09",
+    "State": "END",
+    "TotalFilesToCopy": "2",
+    "TotalFilesSize": "716",
+    "NbFilesLeftToDo": "0",
+    "Progression": "100%"
+  }
+]

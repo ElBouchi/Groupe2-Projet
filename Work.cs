@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Projet
 {
-    class Travail
+    class Work
     {
         public static string filePath = @"..\..\..\work.json";
         public string name { get; set; }

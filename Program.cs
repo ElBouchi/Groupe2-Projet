@@ -7,6 +7,7 @@ namespace Projet
     {
         static void Main(string[] args)
         {
+            // a loop that used for the language parameter
             while (true)
             {
                 Console.WriteLine("Choose a language");
@@ -32,7 +33,7 @@ namespace Projet
                 }
             }
 
-
+            // a loop that used in the whole program
             while (true)
             {
                 if (Language.language == "FR")
@@ -42,7 +43,7 @@ namespace Projet
                     Console.WriteLine("3. Quittez l'application\n");
 
                     string input = Console.ReadLine();
-                    if (input == "1")
+                    if (input == "1") //add a backup work
                     {
                         Console.Write("Entrez le nom d'un travail de sauvegarde :");
                         string inputName = Console.ReadLine();
@@ -99,7 +100,7 @@ namespace Projet
                         }
 
                     }
-                    else if (input == "2")
+                    else if (input == "2") //execute a backup work
                     {
                         Console.WriteLine("Voici les différents travaux de sauvegardes :");
 
@@ -155,7 +156,7 @@ namespace Projet
                             Console.WriteLine("Mauvaise entrée vous pouvez sélectionner <1> ou <2>\n");
                         }
                     }
-                    else if (input == "3")
+                    else if (input == "3") //leave the application
                     {
                         Environment.Exit(1);
                     }
@@ -166,14 +167,14 @@ namespace Projet
                 }
                 else if (Language.language == "EN")
                 {
-                    Console.Write("1. Add a backup job \t");
-                    Console.Write("2. Execute a backup job\n");
+                    Console.Write("1. Add a backup work \t");
+                    Console.Write("2. Execute a backup work\n");
                     Console.WriteLine("3. Leave application\n");
 
                     string input = Console.ReadLine();
-                    if (input == "1")
+                    if (input == "1") //ad a backup work
                     {
-                        Console.Write("Enter the name of a backup job :");
+                        Console.Write("Enter the name of a backup work :");
                         string inputName = Console.ReadLine();
                         Console.WriteLine("");
                         Console.Write("Enter the source directory path: (path example: D:\\Source)");
@@ -184,7 +185,7 @@ namespace Projet
                         Console.WriteLine("");
                         Console.WriteLine("Choose the backup type :\n");
                         Console.Write("1. Full Backup \t");
-                        Console.WriteLine("2. Differential ackup\n");
+                        Console.WriteLine("2. Differential backup\n");
 
                         input = Console.ReadLine();
 
@@ -275,7 +276,7 @@ namespace Projet
                                     break;
                             }
                         }
-                        else if (input == "2")
+                        else if (input == "2") //this input will execute the sequential backup
                         {
                             backup.ExecuteAllWork();
                         }
