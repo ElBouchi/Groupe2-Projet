@@ -7,6 +7,6 @@ namespace Projet
 {
     interface ISauvegarde
     {
-        void Sauvegarde(string sourcePATH, string destPATH, bool copyDirs, bool createFirstFolder, long fileCount, int getIndex, string getName);
+        void Sauvegarde(string sourcePATH, string destPATH, bool copyDirs, int getStateIndex, long fileCount, int getIndex, string getName);
     }
 }

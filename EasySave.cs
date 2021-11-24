@@ -16,45 +16,69 @@ namespace Projet
             var jsonDataWork = File.ReadAllText(Travail.filePath); //Read the JSON file
             var workList = JsonConvert.DeserializeObject<List<Travail>>(jsonDataWork) ?? new List<Travail>(); //convert a string into an object for JSON
 
-            if (workList.Count < 5) // this condition limits the number of backupwork that can be created (5 max)
+            var jsonDataWork2 = File.ReadAllText(Etat.filePath); //Read the JSON file
+            var stateList2 = JsonConvert.DeserializeObject<List<Etat>>(jsonDataWork2) ?? new List<Etat>();
+
+            bool nameExist = false;
+            for (int i = 0; i < stateList2.Count; i++)
             {
-                workList.Add(new Travail() //parameter that the JSON file will contains
+                if (stateList2[i].Name == theName)
                 {
-                    name = theName,
-                    repS = theRepS,
-                    repC = theRepC,
-                    type = theType,
-                });
-
-
-                string strResultJsonWork = JsonConvert.SerializeObject(workList, Formatting.Indented); //convert an object into a string for JSON
-                File.WriteAllText(Travail.filePath, strResultJsonWork); // write in the JSON file
-
-                var jsonDataState = File.ReadAllText(Etat.filePath); //Read the JSON file
-                var stateList = JsonConvert.DeserializeObject<List<Etat>>(jsonDataState) ?? new List<Etat>(); //convert a string into an object for JSON
-
-
-                stateList.Add(new Etat() //parameter that the JSON file will contains
+                    nameExist = true;
+                    break;
+                }
+                else
                 {
-                    Name = theName,
-                    SourceFilePath = theRepC,
-                    TargetFilePath = theRepS,
-                    Time = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"),
-                    State = "INACTIVE",
-                    TotalFilesToCopy = countfile.ToString(),
-                    TotalFilesSize = filesize.ToString(),
-                    NbFilesLeftToDo = "0",
-                    Progression = "0"
-                });
+                    nameExist = false;
+                }
+            }
 
-                string strResultJsonState = JsonConvert.SerializeObject(stateList, Formatting.Indented); //convert an object into a string for JSON
-                File.WriteAllText(Etat.filePath, strResultJsonState); // write in the JSON file
+            if (!nameExist)
+            {
+                if (workList.Count < 5) // this condition limits the number of backupwork that can be created (5 max)
+                {
+                    workList.Add(new Travail() //parameter that the JSON file will contains
+                    {
+                        name = theName,
+                        repS = theRepS,
+                        repC = theRepC,
+                        type = theType,
+                    });
 
-                Console.WriteLine("Travail ajouté avec succès !\n");
+
+                    string strResultJsonWork = JsonConvert.SerializeObject(workList, Formatting.Indented); //convert an object into a string for JSON
+                    File.WriteAllText(Travail.filePath, strResultJsonWork); // write in the JSON file
+
+                    var jsonDataState = File.ReadAllText(Etat.filePath); //Read the JSON file
+                    var stateList = JsonConvert.DeserializeObject<List<Etat>>(jsonDataState) ?? new List<Etat>(); //convert a string into an object for JSON
+
+
+                    stateList.Add(new Etat() //parameter that the JSON file will contains
+                    {
+                        Name = theName,
+                        SourceFilePath = theRepC,
+                        TargetFilePath = theRepS,
+                        Time = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"),
+                        State = "INACTIVE",
+                        TotalFilesToCopy = countfile.ToString(),
+                        TotalFilesSize = filesize.ToString(),
+                        NbFilesLeftToDo = "0",
+                        Progression = "0%"
+                    });
+
+                    string strResultJsonState = JsonConvert.SerializeObject(stateList, Formatting.Indented); //convert an object into a string for JSON
+                    File.WriteAllText(Etat.filePath, strResultJsonState); // write in the JSON file
+
+                    Console.WriteLine("Travail ajouté avec succès !\n");
+                }
+                else
+                {
+                    Console.WriteLine("Nombre maximal de travaux atteint\n");
+                }
             }
             else
             {
-                Console.WriteLine("Nombre maximal de travaux atteint\n");
+                Console.WriteLine("Un travail avec le meme nom existe déjà\n");
             }
         }
         public void displayWorks() // a method that will allow to display all our backupwork
@@ -84,18 +108,52 @@ namespace Projet
                 long filesNum = Directory.GetFiles(sourceDir, "*", SearchOption.AllDirectories).Length;
 
                 //this condition is used to execute the type of backup chosen in the creation 
-                if (workList.ElementAt(Convert.ToInt32(inputUtilisateur) - 1).type == "Differentielle") 
+                if (workList.ElementAt(Convert.ToInt32(inputUtilisateur) - 1).type == "Differential") 
                 {
+                    var jsonDataState2 = File.ReadAllText(Etat.filePath);
+                    var stateList2 = JsonConvert.DeserializeObject<List<Etat>>(jsonDataState2) ?? new List<Etat>();
+
+                    int indexState = 0;
+                    for (int i = 0; i < stateList2.Count; i++)
+                    {
+                        if (stateList2[i].Name == workList[index].name)
+                        {
+                            indexState = i;
+                            break;
+                        }
+                    }
+
+                    stateList2[indexState].State = "Active";
+
+                    string strResultJsonState2 = JsonConvert.SerializeObject(stateList2, Formatting.Indented);
+                    File.WriteAllText(Etat.filePath, strResultJsonState2);
                     // differential backup
                     SauvegardeDifferentielle SD = new SauvegardeDifferentielle(); 
-                    SD.Sauvegarde(sourceDir, backupDir, true, true, filesNum, index, name);
+                    SD.Sauvegarde(sourceDir, backupDir, true, indexState, filesNum, index, name);
 
                 }
                 else
                 {
+                    var jsonDataState2 = File.ReadAllText(Etat.filePath);
+                    var stateList2 = JsonConvert.DeserializeObject<List<Etat>>(jsonDataState2) ?? new List<Etat>();
+
+                    int indexState = 0;
+                    for (int i = 0; i < stateList2.Count; i++)
+                    {
+                        if (stateList2[i].Name == workList[index].name)
+                        {
+                            indexState = i;
+                            break;
+                        }
+                    }
+
+                    stateList2[indexState].State = "Active";
+
+                    string strResultJsonState2 = JsonConvert.SerializeObject(stateList2, Formatting.Indented);
+                    File.WriteAllText(Etat.filePath, strResultJsonState2);
                     // complete backup
                     SauvegardeComplete SD = new SauvegardeComplete();
-                    SD.Sauvegarde(sourceDir, backupDir, true, true, filesNum, index, name);
+                    SD.Sauvegarde(sourceDir, backupDir, true, indexState, filesNum, index, name);
 
                 }
 
@@ -103,6 +161,16 @@ namespace Projet
             else
             {
                 Console.WriteLine("Aucun travail de sauvegarde avec l'entrée " + inputUtilisateur + " trouvée\n");
+            }
+        }
+        public void ExecuteAllWork()
+        {
+            var jsonData = File.ReadAllText(Travail.filePath);
+            var workList = JsonConvert.DeserializeObject<List<Travail>>(jsonData) ?? new List<Travail>();
+
+            for (int i = 0; i < workList.Count; i++)
+            {
+                ExecuteWork("1");
             }
         }
         public long GetFileSizeSumFromDirectory(string searchDirectory) //a method that allow to calculate the size of a directory (subdirrectory included)

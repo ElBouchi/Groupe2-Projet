@@ -13,11 +13,7 @@ namespace Projet
                 Console.Write("2. Executer un travail de sauvegarde\n");
                 Console.WriteLine("3. Quittez l'application\n");
 
-
                 string input = Console.ReadLine();
-
-
-
                 if (input == "1")
                 {
                     Console.Write("Entrez le nom d'un travail de sauvegarde :");
@@ -43,7 +39,7 @@ namespace Projet
                             int fCount = Directory.GetFiles(inputSourcePath, "*", SearchOption.AllDirectories).Length;
                             EasySave backup = new EasySave();
                             long size = backup.GetFileSizeSumFromDirectory(inputSourcePath);
-                            string inputType = "Complete";
+                            string inputType = "Full";
                             backup.addWork(size, fCount, inputName, inputSourcePath, inputDestinationPath, inputType);
                         }
                         catch
@@ -55,11 +51,11 @@ namespace Projet
                     {
                         try
                         {
-                            var verifDest = Directory.GetFiles(inputDestinationPath, "*", SearchOption.AllDirectories);
+                            var verifDest = Directory.GetFiles(inputDestinationPath, "*", SearchOption.AllDirectories).Length;
                             int fCount = Directory.GetFiles(inputSourcePath, "*", SearchOption.AllDirectories).Length;
                             EasySave backup = new EasySave();
                             long size = backup.GetFileSizeSumFromDirectory(inputSourcePath);
-                            string inputType = "Differentielle";
+                            string inputType = "Differential";
                             backup.addWork(size, fCount, inputName, inputSourcePath, inputDestinationPath, inputType);
                         }
                         catch
@@ -124,7 +120,7 @@ namespace Projet
                     }
                     else if (input == "2")
                     {
-                        Console.WriteLine("En Cours de développement\n");
+                        backup.ExecuteAllWork();
                     }
                     else
                     {

@@ -2,6 +2,7 @@
 using System.IO;
 using System.Collections.Generic;
 using Newtonsoft.Json;
+using System.Diagnostics;
 using System.Text;
 using System.Linq;
 using System.Security.Cryptography;
@@ -10,8 +11,10 @@ namespace Projet
 {
     class SauvegardeComplete : ISauvegarde
     {
-        public void Sauvegarde(string sourcePATH, string destPATH, bool copyDirs, bool createFirstFolder, long fileCount, int getIndex, string getName)
+        public void Sauvegarde(string sourcePATH, string destPATH, bool copyDirs, int getStateIndex, long fileCount, int getIndex, string getName)
         {
+            Stopwatch stopWatch = new Stopwatch();
+            stopWatch.Start();
             // Get the subdirectories for the specified directory.
             DirectoryInfo dir = new DirectoryInfo(sourcePATH);
 
@@ -28,16 +31,18 @@ namespace Projet
             }
 
             FileInfo[] files = copyDirs ? dir.GetFiles("*", SearchOption.AllDirectories) : dir.GetFiles();
+            var i = 0;
             foreach (var file in files)
             {
                 file.CopyTo(file.FullName.Replace(sourcePATH, destPATH), true);
-                var filesLeftToDo = Directory.GetFiles(sourcePATH, "*", SearchOption.AllDirectories).Length - Directory.GetFiles(destPATH, "*", SearchOption.AllDirectories).Length;
+                i++;
+                var filesLeftToDo = Directory.GetFiles(sourcePATH, "*", SearchOption.AllDirectories).Length - i;
                 string progress = Convert.ToString((100 - (filesLeftToDo * 100) / fileCount)) + "%";
                 var jsonData = File.ReadAllText(Etat.filePath);
                 var stateList = JsonConvert.DeserializeObject<List<Etat>>(jsonData) ?? new List<Etat>();
 
-                stateList[getIndex].NbFilesLeftToDo = filesLeftToDo.ToString();
-                stateList[getIndex].Progression = progress;
+                stateList[getStateIndex].NbFilesLeftToDo = filesLeftToDo.ToString();
+                stateList[getStateIndex].Progression = progress;
 
                 string strResultJsonState = JsonConvert.SerializeObject(stateList, Formatting.Indented);
                 File.WriteAllText(Etat.filePath, strResultJsonState);
@@ -50,8 +55,8 @@ namespace Projet
             var jsonDataState2 = File.ReadAllText(Etat.filePath);
             var stateList2 = JsonConvert.DeserializeObject<List<Etat>>(jsonDataState2) ?? new List<Etat>();
 
-            stateList2[getIndex].Time = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
-            stateList2[getIndex].State = "END";
+            stateList2[getStateIndex].Time = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
+            stateList2[getStateIndex].State = "END";
 
             string strResultJsonState2 = JsonConvert.SerializeObject(stateList2, Formatting.Indented);
             File.WriteAllText(Etat.filePath, strResultJsonState2);
@@ -63,6 +68,32 @@ namespace Projet
 
             string strResultJsonState3 = JsonConvert.SerializeObject(stateList3, Formatting.Indented);
             File.WriteAllText(Travail.filePath, strResultJsonState3);
+
+            stopWatch.Stop();
+            TimeSpan ts = stopWatch.Elapsed;
+            string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}", ts.Hours, ts.Minutes, ts.Seconds, ts.Milliseconds / 10);
+            Console.WriteLine("RunTime " + elapsedTime);
+
+            var jsonDataState4 = File.ReadAllText(Log.filePath);
+            var stateList4 = JsonConvert.DeserializeObject<List<Log>>(jsonDataState4) ?? new List<Log>();
+
+            stateList4.Add(new Log()
+            {
+                Name = stateList2[getStateIndex].Name,
+                FileSource = stateList2[getStateIndex].SourceFilePath,
+                FileTarget = stateList2[getStateIndex].TargetFilePath,
+                FileSize = stateList2[getStateIndex].TotalFilesSize,
+                FileTransferTime = elapsedTime,
+                time = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")
+        });
+
+            string strResultJsonState4 = JsonConvert.SerializeObject(stateList4, Formatting.Indented);
+            File.WriteAllText(Log.filePath, strResultJsonState4);
+
+
+
+
+
         }
         private void CreateDirs(string path, DirectoryInfo[] dirs)
         {
