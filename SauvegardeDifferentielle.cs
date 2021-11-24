@@ -34,7 +34,7 @@ namespace Projet
             var i = 0;
             foreach (var file in files)
             {
-                if(File.Exists(file.FullName.Replace(sourcePATH, destPATH)))
+                if (File.Exists(file.FullName.Replace(sourcePATH, destPATH)))
                 {
                     using (var sourcef = File.OpenRead(file.FullName))
                     {
@@ -49,8 +49,8 @@ namespace Projet
                             };
                         }
                     }
-                var jsonDataNo = File.ReadAllText(Etat.filePath);
-                var stateListNo = JsonConvert.DeserializeObject<List<Etat>>(jsonDataNo) ?? new List<Etat>();
+                    var jsonDataNo = File.ReadAllText(Etat.filePath);
+                    var stateListNo = JsonConvert.DeserializeObject<List<Etat>>(jsonDataNo) ?? new List<Etat>();
                 }
                 file.CopyTo(file.FullName.Replace(sourcePATH, destPATH), true);
                 i++;
@@ -65,8 +65,20 @@ namespace Projet
                 string strResultJsonState = JsonConvert.SerializeObject(stateList, Formatting.Indented);
                 File.WriteAllText(Etat.filePath, strResultJsonState);
 
-                Console.Write("Nombre de fichiers restants: " + filesLeftToDo + "\t");
-                Console.WriteLine("Progression: " + progress + "\n");
+                if (Language.language == "FR")
+                {
+
+                    Console.Write("Nombre de fichiers restants: " + filesLeftToDo + "\t");
+                    Console.WriteLine("Progression: " + progress + "\n");
+
+                }
+                else if (Language.language == "EN")
+                {
+
+                    Console.Write("Number of remaining files: " + filesLeftToDo + "\t");
+                    Console.WriteLine("Progression: " + progress + "\n");
+
+                }
             }
             var jsonDataState2 = File.ReadAllText(Etat.filePath);
             var stateList2 = JsonConvert.DeserializeObject<List<Etat>>(jsonDataState2) ?? new List<Etat>();

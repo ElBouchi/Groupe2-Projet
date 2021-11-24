@@ -69,16 +69,49 @@ namespace Projet
                     string strResultJsonState = JsonConvert.SerializeObject(stateList, Formatting.Indented); //convert an object into a string for JSON
                     File.WriteAllText(Etat.filePath, strResultJsonState); // write in the JSON file
 
-                    Console.WriteLine("Travail ajouté avec succès !\n");
+
+                    if (Language.language == "FR")
+                    {
+
+                        Console.WriteLine("Travail ajouté avec succès !\n");
+
+                    }
+                    else if (Language.language == "EN")
+                    {
+
+                        Console.WriteLine("Backup work created successfully !\n");
+
+                    }
                 }
                 else
                 {
-                    Console.WriteLine("Nombre maximal de travaux atteint\n");
+                    if (Language.language == "FR")
+                    {
+
+                        Console.WriteLine("Nombre maximal de travaux atteint !\n");
+
+                    }
+                    else if (Language.language == "EN")
+                    {
+
+                        Console.WriteLine("Maximum number of jobs reached !\n");
+
+                    }
                 }
             }
             else
             {
-                Console.WriteLine("Un travail avec le meme nom existe déjà\n");
+                if (Language.language == "FR")
+                {
+
+                    Console.WriteLine("Un travail avec le meme nom existe déjà !\n");
+
+                }
+                else if (Language.language == "EN")
+                {
+
+                    Console.WriteLine("A job with the same name already exists!\n");
+                }
             }
         }
         public void displayWorks() // a method that will allow to display all our backupwork
@@ -108,7 +141,7 @@ namespace Projet
                 long filesNum = Directory.GetFiles(sourceDir, "*", SearchOption.AllDirectories).Length;
 
                 //this condition is used to execute the type of backup chosen in the creation 
-                if (workList.ElementAt(Convert.ToInt32(inputUtilisateur) - 1).type == "Differential") 
+                if (workList.ElementAt(Convert.ToInt32(inputUtilisateur) - 1).type == "Differential")
                 {
                     var jsonDataState2 = File.ReadAllText(Etat.filePath);
                     var stateList2 = JsonConvert.DeserializeObject<List<Etat>>(jsonDataState2) ?? new List<Etat>();
@@ -128,7 +161,7 @@ namespace Projet
                     string strResultJsonState2 = JsonConvert.SerializeObject(stateList2, Formatting.Indented);
                     File.WriteAllText(Etat.filePath, strResultJsonState2);
                     // differential backup
-                    SauvegardeDifferentielle SD = new SauvegardeDifferentielle(); 
+                    SauvegardeDifferentielle SD = new SauvegardeDifferentielle();
                     SD.Sauvegarde(sourceDir, backupDir, true, indexState, filesNum, index, name);
 
                 }
@@ -160,7 +193,18 @@ namespace Projet
             }
             else
             {
-                Console.WriteLine("Aucun travail de sauvegarde avec l'entrée " + inputUtilisateur + " trouvée\n");
+                if (Language.language == "FR")
+                {
+
+                    Console.WriteLine("No backup job with entry " + inputUtilisateur + " found !\n");
+
+                }
+                else if (Language.language == "EN")
+                {
+
+                    Console.WriteLine("No backup job with entry " + inputUtilisateur + " found !\n");
+
+                }
             }
         }
         public void ExecuteAllWork()

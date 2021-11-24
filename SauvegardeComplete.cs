@@ -47,9 +47,20 @@ namespace Projet
                 string strResultJsonState = JsonConvert.SerializeObject(stateList, Formatting.Indented);
                 File.WriteAllText(Etat.filePath, strResultJsonState);
 
-                Console.Write("Nombre de fichiers restants: " + filesLeftToDo + "\t");
-                Console.WriteLine("Progression: " + progress + "\n");
+                if (Language.language == "FR")
+                {
 
+                    Console.Write("Nombre de fichiers restants: " + filesLeftToDo + "\t");
+                    Console.WriteLine("Progression: " + progress + "\n");
+
+                }
+                else if (Language.language == "EN")
+                {
+
+                    Console.Write("Number of remaining files: " + filesLeftToDo + "\t");
+                    Console.WriteLine("Progression: " + progress + "\n");
+
+                }
 
             }
             var jsonDataState2 = File.ReadAllText(Etat.filePath);
@@ -85,7 +96,7 @@ namespace Projet
                 FileSize = stateList2[getStateIndex].TotalFilesSize,
                 FileTransferTime = elapsedTime,
                 time = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")
-        });
+            });
 
             string strResultJsonState4 = JsonConvert.SerializeObject(stateList4, Formatting.Indented);
             File.WriteAllText(Log.filePath, strResultJsonState4);
