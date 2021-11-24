@@ -49,10 +49,10 @@ namespace Projet
                         string inputName = Console.ReadLine();
                         Console.WriteLine("");
                         Console.Write("Entrer le chemin répertoire source : (Exemple de format: D:\\Source)");
-                        string inputSourcePath = Console.ReadLine();
+                        string inputSourcePath = Console.ReadLine().Replace(@"/", @"\");
                         Console.WriteLine("");
                         Console.Write("Entrer le chemin répertoire cible : (Exemple de format: D:\\Destination)");
-                        string inputDestinationPath = Console.ReadLine();
+                        string inputDestinationPath = Console.ReadLine().Replace(@"/", @"\");
                         Console.WriteLine("");
                         Console.WriteLine("Choisissez un type de sauvegarde :\n");
                         Console.Write("1. Sauvegarde complète \t");
@@ -178,10 +178,10 @@ namespace Projet
                         string inputName = Console.ReadLine();
                         Console.WriteLine("");
                         Console.Write("Enter the source directory path: (path example: D:\\Source)");
-                        string inputSourcePath = Console.ReadLine();
+                        string inputSourcePath = Console.ReadLine().Replace(@"/", @"\");
                         Console.WriteLine("");
                         Console.Write("Enter the target directory path : (path example: D:\\Destination)");
-                        string inputDestinationPath = Console.ReadLine();
+                        string inputDestinationPath = Console.ReadLine().Replace(@"/", @"\");
                         Console.WriteLine("");
                         Console.WriteLine("Choose the backup type :\n");
                         Console.Write("1. Full Backup \t");
