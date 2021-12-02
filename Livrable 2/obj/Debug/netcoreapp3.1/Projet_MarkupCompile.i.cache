@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\deada\source\repos\Projet\obj\Debug\netcoreapp3.1\
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\obj\Debug\netcoreapp3.1\
 Projet
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
-C:\Users\deada\source\repos\Projet\App.xaml
-3850589
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\App.xaml
+31722992324
 
-14-333531683
+14-1657585678
 2011200516077
-addWork.xaml;executeWork.xaml;MainWindow.xaml;
+View\addWork.xaml;View\executeWork.xaml;View\MainWindow.xaml;
 
 False
 

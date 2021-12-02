@@ -65,19 +65,26 @@ namespace Projet.View
 
         private void Add_Click(object sender, RoutedEventArgs e)
         {
-            ViewModel.EasySave addWork = new ViewModel.EasySave();
-
-            int fCount = Directory.GetFiles(sourcePATH.Text, "*", SearchOption.AllDirectories).Length;
-            long size = addWork.GetFileSizeSumFromDirectory(sourcePATH.Text);
-
-            try
+            if (Name.Text != "" && sourcePATH.Text != "" && destPATH.Text != "" && backupType.Text != "")
             {
-                addWork.addWork(size, fCount, Name.Text, sourcePATH.Text, destPATH.Text, backupType.Text);
+                ViewModel.EasySave addWork = new ViewModel.EasySave();
+
+                int fCount = Directory.GetFiles(sourcePATH.Text, "*", SearchOption.AllDirectories).Length;
+                long size = addWork.GetFileSizeSumFromDirectory(sourcePATH.Text);
+
+                try
+                {
+                    addWork.addWork(size, fCount, Name.Text, sourcePATH.Text, destPATH.Text, backupType.Text);
+                }
+                catch
+                {
+                    MessageBox.Show("Une erreur est survenue");
+                }
             }
-            catch
+            else
             {
-                MessageBox.Show("Une erreur est survenue");
-            }           
+                MessageBox.Show("Veuillez remplir tout les champs");
+            }
         }
     }
 }

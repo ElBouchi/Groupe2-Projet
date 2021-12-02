@@ -7,21 +7,21 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="addWork.xaml.cs">
+    <Compile Update="View\addWork.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="executeWork.xaml.cs">
+    <Compile Update="View\executeWork.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="addWork.xaml">
+    <Page Update="View\addWork.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="executeWork.xaml">
+    <Page Update="View\executeWork.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="MainWindow.xaml">
+    <Page Update="View\MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
