@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "vC9YJj292Ehq3MIKCYnrEPo7X1loV5uJMGWKbdEV/xp1czkl2CNrRKXEYJq8DiYpxgug724GQ1drN/NNyIPIew==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\deada\\source\\repos\\Projet\\Projet.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\deada\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\deada\\.nuget\\packages\\ookii.dialogs.wpf\\5.0.0\\ookii.dialogs.wpf.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
