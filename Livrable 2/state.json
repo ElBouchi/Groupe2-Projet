@@ -1,0 +1,14 @@
+[
+  {
+    "Name": "travail1",
+    "SourceFilePath": "D:\\Destination",
+    "TargetFilePath": "D:\\Source",
+    "Time": "04/12/2021 01:27:40",
+    "State": "END",
+    "TotalFilesToCopy": "5",
+    "TotalFilesSize": "1010602",
+    "NbFilesLeftToDo": "0",
+    "Progression": "100%",
+    "TimeToCrypt": "00:00:02.1994650"
+  }
+]
