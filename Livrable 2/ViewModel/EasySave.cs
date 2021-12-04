@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows;
 using System.Linq;
+using System.Diagnostics;
 
 namespace Projet.ViewModel
 {
@@ -67,14 +68,27 @@ namespace Projet.ViewModel
                     string strResultJsonState = JsonConvert.SerializeObject(stateList, Formatting.Indented); //convert an object into a string for JSON
                     File.WriteAllText(Model.Etat.filePath, strResultJsonState); // write in the JSON file
 
-                    // Switch the language of the outpoot according to the choice of the user when he started the program
+                // Switch the language of the outpoot according to the choice of the user when he started the program
 
-                        MessageBox.Show("Travail ajouté avec succès !\n");
+                if (Model.Language.verifLg == "English" || Model.Language.verifLg == "")
+                {
+                    MessageBox.Show("Work created successfully");
+                }
+                else
+                {
+                    MessageBox.Show("Travail ajouté avec succès");
+                }
             }
             else
             {   // Switch the language of the outpoot according to the choice of the user when he started the program
-
-                MessageBox.Show("Un travail avec le meme nom existe déjà !\n");
+                if (Model.Language.verifLg == "English" || Model.Language.verifLg == "")
+                {
+                    MessageBox.Show("A work with the same name already exists");
+                }
+                else
+                {
+                    MessageBox.Show("Un travail avec le meme nom existe déjà !");
+                }
             }
         }
         public List<Model.Work> displayWorks() // a method that will allow to display all our backupwork
@@ -86,6 +100,8 @@ namespace Projet.ViewModel
         }
         public void ExecuteWork(string inputUtilisateur) // a method that will allow to execute a backupwork created
         {
+        if (Process.GetProcessesByName("Calculator").Length == 0)
+        {       
             var jsonData = File.ReadAllText(Model.Work.filePath); //Read the JSON file
             var workList = JsonConvert.DeserializeObject<List<Model.Work>>(jsonData) ?? new List<Model.Work>(); //convert a string into an object for JSON
 
@@ -151,7 +167,26 @@ namespace Projet.ViewModel
             else
             {   // Switch the language of the outpoot according to the choice of the user when he started the program
 
-                    MessageBox.Show("No backup job with entry " + inputUtilisateur + " found !\n");
+                if (Model.Language.verifLg == "English" || Model.Language.verifLg == "")
+                {
+                    MessageBox.Show("No backup job with entry " + inputUtilisateur + " found !");
+                }
+                else
+                {
+                    MessageBox.Show("La ligne " + inputUtilisateur + " ne contient aucun travail de sauvegarde !");
+                }              
+            }
+        }
+        else
+        {
+                if (Model.Language.verifLg == "English" || Model.Language.verifLg == "")
+                {
+                    MessageBox.Show("Cannot launch because business software is running");
+                }
+                else
+                {
+                    MessageBox.Show("Impossible de lancer car un logiciel métier est en cours d'éxecution");
+                }
             }
         }
         public void ExecuteAllWork()

@@ -7,12 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-    <PackageReference Include="Ookii.Dialogs.Wpf" Version="5.0.0" />
+    <Compile Remove="Conception UML\Livrable 2\**" />
+    <EmbeddedResource Remove="Conception UML\Livrable 2\**" />
+    <None Remove="Conception UML\Livrable 2\**" />
+    <Page Remove="Conception UML\Livrable 2\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Conception UML\Livrable 2\" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Ookii.Dialogs.Wpf" Version="5.0.0" />
   </ItemGroup>
 
 </Project>

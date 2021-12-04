@@ -1,0 +1,18 @@
+﻿<Window x:Class="Projet.View.Settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projet.View"
+        mc:Ignorable="d"
+        Title="Settings" Height="213" Width="335" Loaded="Window_Loaded">
+    <Grid>
+        <ComboBox x:Name="lang" HorizontalAlignment="Left" Margin="156,16,0,0" VerticalAlignment="Top" Width="120">
+            <Label Content="Francais"/>
+            <Label Content="English"/>
+        </ComboBox>
+        <Label x:Name="langLabel" HorizontalAlignment="Left" Margin="18,13,0,0" VerticalAlignment="Top" Height="27" Width="133"/>
+        <Button x:Name="saveLabel" HorizontalAlignment="Left" Margin="144,121,0,0" VerticalAlignment="Top" Height="20" Width="134" Click="Button_Click"/>
+        <Button x:Name="changeExt" Content="" HorizontalAlignment="Left" Margin="91,69,0,0" VerticalAlignment="Top" Height="19" Width="120" Click="changeExt_Click"/>
+    </Grid>
+</Window>

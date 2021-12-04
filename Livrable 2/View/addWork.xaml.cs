@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -39,7 +41,14 @@ namespace Projet.View
             }
             else
             {
-                MessageBox.Show("Le répertoire source précisé est vide");
+                if (Model.Language.verifLg == "English" || Model.Language.verifLg == "")
+                {
+                    MessageBox.Show("Source path empty");
+                }
+                else
+                {
+                    MessageBox.Show("Le répertoire source précisé est vide");
+                }        
             }
         }
 
@@ -59,7 +68,14 @@ namespace Projet.View
             }
             else
             {
-                MessageBox.Show("Le répertoire destination précisé est vide");
+                if (Model.Language.verifLg == "English" || Model.Language.verifLg == "")
+                {
+                    MessageBox.Show("Target path empty");
+                }
+                else
+                {
+                    MessageBox.Show("Le répertoire de destination précisé est vide");
+                }
             }
         }
 
@@ -75,15 +91,67 @@ namespace Projet.View
                 try
                 {
                     addWork.addWork(size, fCount, Name.Text, sourcePATH.Text, destPATH.Text, backupType.Text);
+                    Name.Text = "";
+                    sourcePATH.Text = "";
+                    destPATH.Text = "";
+                    backupType.Text = "";
+
                 }
                 catch
                 {
-                    MessageBox.Show("Une erreur est survenue");
+                    if (Model.Language.verifLg == "English" || Model.Language.verifLg == "")
+                    {
+                        MessageBox.Show("An error occured");
+                    }
+                    else
+                    {
+                        MessageBox.Show("une erreur est survenue");
+                    }
+
+                    Name.Text = "";
+                    sourcePATH.Text = "";
+                    destPATH.Text = "";
+                    backupType.Text = "";
                 }
             }
             else
             {
-                MessageBox.Show("Veuillez remplir tout les champs");
+                if (Model.Language.verifLg == "English" || Model.Language.verifLg == "")
+                {
+                    MessageBox.Show("Fill all the fields");
+                }
+                else
+                {
+                    MessageBox.Show("Veuillez remplir tout les champs");
+                }  
+            }
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            if (Model.Language.verifLg == "English" || Model.Language.verifLg == "")
+            {
+                nameLabel.Content = "Name";
+                sourceLabel.Content = "Source Path";
+                destLabel.Content = "Destination Path";
+                backupTypeLabel.Content = "Backup Type";
+                uploadSource.Content = "Upload";
+                uploadDestination.Content = "Upload";
+                backupType.Items.Add("Full");
+                backupType.Items.Add("Differential");
+                Add.Content = "Add";
+            }
+            else
+            {
+                nameLabel.Content = "Nom";
+                sourceLabel.Content = "Chemin Source";
+                destLabel.Content = "Chemin Cible";
+                backupTypeLabel.Content = "Type de sauvegarde";
+                uploadSource.Content = "Parcourir";
+                uploadDestination.Content = "Parcourir";
+                backupType.Items.Add("Full");
+                backupType.Items.Add("Differential");
+                Add.Content = "Ajouter";
             }
         }
     }

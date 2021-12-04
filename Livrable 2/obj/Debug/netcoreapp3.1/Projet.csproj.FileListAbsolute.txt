@@ -52,3 +52,5 @@ C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\obj\Debug\netcoreapp3.1\Vi
 C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\obj\Debug\netcoreapp3.1\View\addWork.baml
 C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\obj\Debug\netcoreapp3.1\View\executeWork.baml
 C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\obj\Debug\netcoreapp3.1\View\MainWindow.baml
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\obj\Debug\netcoreapp3.1\View\Settings.g.cs
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\obj\Debug\netcoreapp3.1\View\settings.baml

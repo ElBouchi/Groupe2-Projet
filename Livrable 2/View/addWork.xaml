@@ -5,23 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projet"
         mc:Ignorable="d"
-        Title="addWork" Height="257" Width="397" SizeToContent="Width">
+        Title="addWork" Height="263" Width="452" SizeToContent="Width" Loaded="Window_Loaded">
     <Grid Margin="0,-17,0,-6">
         <Button HorizontalAlignment="Left" Margin="88,48,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="Name" HorizontalAlignment="Left" Margin="53,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="Add" Content="Add" HorizontalAlignment="Left" Margin="249,191,0,0" VerticalAlignment="Top" Height="24" Width="93" Click="Add_Click"/>
+        <Button x:Name="Add" HorizontalAlignment="Left" Margin="249,191,0,0" VerticalAlignment="Top" Height="24" Width="93" Click="Add_Click" HorizontalContentAlignment="Center"/>
         <TextBox x:Name="sourcePATH" HorizontalAlignment="Left" Margin="106,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="121" IsEnabled="False"/>
         <TextBox x:Name="destPATH" HorizontalAlignment="Left" Margin="106,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
-        <ComboBox x:Name="backupType" HorizontalAlignment="Left" Margin="91,128,0,0" VerticalAlignment="Top" Width="120" Height="16">
-            <Label Content="Full"/>
-            <Label Content="Differential"/>
-        </ComboBox>
-        <Button x:Name="uploadSource" Content="upload" HorizontalAlignment="Left" Margin="241,64,0,0" VerticalAlignment="Top" Click="uploadSource_Click"/>
-        <Button x:Name="uploadDestination" Content="upload" HorizontalAlignment="Left" Margin="240,96,0,0" VerticalAlignment="Top" Width="41" Click="uploadDestination_Click"/>
-        <Label Content="Destination Path" HorizontalAlignment="Left" Margin="8,92,0,0" VerticalAlignment="Top"/>
-        <Label Content="Name" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top"/>
-        <Label Content="Source Path" HorizontalAlignment="Left" Margin="9,61,0,0" VerticalAlignment="Top"/>
-        <Label Content="Backup Type" HorizontalAlignment="Left" Margin="10,123,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="backupType" HorizontalAlignment="Left" Margin="147,128,0,0" VerticalAlignment="Top" Width="120" Height="16"/>
+        <Button x:Name="uploadSource" HorizontalAlignment="Left" Margin="241,64,0,0" VerticalAlignment="Top" Click="uploadSource_Click" Height="19" Width="73"/>
+        <Button x:Name="uploadDestination" HorizontalAlignment="Left" Margin="240,96,0,0" VerticalAlignment="Top" Width="74" Click="uploadDestination_Click" Height="18"/>
+        <Label x:Name="destLabel" HorizontalAlignment="Left" Margin="8,92,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="nameLabel" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="sourceLabel" HorizontalAlignment="Left" Margin="9,61,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="backupTypeLabel" HorizontalAlignment="Left" Margin="10,123,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

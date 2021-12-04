@@ -17,5 +17,6 @@ namespace Projet.Model
         public string TotalFilesSize { get; set; }
         public string NbFilesLeftToDo { get; set; }
         public string Progression { get; set; }
+        public string TimeToCrypt { get; set; }
     }
 }

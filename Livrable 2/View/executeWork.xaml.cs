@@ -29,6 +29,19 @@ namespace Projet.View
         }
         private void executeWork_Loaded(object sender, RoutedEventArgs e)
         {
+            if (Model.Language.verifLg == "English" || Model.Language.verifLg == "")
+            {
+                rowLabel.Content = "Row of the backup work";
+                uniqueExec.Content = "Running a single backup job";
+                sequentialExec.Content = "Sequential execution";
+            }
+            else
+            {
+                rowLabel.Content = "Ligne du travail de sauvegarde";
+                uniqueExec.Content = "Executer un travail de sauvegarde";
+                sequentialExec.Content = "Execution séquentielle";
+            }
+
             ViewModel.EasySave execWork = new ViewModel.EasySave();
             Works.ItemsSource = execWork.displayWorks();
         }
@@ -39,9 +52,21 @@ namespace Projet.View
             {
                 ViewModel.EasySave execWork = new ViewModel.EasySave();
                 execWork.ExecuteWork(index.Text);
+
+                index.Text = "";
+
+                executeWork_Loaded(sender, e);
+
             } else 
             {
-                MessageBox.Show("Please enter the row of a backup work");
+                if (Model.Language.verifLg == "English" || Model.Language.verifLg == "")
+                {
+                    MessageBox.Show("Please enter the row of a backup work");
+                }
+                else
+                {
+                    MessageBox.Show("Entrez le numéro de la ligne du travail de sauvegarde souhaité");
+                }             
             }
 
 
@@ -54,6 +79,10 @@ namespace Projet.View
 
             ViewModel.EasySave execAllWork = new ViewModel.EasySave();
             execAllWork.ExecuteAllWork();
+
+            index.Text = "";
+
+            executeWork_Loaded(sender, e);
         }
     }
 }

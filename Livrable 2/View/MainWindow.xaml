@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projet"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
-        <Button Content="Ajouter un travail de sauvegarde" HorizontalAlignment="Left" Margin="154,174,0,0" VerticalAlignment="Top" Height="60" Width="182" Click="Button_Click"/>
-        <Button Content="Executer un travail de sauvegarde" HorizontalAlignment="Left" Margin="455,174,0,0" VerticalAlignment="Top" Height="60" Width="182" Click="Button_Click_1"/>
+        <Button x:Name="addButton" HorizontalAlignment="Left" Margin="154,174,0,0" VerticalAlignment="Top" Height="60" Width="182" Click="Button_Click"/>
+        <Button x:Name="execButton" HorizontalAlignment="Left" Margin="455,174,0,0" VerticalAlignment="Top" Height="60" Width="182" Click="Button_Click_1"/>
+        <Button x:Name="settings" HorizontalAlignment="Left" Margin="734,10,0,0" VerticalAlignment="Top" Height="37" Width="56" Click="Button_Click_2"/>
     </Grid>
 </Window>
