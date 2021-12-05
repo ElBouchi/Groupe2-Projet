@@ -50,6 +50,8 @@ namespace Projet.View
                         MessageBox.Show("l'application vas etre fermé pour appliquer les changements", MessageBoxButton.OK.ToString());
                     }
                     changLg[0].language = lang.Text;
+                    //Application.Current.Shutdown();
+                    Process.Start(Process.GetCurrentProcess().MainModule.FileName);
                     Application.Current.Shutdown();
                 }
 

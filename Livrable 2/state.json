@@ -10,5 +10,29 @@
     "NbFilesLeftToDo": "0",
     "Progression": "100%",
     "TimeToCrypt": "00:00:02.1994650"
+  },
+  {
+    "Name": "mpmp",
+    "SourceFilePath": "C:\\Users\\PC\\Desktop\\destination",
+    "TargetFilePath": "C:\\Users\\PC\\Desktop\\source",
+    "Time": "05/12/2021 14:07:40",
+    "State": "END",
+    "TotalFilesToCopy": "2",
+    "TotalFilesSize": "0",
+    "NbFilesLeftToDo": "0",
+    "Progression": "100%",
+    "TimeToCrypt": "00:00:00.0755145"
+  },
+  {
+    "Name": "efef",
+    "SourceFilePath": "C:\\Users\\PC\\Desktop\\destination",
+    "TargetFilePath": "C:\\Users\\PC\\Desktop\\source",
+    "Time": "05/12/2021 14:08:40",
+    "State": "END",
+    "TotalFilesToCopy": "2",
+    "TotalFilesSize": "16",
+    "NbFilesLeftToDo": "0",
+    "Progression": "100%",
+    "TimeToCrypt": "00:00:00.0149975"
   }
 ]
