@@ -4,6 +4,32 @@
              xmlns:local="clr-namespace:Projet"
              StartupUri="View\MainWindow.xaml">
     <Application.Resources>
-         
+        <Style TargetType="Button" x:Key="btnHover">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="orange"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                               
+                                BorderThickness="2"
+                                BorderBrush="orange">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center">
+
+                            </ContentPresenter>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="orange"/>
+                    <Setter Property="Foreground" Value="#404040"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
     </Application.Resources>
 </Application>

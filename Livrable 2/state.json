@@ -34,5 +34,17 @@
     "NbFilesLeftToDo": "0",
     "Progression": "100%",
     "TimeToCrypt": "00:00:00.0149975"
+  },
+  {
+    "Name": "maryam",
+    "SourceFilePath": "C:\\destination",
+    "TargetFilePath": "C:\\maryam",
+    "Time": "10/12/2021 22:51:45",
+    "State": "INACTIVE",
+    "TotalFilesToCopy": "1",
+    "TotalFilesSize": "7",
+    "NbFilesLeftToDo": "0",
+    "Progression": "0%",
+    "TimeToCrypt": null
   }
 ]

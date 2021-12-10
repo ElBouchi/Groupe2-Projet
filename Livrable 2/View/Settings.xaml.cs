@@ -80,5 +80,10 @@ namespace Projet.View
         {
             Process.Start("notepad.exe", @"..\..\..\extensions.json");
         }
+
+        private void lang_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
+        }
     }
 }

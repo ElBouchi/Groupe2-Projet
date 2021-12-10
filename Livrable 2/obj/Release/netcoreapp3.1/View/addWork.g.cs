@@ -142,7 +142,7 @@ namespace Projet.View {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Projet;component/view/addwork.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Projet_m1xc03uw_wpftmp;component/view/addwork.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\View\addWork.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -5,20 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projet"
         mc:Ignorable="d"
-        Title="addWork" Height="263" Width="452" SizeToContent="Width" Loaded="Window_Loaded">
+        Title="addWork" Height="380" Width="530" ResizeMode="NoResize" Loaded="Window_Loaded" Background="#404040">
     <Grid Margin="0,-17,0,-6">
-        <Button HorizontalAlignment="Left" Margin="88,48,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="Name" HorizontalAlignment="Left" Margin="53,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="Add" HorizontalAlignment="Left" Margin="249,191,0,0" VerticalAlignment="Top" Height="24" Width="93" Click="Add_Click" HorizontalContentAlignment="Center"/>
-        <TextBox x:Name="sourcePATH" HorizontalAlignment="Left" Margin="106,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="121" IsEnabled="False"/>
-        <TextBox x:Name="destPATH" HorizontalAlignment="Left" Margin="106,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
-        <ComboBox x:Name="backupType" HorizontalAlignment="Left" Margin="147,128,0,0" VerticalAlignment="Top" Width="120" Height="16"/>
-        <Button x:Name="uploadSource" HorizontalAlignment="Left" Margin="241,64,0,0" VerticalAlignment="Top" Click="uploadSource_Click" Height="19" Width="73"/>
-        <Button x:Name="uploadDestination" HorizontalAlignment="Left" Margin="240,96,0,0" VerticalAlignment="Top" Width="74" Click="uploadDestination_Click" Height="18"/>
-        <Label x:Name="destLabel" HorizontalAlignment="Left" Margin="8,92,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="nameLabel" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="sourceLabel" HorizontalAlignment="Left" Margin="9,61,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="backupTypeLabel" HorizontalAlignment="Left" Margin="10,123,0,0" VerticalAlignment="Top"/>
+
+        <TextBox x:Name="Name" HorizontalAlignment="Left" Margin="198,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="275" Height="22"  BorderBrush="Orange" VerticalContentAlignment="Center"/>
+        <Button x:Name="Add" HorizontalAlignment="Left" Margin="380,293,0,0" VerticalAlignment="Top" Height="30" Width="93" Click="Add_Click" HorizontalContentAlignment="Center" Style="{StaticResource btnHover}" Background="Orange" Foreground="#404040"/>
+        <TextBox x:Name="sourcePATH" HorizontalAlignment="Left" Margin="198,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184"  Height="38" BorderBrush="Orange" Background="White"/>
+        <TextBox x:Name="destPATH" HorizontalAlignment="Left" Margin="198,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184"  Height="38" BorderBrush="Orange" Background="White"/>
+        <ComboBox x:Name="backupType" HorizontalAlignment="Left" Margin="198,232,0,0" VerticalAlignment="Top" Width="275" Height="30" VerticalContentAlignment="Center"/>
+        <Button x:Name="uploadSource" HorizontalAlignment="Left" Margin="399,116,0,0" VerticalAlignment="Top" Click="uploadSource_Click" Height="38" Width="74" Style="{StaticResource btnHover}" Background="Orange" Foreground="#404040"/>
+        <Button x:Name="uploadDestination" HorizontalAlignment="Left" Margin="399,169,0,0" VerticalAlignment="Top" Width="74" Click="uploadDestination_Click" Height="38" Style="{StaticResource btnHover}" Background="Orange" Foreground="#404040"/>
+        <Label x:Name="destLabel" HorizontalAlignment="Left" Margin="30,179,0,0" VerticalAlignment="Top" Foreground="Orange" FontSize="14"/>
+        <Label x:Name="nameLabel" HorizontalAlignment="Left" Margin="30,78,0,0" VerticalAlignment="Top" Foreground="Orange" FontSize="14"/>
+        <Label x:Name="sourceLabel" HorizontalAlignment="Left" Margin="30,125,0,0" VerticalAlignment="Top" Foreground="Orange" FontSize="14"/>
+        <Label x:Name="backupTypeLabel" HorizontalAlignment="Left" Margin="30,232,0,0" VerticalAlignment="Top" Foreground="Orange" FontSize="14"/>
 
     </Grid>
 </Window>

@@ -94,7 +94,7 @@ namespace Projet.View {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Projet;component/view/executework.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Projet_m1xc03uw_wpftmp;component/view/executework.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\View\executeWork.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

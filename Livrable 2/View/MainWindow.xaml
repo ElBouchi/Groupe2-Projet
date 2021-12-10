@@ -5,10 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projet"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+         Height="550" Width="950" ResizeMode="NoResize" Loaded="Window_Loaded" Background="#404040" >
     <Grid>
-        <Button x:Name="addButton" HorizontalAlignment="Left" Margin="154,174,0,0" VerticalAlignment="Top" Height="60" Width="182" Click="Button_Click"/>
-        <Button x:Name="execButton" HorizontalAlignment="Left" Margin="455,174,0,0" VerticalAlignment="Top" Height="60" Width="182" Click="Button_Click_1"/>
-        <Button x:Name="settings" HorizontalAlignment="Left" Margin="734,10,0,0" VerticalAlignment="Top" Height="37" Width="56" Click="Button_Click_2"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="234*"/>
+            <ColumnDefinition Width="241*"/>
+        </Grid.ColumnDefinitions>
+        <Image Source="/image/maryam.png" Margin="48,14,351,386">
+        </Image>
+        <Label Foreground="Orange" FontSize="60" Height="120" Margin="122,21,-122,393" Grid.ColumnSpan="2">EasySave</Label>
+        <Button x:Name="addButton" HorizontalAlignment="Left" Style="{StaticResource btnHover}" Margin="32,158,0,0" VerticalAlignment="Top" FontSize="18" Height="280" Width="412" Click="Button_Click"  />
+        <Button x:Name="execButton" HorizontalAlignment="Left" Margin="27,158,0,0" Style="{StaticResource btnHover}" VerticalAlignment="Top" FontSize="18" Height="280" Width="412"  Click="Button_Click_1" Grid.Column="1"/>
+        <Button x:Name="settings" HorizontalAlignment="Left" Margin="236,51,0,0" Style="{StaticResource btnHover}" Background="orange" Foreground="#404040" VerticalAlignment="Top" Height="60" Width="192" FontSize="20" Click="Button_Click_2" Grid.Column="1"/>
     </Grid>
 </Window>

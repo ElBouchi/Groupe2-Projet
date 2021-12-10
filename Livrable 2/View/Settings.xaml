@@ -5,14 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projet.View"
         mc:Ignorable="d"
-        Title="Settings" Height="213" Width="335" Loaded="Window_Loaded">
+        Title="Settings" Height="350" Width="500" ResizeMode="NoResize" Loaded="Window_Loaded" Background="#404040">
     <Grid>
-        <ComboBox x:Name="lang" HorizontalAlignment="Left" Margin="156,16,0,0" VerticalAlignment="Top" Width="120">
+        <ComboBox x:Name="lang"  HorizontalAlignment="Center" Margin="0,113,0,0" VerticalAlignment="Top" Width="156" Height="32" SelectionChanged="lang_SelectionChanged" >
+
             <Label Content="Francais"/>
             <Label Content="English"/>
         </ComboBox>
-        <Label x:Name="langLabel" HorizontalAlignment="Left" Margin="18,13,0,0" VerticalAlignment="Top" Height="27" Width="133"/>
-        <Button x:Name="saveLabel" HorizontalAlignment="Left" Margin="144,121,0,0" VerticalAlignment="Top" Height="20" Width="134" Click="Button_Click"/>
-        <Button x:Name="changeExt" Content="" HorizontalAlignment="Left" Margin="91,69,0,0" VerticalAlignment="Top" Height="19" Width="120" Click="changeExt_Click"/>
+        <Label x:Name="langLabel" HorizontalAlignment="Center" Margin="0,80,0,0" VerticalAlignment="Top" Foreground="Orange" FontSize="15" />
+        <Button x:Name="saveLabel" Style="{StaticResource btnHover}" Background="Orange"  HorizontalAlignment="Center" Margin="0,257,0,0" VerticalAlignment="Top" Height="32" Width="156" Click="Button_Click"  Foreground="#404040" />
+        <Button x:Name="changeExt" Style="{StaticResource btnHover}" Content="" HorizontalAlignment="Center" VerticalAlignment="Top" Height="34" Width="154" Click="changeExt_Click" Margin="0,167,0,0"/>
+
     </Grid>
 </Window>

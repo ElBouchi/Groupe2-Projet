@@ -62,7 +62,7 @@ namespace Projet.View
             else
             {
                 Model.Language.verifLg = lg[0].language;
-                addButton.Content = "Ajouter un travail de sauvegarde";
+                addButton.Content = "Ajouter un travail de  sauvegarde";
                 execButton.Content = "Executer des travaux de saveugardes";
                 settings.Content = "Réglages";
             }
