@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nazim GAOUA\\source\\Repos\\Livrable 2\\Projet.csproj": {}
+    "C:\\Users\\deada\\Source\\Repos\\Groupe2-Projet\\Livrable 2\\Projet.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nazim GAOUA\\source\\Repos\\Livrable 2\\Projet.csproj": {
+    "C:\\Users\\deada\\Source\\Repos\\Groupe2-Projet\\Livrable 2\\Projet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nazim GAOUA\\source\\Repos\\Livrable 2\\Projet.csproj",
+        "projectUniqueName": "C:\\Users\\deada\\Source\\Repos\\Groupe2-Projet\\Livrable 2\\Projet.csproj",
         "projectName": "Projet",
-        "projectPath": "C:\\Users\\Nazim GAOUA\\source\\Repos\\Livrable 2\\Projet.csproj",
-        "packagesPath": "C:\\Users\\Nazim GAOUA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nazim GAOUA\\source\\Repos\\Livrable 2\\obj\\",
+        "projectPath": "C:\\Users\\deada\\Source\\Repos\\Groupe2-Projet\\Livrable 2\\Projet.csproj",
+        "packagesPath": "C:\\Users\\deada\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\deada\\Source\\Repos\\Groupe2-Projet\\Livrable 2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Nazim GAOUA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\deada\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

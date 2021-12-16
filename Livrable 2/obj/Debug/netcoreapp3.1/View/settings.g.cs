@@ -86,7 +86,7 @@ namespace Projet.View {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Projet;component/view/settings.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Projet_vzbnilnp_wpftmp;component/view/settings.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\View\Settings.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

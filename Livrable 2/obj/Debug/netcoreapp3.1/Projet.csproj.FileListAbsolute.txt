@@ -115,3 +115,5 @@ C:\Users\Nazim GAOUA\source\Repos\Livrable 2\obj\Debug\netcoreapp3.1\Projet.dll
 C:\Users\Nazim GAOUA\source\Repos\Livrable 2\obj\Debug\netcoreapp3.1\Projet.pdb
 C:\Users\Nazim GAOUA\source\Repos\Livrable 2\obj\Debug\netcoreapp3.1\Projet.genruntimeconfig.cache
 C:\Users\Nazim GAOUA\source\Repos\Livrable 2\obj\Debug\netcoreapp3.1\App.baml
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\obj\Debug\netcoreapp3.1\Projet.csproj.ResolveComReference.cache
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\obj\Debug\netcoreapp3.1\App.baml

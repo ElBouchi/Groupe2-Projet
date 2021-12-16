@@ -60,7 +60,7 @@ namespace Projet {
             
             #line default
             #line hidden
-            System.Uri resourceLocater = new System.Uri("/Projet;component/app.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Projet_vzbnilnp_wpftmp;component/app.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\App.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
