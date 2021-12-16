@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ynFl1yOqqmHLfqFdUl6blZgLOOisHN5/1buB2A2GK6nipPAC9egRG3WiMUDzm8OdmkcI1AD2pGWXVLsBdbG9AA==",
+  "dgSpecHash": "XSTrWPkF13MZJcmBh/LeT+KRUCZ34OgzHp0lx+OmmIo/JwftYxu70Zvl8B2PfiMlDIAeYJ1dAj/C9OlxH3030A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\deada\\Source\\Repos\\Groupe2-Projet\\Livrable 2\\Projet.csproj",
+  "projectFilePath": "C:\\Users\\Nazim GAOUA\\source\\Repos\\Livrable 2\\Projet.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\deada\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
-    "C:\\Users\\deada\\.nuget\\packages\\ookii.dialogs.wpf\\5.0.0\\ookii.dialogs.wpf.5.0.0.nupkg.sha512"
+    "C:\\Users\\Nazim GAOUA\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Nazim GAOUA\\.nuget\\packages\\ookii.dialogs.wpf\\5.0.0\\ookii.dialogs.wpf.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

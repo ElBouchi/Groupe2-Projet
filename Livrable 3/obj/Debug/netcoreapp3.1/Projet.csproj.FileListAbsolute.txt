@@ -1,0 +1,119 @@
+C:\Users\deada\source\repos\Projet\bin\Debug\netcoreapp3.1\Projet.exe
+C:\Users\deada\source\repos\Projet\bin\Debug\netcoreapp3.1\Projet.deps.json
+C:\Users\deada\source\repos\Projet\bin\Debug\netcoreapp3.1\Projet.runtimeconfig.json
+C:\Users\deada\source\repos\Projet\bin\Debug\netcoreapp3.1\Projet.runtimeconfig.dev.json
+C:\Users\deada\source\repos\Projet\bin\Debug\netcoreapp3.1\Projet.dll
+C:\Users\deada\source\repos\Projet\bin\Debug\netcoreapp3.1\Projet.pdb
+C:\Users\deada\source\repos\Projet\obj\Debug\netcoreapp3.1\Projet.csproj.AssemblyReference.cache
+C:\Users\deada\source\repos\Projet\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\deada\source\repos\Projet\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\deada\source\repos\Projet\obj\Debug\netcoreapp3.1\Projet_MarkupCompile.cache
+C:\Users\deada\source\repos\Projet\obj\Debug\netcoreapp3.1\Projet_MarkupCompile.lref
+C:\Users\deada\source\repos\Projet\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\deada\source\repos\Projet\obj\Debug\netcoreapp3.1\Projet.g.resources
+C:\Users\deada\source\repos\Projet\obj\Debug\netcoreapp3.1\Projet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\deada\source\repos\Projet\obj\Debug\netcoreapp3.1\Projet.AssemblyInfoInputs.cache
+C:\Users\deada\source\repos\Projet\obj\Debug\netcoreapp3.1\Projet.AssemblyInfo.cs
+C:\Users\deada\source\repos\Projet\obj\Debug\netcoreapp3.1\Projet.csproj.CoreCompileInputs.cache
+C:\Users\deada\source\repos\Projet\obj\Debug\netcoreapp3.1\Projet.dll
+C:\Users\deada\source\repos\Projet\obj\Debug\netcoreapp3.1\Projet.pdb
+C:\Users\deada\source\repos\Projet\obj\Debug\netcoreapp3.1\Projet.genruntimeconfig.cache
+C:\Users\deada\source\repos\Projet\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\deada\source\repos\Projet\obj\Debug\netcoreapp3.1\Projet.csproj.CopyComplete
+C:\Users\deada\source\repos\Projet\bin\Debug\netcoreapp3.1\Ookii.Dialogs.Wpf.dll
+C:\Users\deada\source\repos\Projet\obj\Debug\netcoreapp3.1\addWork.g.cs
+C:\Users\deada\source\repos\Projet\obj\Debug\netcoreapp3.1\addWork.baml
+C:\Users\deada\source\repos\Projet\obj\Debug\netcoreapp3.1\executeWork.g.cs
+C:\Users\deada\source\repos\Projet\obj\Debug\netcoreapp3.1\executeWork.baml
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\bin\Debug\netcoreapp3.1\Projet.exe
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\bin\Debug\netcoreapp3.1\Projet.deps.json
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\bin\Debug\netcoreapp3.1\Projet.runtimeconfig.json
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\bin\Debug\netcoreapp3.1\Projet.runtimeconfig.dev.json
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\bin\Debug\netcoreapp3.1\Projet.dll
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\bin\Debug\netcoreapp3.1\Projet.pdb
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\bin\Debug\netcoreapp3.1\Ookii.Dialogs.Wpf.dll
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\obj\Debug\netcoreapp3.1\Projet.csproj.AssemblyReference.cache
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\obj\Debug\netcoreapp3.1\Projet_MarkupCompile.cache
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\obj\Debug\netcoreapp3.1\Projet_MarkupCompile.lref
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\obj\Debug\netcoreapp3.1\Projet.g.resources
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\obj\Debug\netcoreapp3.1\Projet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\obj\Debug\netcoreapp3.1\Projet.AssemblyInfoInputs.cache
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\obj\Debug\netcoreapp3.1\Projet.AssemblyInfo.cs
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\obj\Debug\netcoreapp3.1\Projet.csproj.CoreCompileInputs.cache
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\obj\Debug\netcoreapp3.1\Projet.csproj.CopyComplete
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\obj\Debug\netcoreapp3.1\Projet.dll
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\obj\Debug\netcoreapp3.1\Projet.pdb
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\obj\Debug\netcoreapp3.1\Projet.genruntimeconfig.cache
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\obj\Debug\netcoreapp3.1\View\addWork.g.cs
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\obj\Debug\netcoreapp3.1\View\executeWork.g.cs
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\obj\Debug\netcoreapp3.1\View\MainWindow.g.cs
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\obj\Debug\netcoreapp3.1\View\addWork.baml
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\obj\Debug\netcoreapp3.1\View\executeWork.baml
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\obj\Debug\netcoreapp3.1\View\MainWindow.baml
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\obj\Debug\netcoreapp3.1\View\Settings.g.cs
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\obj\Debug\netcoreapp3.1\View\settings.baml
+C:\Users\PC\Source\Repos\ProjetG2\Livrable 2\bin\Debug\netcoreapp3.1\Projet.exe
+C:\Users\PC\Source\Repos\ProjetG2\Livrable 2\bin\Debug\netcoreapp3.1\Projet.deps.json
+C:\Users\PC\Source\Repos\ProjetG2\Livrable 2\bin\Debug\netcoreapp3.1\Projet.runtimeconfig.json
+C:\Users\PC\Source\Repos\ProjetG2\Livrable 2\bin\Debug\netcoreapp3.1\Projet.runtimeconfig.dev.json
+C:\Users\PC\Source\Repos\ProjetG2\Livrable 2\bin\Debug\netcoreapp3.1\Projet.dll
+C:\Users\PC\Source\Repos\ProjetG2\Livrable 2\bin\Debug\netcoreapp3.1\Projet.pdb
+C:\Users\PC\Source\Repos\ProjetG2\Livrable 2\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\PC\Source\Repos\ProjetG2\Livrable 2\bin\Debug\netcoreapp3.1\Ookii.Dialogs.Wpf.dll
+C:\Users\PC\Source\Repos\ProjetG2\Livrable 2\obj\Debug\netcoreapp3.1\Projet.csproj.AssemblyReference.cache
+C:\Users\PC\Source\Repos\ProjetG2\Livrable 2\obj\Debug\netcoreapp3.1\View\addWork.g.cs
+C:\Users\PC\Source\Repos\ProjetG2\Livrable 2\obj\Debug\netcoreapp3.1\View\executeWork.g.cs
+C:\Users\PC\Source\Repos\ProjetG2\Livrable 2\obj\Debug\netcoreapp3.1\View\MainWindow.g.cs
+C:\Users\PC\Source\Repos\ProjetG2\Livrable 2\obj\Debug\netcoreapp3.1\View\Settings.g.cs
+C:\Users\PC\Source\Repos\ProjetG2\Livrable 2\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\PC\Source\Repos\ProjetG2\Livrable 2\obj\Debug\netcoreapp3.1\Projet_MarkupCompile.cache
+C:\Users\PC\Source\Repos\ProjetG2\Livrable 2\obj\Debug\netcoreapp3.1\Projet_MarkupCompile.lref
+C:\Users\PC\Source\Repos\ProjetG2\Livrable 2\obj\Debug\netcoreapp3.1\View\addWork.baml
+C:\Users\PC\Source\Repos\ProjetG2\Livrable 2\obj\Debug\netcoreapp3.1\View\executeWork.baml
+C:\Users\PC\Source\Repos\ProjetG2\Livrable 2\obj\Debug\netcoreapp3.1\View\MainWindow.baml
+C:\Users\PC\Source\Repos\ProjetG2\Livrable 2\obj\Debug\netcoreapp3.1\View\Settings.baml
+C:\Users\PC\Source\Repos\ProjetG2\Livrable 2\obj\Debug\netcoreapp3.1\Projet.g.resources
+C:\Users\PC\Source\Repos\ProjetG2\Livrable 2\obj\Debug\netcoreapp3.1\Projet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Source\Repos\ProjetG2\Livrable 2\obj\Debug\netcoreapp3.1\Projet.AssemblyInfoInputs.cache
+C:\Users\PC\Source\Repos\ProjetG2\Livrable 2\obj\Debug\netcoreapp3.1\Projet.AssemblyInfo.cs
+C:\Users\PC\Source\Repos\ProjetG2\Livrable 2\obj\Debug\netcoreapp3.1\Projet.csproj.CoreCompileInputs.cache
+C:\Users\PC\Source\Repos\ProjetG2\Livrable 2\obj\Debug\netcoreapp3.1\Projet.csproj.CopyComplete
+C:\Users\PC\Source\Repos\ProjetG2\Livrable 2\obj\Debug\netcoreapp3.1\Projet.dll
+C:\Users\PC\Source\Repos\ProjetG2\Livrable 2\obj\Debug\netcoreapp3.1\Projet.pdb
+C:\Users\PC\Source\Repos\ProjetG2\Livrable 2\obj\Debug\netcoreapp3.1\Projet.genruntimeconfig.cache
+C:\Users\PC\Source\Repos\ProjetG2\Livrable 2\obj\Debug\netcoreapp3.1\Projet.csproj.ResolveComReference.cache
+C:\Users\Nazim GAOUA\source\Repos\Livrable 2\bin\Debug\netcoreapp3.1\Projet.exe
+C:\Users\Nazim GAOUA\source\Repos\Livrable 2\bin\Debug\netcoreapp3.1\Projet.deps.json
+C:\Users\Nazim GAOUA\source\Repos\Livrable 2\bin\Debug\netcoreapp3.1\Projet.runtimeconfig.json
+C:\Users\Nazim GAOUA\source\Repos\Livrable 2\bin\Debug\netcoreapp3.1\Projet.runtimeconfig.dev.json
+C:\Users\Nazim GAOUA\source\Repos\Livrable 2\bin\Debug\netcoreapp3.1\Projet.dll
+C:\Users\Nazim GAOUA\source\Repos\Livrable 2\bin\Debug\netcoreapp3.1\Projet.pdb
+C:\Users\Nazim GAOUA\source\Repos\Livrable 2\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Nazim GAOUA\source\Repos\Livrable 2\bin\Debug\netcoreapp3.1\Ookii.Dialogs.Wpf.dll
+C:\Users\Nazim GAOUA\source\Repos\Livrable 2\obj\Debug\netcoreapp3.1\Projet.csproj.AssemblyReference.cache
+C:\Users\Nazim GAOUA\source\Repos\Livrable 2\obj\Debug\netcoreapp3.1\Projet.csproj.ResolveComReference.cache
+C:\Users\Nazim GAOUA\source\Repos\Livrable 2\obj\Debug\netcoreapp3.1\View\addWork.g.cs
+C:\Users\Nazim GAOUA\source\Repos\Livrable 2\obj\Debug\netcoreapp3.1\View\executeWork.g.cs
+C:\Users\Nazim GAOUA\source\Repos\Livrable 2\obj\Debug\netcoreapp3.1\View\MainWindow.g.cs
+C:\Users\Nazim GAOUA\source\Repos\Livrable 2\obj\Debug\netcoreapp3.1\View\Settings.g.cs
+C:\Users\Nazim GAOUA\source\Repos\Livrable 2\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Nazim GAOUA\source\Repos\Livrable 2\obj\Debug\netcoreapp3.1\Projet_MarkupCompile.cache
+C:\Users\Nazim GAOUA\source\Repos\Livrable 2\obj\Debug\netcoreapp3.1\Projet_MarkupCompile.lref
+C:\Users\Nazim GAOUA\source\Repos\Livrable 2\obj\Debug\netcoreapp3.1\View\addWork.baml
+C:\Users\Nazim GAOUA\source\Repos\Livrable 2\obj\Debug\netcoreapp3.1\View\executeWork.baml
+C:\Users\Nazim GAOUA\source\Repos\Livrable 2\obj\Debug\netcoreapp3.1\View\MainWindow.baml
+C:\Users\Nazim GAOUA\source\Repos\Livrable 2\obj\Debug\netcoreapp3.1\View\Settings.baml
+C:\Users\Nazim GAOUA\source\Repos\Livrable 2\obj\Debug\netcoreapp3.1\Projet.g.resources
+C:\Users\Nazim GAOUA\source\Repos\Livrable 2\obj\Debug\netcoreapp3.1\Projet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nazim GAOUA\source\Repos\Livrable 2\obj\Debug\netcoreapp3.1\Projet.AssemblyInfoInputs.cache
+C:\Users\Nazim GAOUA\source\Repos\Livrable 2\obj\Debug\netcoreapp3.1\Projet.AssemblyInfo.cs
+C:\Users\Nazim GAOUA\source\Repos\Livrable 2\obj\Debug\netcoreapp3.1\Projet.csproj.CoreCompileInputs.cache
+C:\Users\Nazim GAOUA\source\Repos\Livrable 2\obj\Debug\netcoreapp3.1\Projet.csproj.CopyComplete
+C:\Users\Nazim GAOUA\source\Repos\Livrable 2\obj\Debug\netcoreapp3.1\Projet.dll
+C:\Users\Nazim GAOUA\source\Repos\Livrable 2\obj\Debug\netcoreapp3.1\Projet.pdb
+C:\Users\Nazim GAOUA\source\Repos\Livrable 2\obj\Debug\netcoreapp3.1\Projet.genruntimeconfig.cache
+C:\Users\Nazim GAOUA\source\Repos\Livrable 2\obj\Debug\netcoreapp3.1\App.baml
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\obj\Debug\netcoreapp3.1\Projet.csproj.ResolveComReference.cache
+C:\Users\deada\Source\Repos\Groupe2-Projet\Livrable 2\obj\Debug\netcoreapp3.1\App.baml

@@ -1,0 +1,26 @@
+[
+  {
+    "Name": "travail1",
+    "FileSource": "D:\\Destination",
+    "FileTarget": "D:\\Source",
+    "FileSize": "1010602",
+    "FileTransferTime": "00:00:00.75",
+    "time": "04/12/2021 01:27:40"
+  },
+  {
+    "Name": "mpmp",
+    "FileSource": "C:\\Users\\PC\\Desktop\\destination",
+    "FileTarget": "C:\\Users\\PC\\Desktop\\source",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.05",
+    "time": "05/12/2021 14:07:40"
+  },
+  {
+    "Name": "efef",
+    "FileSource": "C:\\Users\\PC\\Desktop\\destination",
+    "FileTarget": "C:\\Users\\PC\\Desktop\\source",
+    "FileSize": "16",
+    "FileTransferTime": "00:00:00.02",
+    "time": "05/12/2021 14:08:40"
+  }
+]

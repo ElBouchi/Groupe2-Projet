@@ -51,7 +51,7 @@ namespace Projet.View
             if (index.Text != "") 
             {
                 ViewModel.EasySave execWork = new ViewModel.EasySave();
-                execWork.ExecuteWork(Convert.ToInt32(index.Text), false);
+                execWork.ExecuteWork(index.Text);
 
                 index.Text = "";
 
@@ -75,6 +75,7 @@ namespace Projet.View
         private void sequentialExec_Click(object sender, RoutedEventArgs e)
         {
             string workNumbers = Convert.ToString(Works.Items.Count - 1);
+            MessageBox.Show(workNumbers);
 
             ViewModel.EasySave execAllWork = new ViewModel.EasySave();
             execAllWork.ExecuteAllWork();

@@ -79,7 +79,7 @@ namespace Projet.Model
                     var jsonState = File.ReadAllText(Etat.filePath); //Read the JSON file
                     var stateListCrypt = JsonConvert.DeserializeObject<List<Etat>>(jsonState) ?? new List<Etat>(); //convert a string into an object for JSON
 
-                    //stateListCrypt[getStateIndex].TimeToCrypt = TimeToCrypt.ToString();
+                    stateListCrypt[getStateIndex].TimeToCrypt = TimeToCrypt.ToString();
 
                     string ResultJsonState = JsonConvert.SerializeObject(stateListCrypt, Formatting.Indented);  //convert an object into a string for JSON
                     File.WriteAllText(Etat.filePath, ResultJsonState);
