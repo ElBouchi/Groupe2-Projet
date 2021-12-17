@@ -1,0 +1,13 @@
+[
+  {
+    "Name": "badi",
+    "SourceFilePath": "C:\\maryam",
+    "TargetFilePath": "C:\\destination",
+    "Time": "17/12/2021 17:46:06",
+    "State": "END",
+    "TotalFilesToCopy": "37",
+    "TotalFilesSize": "3589883",
+    "NbFilesLeftToDo": "0",
+    "Progression": "100%"
+  }
+]

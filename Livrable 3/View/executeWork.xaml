@@ -8,9 +8,7 @@
         Title="executeWork" Height="550" Width="950" ResizeMode="NoResize" Background="#404040"  Loaded="executeWork_Loaded">
     <Grid>
         <DataGrid x:Name="Works" Margin="149,10,149,179" LoadingRow="Works_LoadingRow" HorizontalGridLinesBrush="Orange" VerticalGridLinesBrush="Orange" BorderBrush="Orange" FontSize="14" />
-        <Button x:Name="sequentialExec" HorizontalAlignment="Left" Margin="547,453,0,0" VerticalAlignment="Top" Height="51" Width="254" Click="sequentialExec_Click" Style="{StaticResource btnHover}" FontSize="15" Background="Orange" Foreground="#404040"/>
-        <Button x:Name="uniqueExec" HorizontalAlignment="Left" Margin="547,383,0,0" VerticalAlignment="Top" Width="254" Height="50" Click="uniqueExec_Click" Style="{StaticResource btnHover}" FontSize="15" Background="Orange" Foreground="#404040"/>
-        <TextBox x:Name="index" HorizontalAlignment="Center" Margin="0,383,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58" Height="50" VerticalContentAlignment="Center"  HorizontalContentAlignment="Center" Background="Transparent" BorderBrush="Orange" BorderThickness="2" Foreground="Orange" />
-        <Label x:Name="rowLabel" HorizontalAlignment="Left" Margin="149,393,0,0" VerticalAlignment="Top" Height="30" FontSize="15" Foreground="Orange"/>
+        <Button x:Name="sequentialExec" HorizontalAlignment="Left" Margin="530,397,0,0" VerticalAlignment="Top" Height="51" Width="254" Click="sequentialExec_Click" Style="{StaticResource btnHover}" FontSize="15" Background="Orange" Foreground="#404040"/>
+        <Button x:Name="uniqueExec" HorizontalAlignment="Left" Margin="183,397,0,0" VerticalAlignment="Top" Width="254" Height="50" Click="uniqueExec_Click" Style="{StaticResource btnHover}" FontSize="15" Background="Orange" Foreground="#404040"/>
     </Grid>
 </Window>

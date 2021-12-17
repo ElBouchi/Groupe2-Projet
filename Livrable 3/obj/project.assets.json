@@ -85,23 +85,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\deada\\.nuget\\packages\\": {},
+    "C:\\Users\\Nazim GAOUA\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\deada\\Source\\Repos\\Groupe2-Projet\\Livrable 2\\Projet.csproj",
+      "projectUniqueName": "C:\\Users\\Nazim GAOUA\\Source\\Repos\\Groupe2-Projet\\Livrable 3\\Projet.csproj",
       "projectName": "Projet",
-      "projectPath": "C:\\Users\\deada\\Source\\Repos\\Groupe2-Projet\\Livrable 2\\Projet.csproj",
-      "packagesPath": "C:\\Users\\deada\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\deada\\Source\\Repos\\Groupe2-Projet\\Livrable 2\\obj\\",
+      "projectPath": "C:\\Users\\Nazim GAOUA\\Source\\Repos\\Groupe2-Projet\\Livrable 3\\Projet.csproj",
+      "packagesPath": "C:\\Users\\Nazim GAOUA\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Nazim GAOUA\\Source\\Repos\\Groupe2-Projet\\Livrable 3\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\deada\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Nazim GAOUA\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -155,7 +155,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }

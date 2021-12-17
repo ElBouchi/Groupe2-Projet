@@ -84,11 +84,10 @@ namespace Projet.ViewModel
 
             if (workList.Count >= inputUtilisateur) //this condition allow to the user to choose the exact row in order to execute the backupwork chosen
             {
-                int index = inputUtilisateur - 1;
 
-                string workName = workList.ElementAt(index).name;
-                string sourceDir = workList.ElementAt(index).repS;
-                string backupDir = workList.ElementAt(index).repC;                
+                string workName = workList.ElementAt(inputUtilisateur).name;
+                string sourceDir = workList.ElementAt(inputUtilisateur).repS;
+                string backupDir = workList.ElementAt(inputUtilisateur).repC;
                 long filesNum = Directory.GetFiles(sourceDir, "*", SearchOption.AllDirectories).Length;
 
                 Model.Etat state = new Model.Etat();
@@ -97,7 +96,7 @@ namespace Projet.ViewModel
                 int indexState = 0;
                 for (int i = 0; i < stateList.Count; i++)
                 {
-                    if (stateList[i].Name == workList[index].name)
+                    if (stateList[i].Name == workList[inputUtilisateur].name)
                     {
                         indexState = i;
                         break;
@@ -105,21 +104,21 @@ namespace Projet.ViewModel
                 }
 
                 //this condition is used to execute the type of backup chosen in the creation 
-                if (workList.ElementAt(Convert.ToInt32(inputUtilisateur) - 1).type == "Differential")
+                if (workList.ElementAt(inputUtilisateur).type == "Differential")
                 {
                     stateList[indexState].State = "Active";
 
                     state.writeOnlyState(stateList);
                     // differential backup
                     Model.DifferentialBackup SD = new Model.DifferentialBackup();
-                    SD.Sauvegarde(sourceDir, backupDir, true, indexState, filesNum, index, workName);
+                    SD.Sauvegarde(sourceDir, backupDir, true, indexState, filesNum, inputUtilisateur, workName);
 
                     if (!paral)
                     {
 
                         var workListDelete = Works.readOnlyWork();
 
-                        workListDelete.Remove(workListDelete[index]);
+                        workListDelete.Remove(workListDelete[inputUtilisateur]);
 
                         Works.writeOnlyWork(workListDelete);
                     }
@@ -133,14 +132,14 @@ namespace Projet.ViewModel
                     state.writeOnlyState(stateList);
                     // complete backup
                     Model.FullBackup SD = new Model.FullBackup();
-                    SD.Sauvegarde(sourceDir, backupDir, true, indexState, filesNum, index, workName);
+                    SD.Sauvegarde(sourceDir, backupDir, true, indexState, filesNum, inputUtilisateur, workName);
 
                     if (!paral)
                     {
 
                         var workListDelete = Works.readOnlyWork();
 
-                        workListDelete.Remove(workListDelete[index]);
+                        workListDelete.Remove(workListDelete[inputUtilisateur]);
 
                         Works.writeOnlyWork(workListDelete);
                     }
@@ -158,8 +157,9 @@ namespace Projet.ViewModel
                 else
                 {
                     MessageBox.Show("La ligne " + inputUtilisateur + " ne contient aucun travail de sauvegarde !");
-                }              
+                }
             }
+        
         }
         public void ExecuteAllWork()
         {

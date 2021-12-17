@@ -31,13 +31,11 @@ namespace Projet.View
         {
             if (Model.Language.verifLg == "English" || Model.Language.verifLg == "")
             {
-                rowLabel.Content = "Row of the backup work";
                 uniqueExec.Content = "Running a single backup job";
                 sequentialExec.Content = "Sequential execution";
             }
             else
             {
-                rowLabel.Content = "Ligne du travail de sauvegarde";
                 uniqueExec.Content = "Executer un travail de sauvegarde";
                 sequentialExec.Content = "Execution séquentielle";
             }
@@ -48,25 +46,24 @@ namespace Projet.View
 
         private void uniqueExec_Click(object sender, RoutedEventArgs e)
         {
-            if (index.Text != "") 
+            if (Works.SelectedIndex != -1)
             {
                 ViewModel.EasySave execWork = new ViewModel.EasySave();
-                execWork.ExecuteWork(Convert.ToInt32(index.Text), false);
-
-                index.Text = "";
+                execWork.ExecuteWork(Works.SelectedIndex, false);
 
                 executeWork_Loaded(sender, e);
 
-            } else 
+            }
+            else
             {
                 if (Model.Language.verifLg == "English" || Model.Language.verifLg == "")
                 {
-                    MessageBox.Show("Please enter the row of a backup work");
+                    MessageBox.Show("Please select the row of a backup work");
                 }
                 else
                 {
-                    MessageBox.Show("Entrez le numéro de la ligne du travail de sauvegarde souhaité");
-                }             
+                    MessageBox.Show("Sélectionnez la ligne du travail de sauvegarde souhaité");
+                }
             }
 
 
@@ -78,8 +75,6 @@ namespace Projet.View
 
             ViewModel.EasySave execAllWork = new ViewModel.EasySave();
             execAllWork.ExecuteAllWork();
-
-            index.Text = "";
 
             executeWork_Loaded(sender, e);
         }

@@ -22,7 +22,7 @@ namespace Projet.Model
             {
                 var jsonDataWork = File.ReadAllText(filePath); //Read the JSON file
                 var workList = JsonConvert.DeserializeObject<List<Work>>(jsonDataWork) ?? new List<Work>(); //convert a string into an object for JSON
-
+                
                 workList.Add(new Work() //parameter that the JSON file will contains
                 {
                     name = theName,
