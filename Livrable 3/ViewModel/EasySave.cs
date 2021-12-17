@@ -17,7 +17,6 @@ namespace Projet.ViewModel
         // a method that will allow to create a backupwork
         public void addWork(long filesize, int countfile, string theName, string theRepS, string theRepC, string theType)
         {
-
             Model.Etat verifyName = new Model.Etat();
             var nameStateList = verifyName.readOnlyState();
 
@@ -45,7 +44,7 @@ namespace Projet.ViewModel
                 string theTFS = filesize.ToString();
 
                 Model.Etat createState = new Model.Etat();
-                createState.writeState(theName, theRepS, theRepC, theTime, "INACTIVE", theTFTC, theTFS, "0", "0%");
+                createState.writeState(theName, theRepS, theRepC, theTime, "INACTIVE", theTFTC, theTFS, null, "0%");
 
                 // Switch the language of the outpoot according to the choice of the user when he started the program
 
@@ -159,7 +158,6 @@ namespace Projet.ViewModel
                     MessageBox.Show("La ligne " + inputUtilisateur + " ne contient aucun travail de sauvegarde !");
                 }
             }
-        
         }
         public void ExecuteAllWork()
         {
@@ -175,7 +173,7 @@ namespace Projet.ViewModel
                 threadList[threadname].Start();
             }
 
-            while (threadList.All(x => x.Value.IsAlive) && threadList.Count == workList.Count) {}
+            while (threadList.All(x => x.Value.IsAlive) && threadList.Count == workList.Count) { }
 
             for (int i = 0; i < workList.Count; i++)
             {

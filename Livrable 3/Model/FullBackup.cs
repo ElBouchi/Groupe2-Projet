@@ -8,20 +8,25 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Windows;
 using System.Threading;
+using System.Collections.ObjectModel;
 
 namespace Projet.Model
 {
     class FullBackup : IBackup
     {
+        private string _state = "";
+        private EventWaitHandle mre = new ManualResetEvent(false);
         Stopwatch crpytTimer = new Stopwatch();
         Stopwatch stopWatchTimer = new Stopwatch();
         private static Object _locker = new Object();
+        private static Mutex mutex = new Mutex();
+        Etat state = new Etat();
+        Log log = new Log();
         // a method that will be used for the full backup
         public void Sauvegarde(string sourcePATH, string destPATH, bool copyDirs, int getStateIndex, long fileCount, int getIndex, string getName)
         {
+            _state = "Active";
             stopWatchTimer.Start();
-            Etat state = new Etat();
-            Log log = new Log();
             // Get the subdirectories for the specified directory.
             DirectoryInfo dir = new DirectoryInfo(sourcePATH);
 
@@ -38,6 +43,7 @@ namespace Projet.Model
             }
 
             FileInfo[] files = copyDirs ? dir.GetFiles("*", SearchOption.AllDirectories) : dir.GetFiles();
+            files = OrderFiles(files.ToList()).ToArray();
             var i = 0;
 
             var json = File.ReadAllText(Settings.filePath);
@@ -46,10 +52,13 @@ namespace Projet.Model
             extensions = extensions[0].Split(',', ' ');
             TimeSpan TimeToCrypt = TimeSpan.Zero;
 
-                foreach (var file in files)
+            foreach (var file in files)
+            {
+                if (_state == "Active") mre.Set();
+                mre.WaitOne();
+
+                if (extensions.Contains(file.Extension))
                 {
-                    if (extensions.Contains(file.Extension))
-                    {
                     var p = new Process();
                     p.StartInfo.FileName = @"..\..\..\CryptoSoft\CryptoSoft.exe";
                     p.StartInfo.Arguments = $"{file.FullName} {file.FullName.Replace(sourcePATH, destPATH)}";
@@ -60,10 +69,9 @@ namespace Projet.Model
                 }
                 else
                 {
-                    lock (_locker)
-                    {
-                        file.CopyTo(file.FullName.Replace(sourcePATH, destPATH), true); //Copies an existing file to a new file.
-                    }
+                    mutex.WaitOne();
+                    file.CopyTo(file.FullName.Replace(sourcePATH, destPATH), true); //Copies an existing file to a new file.
+                    mutex.ReleaseMutex();
 
                     stopWatchTimer.Stop();
                 }
@@ -90,6 +98,29 @@ namespace Projet.Model
             modifyStateList[getStateIndex].State = "END";
 
             state.writeOnlyState(modifyStateList);
+        }
+
+        private void play()
+        {
+            _state = "Active";
+            mre.Set();
+        }
+        private void pause()
+        {
+            _state = "Pause";
+            mre.Reset();
+        }
+        private void stop()
+        {
+            _state = "Inactive";
+            mre.Reset();
+        }
+        private List<FileInfo> OrderFiles(List<FileInfo> l)
+        {
+            List<FileInfo> lp = l.Where(el => el.Extension == ".txt").ToList();
+            foreach (var t in lp) l.Remove(t);
+            lp.AddRange(l);
+            return new List<FileInfo>(lp);
         }
         private void CreateDirs(string path, DirectoryInfo[] dirs)
         {
