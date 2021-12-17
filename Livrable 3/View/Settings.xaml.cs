@@ -27,12 +27,12 @@ namespace Projet.View
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if(lang.Text != "")
+            if (lang.Text != "")
             {
                 var jsonDataWork = File.ReadAllText(Model.Language.filePath); //Read the JSON file
                 var changLg = JsonConvert.DeserializeObject<List<Model.Language>>(jsonDataWork) ?? new List<Model.Language>(); //convert a string into an object for JSON
 
-                if(changLg.Count == 0)
+                if (changLg.Count == 0)
                 {
                     changLg.Add(new Model.Language() //parameter that the JSON file will contains
                     {
@@ -66,13 +66,16 @@ namespace Projet.View
             {
                 langLabel.Content = "Change language";
                 saveLabel.Content = "Save";
-                changeExt.Content = "Changer extensions";
+                changeExt.Content = "Define extensions to be encrypted";
+                changeExtPrio.Content = "Define priority files extensions";
             }
             else
-            {
+            {//777
+
                 langLabel.Content = "Changer de language";
                 saveLabel.Content = "Sauvegarder";
-                changeExt.Content = "Change extensions";
+                changeExt.Content = "Définir extensions à crypté";
+                changeExtPrio.Content = "Définir extensions des fichiers prioritaires";
             }
         }
 
@@ -83,7 +86,12 @@ namespace Projet.View
 
         private void lang_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            
+
+        }
+
+        private void changeExtPrio_Click(object sender, RoutedEventArgs e)
+        {
+            Process.Start("notepad.exe", @"..\..\..\extensionsPriority.json");
         }
     }
 }

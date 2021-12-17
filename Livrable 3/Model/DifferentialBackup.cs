@@ -44,6 +44,7 @@ namespace Projet.Model
 
 
             FileInfo[] files = copyDirs ? dir.GetFiles("*", SearchOption.AllDirectories) : dir.GetFiles();
+            files = OrderFiles(files.ToList()).ToArray();
             var i = 0;
             foreach (var file in files)
             {
@@ -74,7 +75,7 @@ namespace Projet.Model
                     }
                 }
 
-                var json = File.ReadAllText(Settings.filePath);
+                var json = File.ReadAllText(Settings.filePathCryptExtensions);
                 var List = JsonConvert.DeserializeObject<List<Settings>>(json) ?? new List<Settings>();
                 string[] extensions = new string[] { List[0].extensionsAccepted };
                 extensions = extensions[0].Split(',', ' ');
@@ -119,6 +120,18 @@ namespace Projet.Model
             modifyStateList[getStateIndex].State = "END";
 
             state.writeOnlyState(modifyStateList);
+        }
+        private List<FileInfo> OrderFiles(List<FileInfo> l)
+        {
+            var json = File.ReadAllText(Settings.filePathPriorityExtensions);
+            var List = JsonConvert.DeserializeObject<List<Settings>>(json) ?? new List<Settings>();
+            string[] extensions = new string[] { List[0].extensionsAccepted };
+            extensions = extensions[0].Split(',', ' ');
+
+            List<FileInfo> lp = l.Where(el => extensions.Contains(el.Extension)).ToList();
+            foreach (var t in lp) l.Remove(t);
+            lp.AddRange(l);
+            return new List<FileInfo>(lp);
         }
         private void CreateDirs(string path, DirectoryInfo[] dirs)
         {

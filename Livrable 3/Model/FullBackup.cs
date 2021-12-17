@@ -42,17 +42,17 @@ namespace Projet.Model
                 CreateDirs(destPATH, dir.GetDirectories());
             }
 
-            FileInfo[] files = copyDirs ? dir.GetFiles("*", SearchOption.AllDirectories) : dir.GetFiles();
-            files = OrderFiles(files.ToList()).ToArray();
-            var i = 0;
-
-            var json = File.ReadAllText(Settings.filePath);
+            var json = File.ReadAllText(Settings.filePathCryptExtensions);
             var List = JsonConvert.DeserializeObject<List<Settings>>(json) ?? new List<Settings>();
             string[] extensions = new string[] { List[0].extensionsAccepted };
             extensions = extensions[0].Split(',', ' ');
+
+            FileInfo[] files = copyDirs ? dir.GetFiles("*", SearchOption.AllDirectories) : dir.GetFiles();
+            files = OrderFiles(files.ToList()).ToArray();
+            var i = 0;
             TimeSpan TimeToCrypt = TimeSpan.Zero;
 
-            foreach (var file in files)
+            foreach (FileInfo file in files)
             {
                 if (_state == "Active") mre.Set();
                 mre.WaitOne();
@@ -117,7 +117,12 @@ namespace Projet.Model
         }
         private List<FileInfo> OrderFiles(List<FileInfo> l)
         {
-            List<FileInfo> lp = l.Where(el => el.Extension == ".txt").ToList();
+            var json = File.ReadAllText(Settings.filePathPriorityExtensions);
+            var List = JsonConvert.DeserializeObject<List<Settings>>(json) ?? new List<Settings>();
+            string[] extensions = new string[] { List[0].extensionsAccepted };
+            extensions = extensions[0].Split(',', ' ');
+
+            List<FileInfo> lp = l.Where(el => extensions.Contains(el.Extension)).ToList();
             foreach (var t in lp) l.Remove(t);
             lp.AddRange(l);
             return new List<FileInfo>(lp);

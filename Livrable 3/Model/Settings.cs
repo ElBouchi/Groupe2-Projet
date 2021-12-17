@@ -6,7 +6,8 @@ namespace Projet.Model
 {
     class Settings
     {
-        public static string filePath = @"..\..\..\extensions.json";
+        public static string filePathCryptExtensions = @"..\..\..\extensions.json";
+        public static string filePathPriorityExtensions = @"..\..\..\extensionsPriority.json";
         public string extensionsAccepted { get; set; }
     }
 }

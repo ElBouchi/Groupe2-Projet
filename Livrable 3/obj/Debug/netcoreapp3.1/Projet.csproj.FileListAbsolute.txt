@@ -134,12 +134,6 @@ C:\Users\Nazim GAOUA\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp
 C:\Users\Nazim GAOUA\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\App.g.cs
 C:\Users\Nazim GAOUA\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\Projet_MarkupCompile.cache
 C:\Users\Nazim GAOUA\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\Projet_MarkupCompile.lref
-C:\Users\Nazim GAOUA\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\App.baml
-C:\Users\Nazim GAOUA\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\View\addWork.baml
-C:\Users\Nazim GAOUA\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\View\executeWork.baml
-C:\Users\Nazim GAOUA\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\View\MainWindow.baml
-C:\Users\Nazim GAOUA\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\View\Settings.baml
-C:\Users\Nazim GAOUA\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\Projet.g.resources
 C:\Users\Nazim GAOUA\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\Projet.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Nazim GAOUA\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\Projet.AssemblyInfoInputs.cache
 C:\Users\Nazim GAOUA\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\Projet.AssemblyInfo.cs
@@ -148,3 +142,9 @@ C:\Users\Nazim GAOUA\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp
 C:\Users\Nazim GAOUA\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\Projet.dll
 C:\Users\Nazim GAOUA\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\Projet.pdb
 C:\Users\Nazim GAOUA\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\Projet.genruntimeconfig.cache
+C:\Users\Nazim GAOUA\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\App.baml
+C:\Users\Nazim GAOUA\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\View\addWork.baml
+C:\Users\Nazim GAOUA\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\View\executeWork.baml
+C:\Users\Nazim GAOUA\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\View\MainWindow.baml
+C:\Users\Nazim GAOUA\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\View\Settings.baml
+C:\Users\Nazim GAOUA\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\Projet.g.resources
