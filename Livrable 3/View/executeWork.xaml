@@ -7,8 +7,13 @@
         mc:Ignorable="d"
         Title="executeWork" Height="550" Width="950" ResizeMode="NoResize" Background="#404040"  Loaded="executeWork_Loaded">
     <Grid>
-        <DataGrid x:Name="Works" Margin="149,10,149,179" LoadingRow="Works_LoadingRow" HorizontalGridLinesBrush="Orange" VerticalGridLinesBrush="Orange" BorderBrush="Orange" FontSize="14" />
-        <Button x:Name="sequentialExec" HorizontalAlignment="Left" Margin="517,383,0,0" VerticalAlignment="Top" Height="51" Width="254" Click="sequentialExec_Click" Style="{StaticResource btnHover}" FontSize="15" Background="Orange" Foreground="#404040" RenderTransformOrigin="0.445,-0.938"/>
-        <Button x:Name="uniqueExec" HorizontalAlignment="Left" Margin="204,383,0,0" VerticalAlignment="Top" Width="254" Height="50" Click="uniqueExec_Click" Style="{StaticResource btnHover}" FontSize="15" Background="Orange" Foreground="#404040"/>
+        <DataGrid x:Name="Works" Margin="149,10,149,179" LoadingRow="Works_LoadingRow" HorizontalGridLinesBrush="Orange" SelectedCellsChanged="Works_SelectedCellsChanged"  VerticalGridLinesBrush="Orange" BorderBrush="Orange" FontSize="14" SelectionChanged="Works_SelectionChanged" CanUserAddRows="False" SelectionMode="Single">
+        </DataGrid>
+        <Button x:Name="sequentialExec" HorizontalAlignment="Left" Margin="33,430,0,0" VerticalAlignment="Top" Height="51" Width="254" Click="sequentialExec_Click" Style="{StaticResource btnHover}" FontSize="15" Background="Orange" Foreground="#404040" RenderTransformOrigin="0.445,-0.938"/>
+        <Button x:Name="uniqueExec" HorizontalAlignment="Left" Margin="33,360,0,0" VerticalAlignment="Top" Width="254" Height="50" Click="uniqueExec_Click" Style="{StaticResource btnHover}" FontSize="15" Background="Orange" Foreground="#404040" RenderTransformOrigin="0.495,0.098"/>
+        <Button x:Name="Play" HorizontalAlignment="Left" Margin="826,82,0,0" VerticalAlignment="Top" Width="95" Height="50" Click="uniqueExec_Click" Style="{StaticResource btnHover}" FontSize="15" Background="Orange" Foreground="#404040"/>
+        <Button x:Name="Pause" HorizontalAlignment="Left" Margin="826,158,0,0" VerticalAlignment="Top" Width="95" Height="50" Style="{StaticResource btnHover}" FontSize="15" Background="Orange" Foreground="#404040" Click="Pause_Click"/>
+        <Button x:Name="Stop" HorizontalAlignment="Left" Margin="826,0,0,0" VerticalAlignment="Center" Width="95" Height="50" Style="{StaticResource btnHover}" FontSize="15" Background="Orange" Foreground="#404040"/>
+        <Button x:Name="Delete" HorizontalAlignment="Left" Margin="706,383,0,0" VerticalAlignment="Top" Width="95" Height="50" Style="{StaticResource btnHover}" FontSize="15" Background="Orange" Foreground="#404040" Click="Delete_Click"/>
     </Grid>
 </Window>

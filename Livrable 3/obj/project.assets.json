@@ -91,11 +91,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Zizou\\Source\\Repos\\ProjetGroupe2\\Livrable 3\\Projet.csproj",
+      "projectUniqueName": "C:\\Users\\Zizou\\Source\\Repos\\Groupe2-Projet\\Livrable 3\\Projet.csproj",
       "projectName": "Projet",
-      "projectPath": "C:\\Users\\Zizou\\Source\\Repos\\ProjetGroupe2\\Livrable 3\\Projet.csproj",
+      "projectPath": "C:\\Users\\Zizou\\Source\\Repos\\Groupe2-Projet\\Livrable 3\\Projet.csproj",
       "packagesPath": "C:\\Users\\Zizou\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Zizou\\Source\\Repos\\ProjetGroupe2\\Livrable 3\\obj\\",
+      "outputPath": "C:\\Users\\Zizou\\Source\\Repos\\Groupe2-Projet\\Livrable 3\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

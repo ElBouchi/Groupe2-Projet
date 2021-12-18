@@ -25,57 +25,21 @@ namespace Projet.View
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            if (lang.Text != "")
-            {
-                var jsonDataWork = File.ReadAllText(Model.Language.filePath); //Read the JSON file
-                var changLg = JsonConvert.DeserializeObject<List<Model.Language>>(jsonDataWork) ?? new List<Model.Language>(); //convert a string into an object for JSON
-
-                if (changLg.Count == 0)
-                {
-                    changLg.Add(new Model.Language() //parameter that the JSON file will contains
-                    {
-                        language = lang.Text
-                    });
-                }
-                else
-                {
-                    if (Model.Language.verifLg == "English" || Model.Language.verifLg == "")
-                    {
-                        MessageBox.Show("the application will close to apply the changes", MessageBoxButton.OK.ToString());
-                    }
-                    else
-                    {
-                        MessageBox.Show("l'application vas etre fermé pour appliquer les changements", MessageBoxButton.OK.ToString());
-                    }
-                    changLg[0].language = lang.Text;
-                    //Application.Current.Shutdown();
-                    Process.Start(Process.GetCurrentProcess().MainModule.FileName);
-                    Application.Current.Shutdown();
-                }
-
-                string strResultJsonState = JsonConvert.SerializeObject(changLg, Formatting.Indented);  //convert an object into a string for JSON
-                File.WriteAllText(Model.Language.filePath, strResultJsonState);
-            }
-        }
-
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             if (Model.Language.verifLg == "English" || Model.Language.verifLg == "")
             {
-                langLabel.Content = "Change language";
-                saveLabel.Content = "Save";
                 changeExt.Content = "Define extensions to be encrypted";
                 changeExtPrio.Content = "Define priority files extensions";
+                bussSoftware.Content = "Define business software";
+                sizeMax.Content = "Determine the size of a heavy file";
             }
             else
-            {//777
-
-                langLabel.Content = "Changer de language";
-                saveLabel.Content = "Sauvegarder";
+            {
                 changeExt.Content = "Définir extensions à crypté";
                 changeExtPrio.Content = "Définir extensions des fichiers prioritaires";
+                bussSoftware.Content = "Définir les logiciels métiers";
+                sizeMax.Content = "Déterminer la taille d'un fichier lourd";
             }
         }
 
@@ -92,6 +56,16 @@ namespace Projet.View
         private void changeExtPrio_Click(object sender, RoutedEventArgs e)
         {
             Process.Start("notepad.exe", @"..\..\..\extensionsPriority.json");
+        }
+
+        private void bussSoftware_Click(object sender, RoutedEventArgs e)
+        {
+            Process.Start("notepad.exe", @"..\..\..\BussSoftware.json");
+        }
+        
+        private void sizeMax_Click(object sender, RoutedEventArgs e)
+        {
+            Process.Start("notepad.exe", @"..\..\..\sizeMax.json");
         }
     }
 }

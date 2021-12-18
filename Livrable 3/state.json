@@ -1,12 +1,12 @@
 [
   {
-    "Name": "badi",
-    "SourceFilePath": "C:\\maryam",
-    "TargetFilePath": "C:\\destination",
-    "Time": "17/12/2021 17:46:06",
+    "Name": "benna",
+    "SourceFilePath": "D:\\Riot Games\\Riot Client",
+    "TargetFilePath": "G:\\destination",
+    "Time": "18-12-2021 21:06:57",
     "State": "END",
-    "TotalFilesToCopy": "37",
-    "TotalFilesSize": "3589883",
+    "TotalFilesToCopy": "91",
+    "TotalFilesSize": "394780411",
     "NbFilesLeftToDo": "0",
     "Progression": "100%"
   }

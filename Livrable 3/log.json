@@ -1,335 +1,821 @@
 [
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\.lock",
-    "FileTarget": "C:\\destination\\.lock",
-    "FileSize": "0",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00",
-    "time": "17/12/2021 17:46:05"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\GPUCache\\data_0",
+    "FileTarget": "G:\\destination\\UX\\GPUCache\\data_0",
+    "FileSize": "8192",
+    "FileTransferTime": "00:00:00.0428165",
+    "TimeToCrypt": "00:00:00.0155509",
+    "time": "18-12-2021 21:06:50"
   },
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\122144820_1337870396553720_6556489107829916442_n.jpg",
-    "FileTarget": "C:\\destination\\122144820_1337870396553720_6556489107829916442_n.jpg",
-    "FileSize": "73296",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00",
-    "time": "17/12/2021 17:46:05"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\GPUCache\\data_1",
+    "FileTarget": "G:\\destination\\UX\\GPUCache\\data_1",
+    "FileSize": "270336",
+    "FileTransferTime": "00:00:00.0701724",
+    "TimeToCrypt": "00:00:00.0365950",
+    "time": "18-12-2021 21:06:50"
   },
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\58482f8fcef1014c0b5e4a85 (1).png",
-    "FileTarget": "C:\\destination\\58482f8fcef1014c0b5e4a85 (1).png",
-    "FileSize": "11916",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00",
-    "time": "17/12/2021 17:46:05"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\GPUCache\\data_2",
+    "FileTarget": "G:\\destination\\UX\\GPUCache\\data_2",
+    "FileSize": "8192",
+    "FileTransferTime": "00:00:00.1000423",
+    "TimeToCrypt": "00:00:00.0623952",
+    "time": "18-12-2021 21:06:50"
   },
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\life.txt",
-    "FileTarget": "C:\\destination\\life.txt",
-    "FileSize": "0",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00",
-    "time": "17/12/2021 17:46:05"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\GPUCache\\data_3",
+    "FileTarget": "G:\\destination\\UX\\GPUCache\\data_3",
+    "FileSize": "8192",
+    "FileTransferTime": "00:00:00.1301782",
+    "TimeToCrypt": "00:00:00.0890563",
+    "time": "18-12-2021 21:06:50"
   },
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\maryam.txt",
-    "FileTarget": "C:\\destination\\maryam.txt",
-    "FileSize": "0",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00",
-    "time": "17/12/2021 17:46:05"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\GPUCache\\index",
+    "FileTarget": "G:\\destination\\UX\\GPUCache\\index",
+    "FileSize": "262512",
+    "FileTransferTime": "00:00:00.1503144",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
   },
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\nazim.txt",
-    "FileTarget": "C:\\destination\\nazim.txt",
-    "FileSize": "7",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00",
-    "time": "17/12/2021 17:46:05"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\RiotClientCrashHandler.exe",
+    "FileTarget": "G:\\destination\\RiotClientCrashHandler.exe",
+    "FileSize": "1947648",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
   },
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\.vpprefdata\\.systemproject.vpp",
-    "FileTarget": "C:\\destination\\.vpprefdata\\.systemproject.vpp",
-    "FileSize": "276480",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00",
-    "time": "17/12/2021 17:46:05"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\RiotClientFoundation.dll",
+    "FileTarget": "G:\\destination\\RiotClientFoundation.dll",
+    "FileSize": "9330456",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
   },
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\.vpprefdata\\.systemproject.vpp.bak_000f",
-    "FileTarget": "C:\\destination\\.vpprefdata\\.systemproject.vpp.bak_000f",
-    "FileSize": "252928",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00",
-    "time": "17/12/2021 17:46:05"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\RiotClientServices.exe",
+    "FileTarget": "G:\\destination\\RiotClientServices.exe",
+    "FileSize": "69263064",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
   },
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\.vpprefdata\\.vp.preference",
-    "FileTarget": "C:\\destination\\.vpprefdata\\.vp.preference",
-    "FileSize": "250386",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00",
-    "time": "17/12/2021 17:46:05"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\RiotGamesApi.dll",
+    "FileTarget": "G:\\destination\\RiotGamesApi.dll",
+    "FileSize": "28820072",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
   },
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\.vpprefdata\\resourceCatalog.dat",
-    "FileTarget": "C:\\destination\\.vpprefdata\\resourceCatalog.dat",
-    "FileSize": "5120",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00",
-    "time": "17/12/2021 17:46:05"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\system.yaml",
+    "FileTarget": "G:\\destination\\system.yaml",
+    "FileSize": "12491",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
   },
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\.vpprefdata\\breadcrumbprompts\\ProjectBreadcrumbPromptIndexing.xml",
-    "FileTarget": "C:\\destination\\.vpprefdata\\breadcrumbprompts\\ProjectBreadcrumbPromptIndexing.xml",
-    "FileSize": "65",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00",
-    "time": "17/12/2021 17:46:05"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\vgrl.dll",
+    "FileTarget": "G:\\destination\\vgrl.dll",
+    "FileSize": "3518336",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
   },
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\.vpprefdata\\dictionary\\user.lx",
-    "FileTarget": "C:\\destination\\.vpprefdata\\dictionary\\user.lx",
-    "FileSize": "89",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00",
-    "time": "17/12/2021 17:46:05"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\vivoxsdk.dll",
+    "FileTarget": "G:\\destination\\vivoxsdk.dll",
+    "FileSize": "10899560",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
   },
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\.vpprefdata\\LayoutPerspectiveData\\ARYisCCGAqAKbwca.jpeg",
-    "FileTarget": "C:\\destination\\.vpprefdata\\LayoutPerspectiveData\\ARYisCCGAqAKbwca.jpeg",
-    "FileSize": "668287",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00",
-    "time": "17/12/2021 17:46:05"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\Resources\\icon.ico",
+    "FileTarget": "G:\\destination\\Resources\\icon.ico",
+    "FileSize": "28746",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
   },
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\.vpprefdata\\LayoutPerspectiveData\\ARYisCCGAqAKbwca.lod",
-    "FileTarget": "C:\\destination\\.vpprefdata\\LayoutPerspectiveData\\ARYisCCGAqAKbwca.lod",
-    "FileSize": "5346",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00",
-    "time": "17/12/2021 17:46:05"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\cef.pak",
+    "FileTarget": "G:\\destination\\UX\\cef.pak",
+    "FileSize": "3677354",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
   },
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\.vpprefdata\\LayoutPerspectiveData\\ARYisCCGAqAKbwcaM.lod",
-    "FileTarget": "C:\\destination\\.vpprefdata\\LayoutPerspectiveData\\ARYisCCGAqAKbwcaM.lod",
-    "FileSize": "1931",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00",
-    "time": "17/12/2021 17:46:05"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\cef_100_percent.pak",
+    "FileTarget": "G:\\destination\\UX\\cef_100_percent.pak",
+    "FileSize": "742152",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
   },
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\.vpprefdata\\LayoutPerspectiveData\\i278sCCGAqAKbwcX.jpeg",
-    "FileTarget": "C:\\destination\\.vpprefdata\\LayoutPerspectiveData\\i278sCCGAqAKbwcX.jpeg",
-    "FileSize": "640872",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00",
-    "time": "17/12/2021 17:46:05"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\cef_200_percent.pak",
+    "FileTarget": "G:\\destination\\UX\\cef_200_percent.pak",
+    "FileSize": "872802",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
   },
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\.vpprefdata\\LayoutPerspectiveData\\i278sCCGAqAKbwcX.lod",
-    "FileTarget": "C:\\destination\\.vpprefdata\\LayoutPerspectiveData\\i278sCCGAqAKbwcX.lod",
-    "FileSize": "3369",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00",
-    "time": "17/12/2021 17:46:06"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\cef_extensions.pak",
+    "FileTarget": "G:\\destination\\UX\\cef_extensions.pak",
+    "FileSize": "1833343",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
   },
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\.vpprefdata\\LayoutPerspectiveData\\i278sCCGAqAKbwcXM.lod",
-    "FileTarget": "C:\\destination\\.vpprefdata\\LayoutPerspectiveData\\i278sCCGAqAKbwcXM.lod",
-    "FileSize": "1735",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00",
-    "time": "17/12/2021 17:46:06"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\chrome_elf.dll",
+    "FileTarget": "G:\\destination\\UX\\chrome_elf.dll",
+    "FileSize": "707072",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
   },
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\.vpprefdata\\LayoutPerspectiveData\\L7yCsCCGAqAKbwcY.jpeg",
-    "FileTarget": "C:\\destination\\.vpprefdata\\LayoutPerspectiveData\\L7yCsCCGAqAKbwcY.jpeg",
-    "FileSize": "508669",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00",
-    "time": "17/12/2021 17:46:06"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\d3dcompiler_47.dll",
+    "FileTarget": "G:\\destination\\UX\\d3dcompiler_47.dll",
+    "FileSize": "3705472",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
   },
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\.vpprefdata\\LayoutPerspectiveData\\L7yCsCCGAqAKbwcY.lod",
-    "FileTarget": "C:\\destination\\.vpprefdata\\LayoutPerspectiveData\\L7yCsCCGAqAKbwcY.lod",
-    "FileSize": "4692",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00",
-    "time": "17/12/2021 17:46:06"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\devtools_resources.pak",
+    "FileTarget": "G:\\destination\\UX\\devtools_resources.pak",
+    "FileSize": "6014631",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
   },
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\.vpprefdata\\LayoutPerspectiveData\\L7yCsCCGAqAKbwcYM.lod",
-    "FileTarget": "C:\\destination\\.vpprefdata\\LayoutPerspectiveData\\L7yCsCCGAqAKbwcYM.lod",
-    "FileSize": "1931",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00",
-    "time": "17/12/2021 17:46:06"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\ffmpeg.dll",
+    "FileTarget": "G:\\destination\\UX\\ffmpeg.dll",
+    "FileSize": "1231872",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
   },
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\.vpprefdata\\LayoutPerspectiveData\\Tb9isCCGAqAKbwcb.jpeg",
-    "FileTarget": "C:\\destination\\.vpprefdata\\LayoutPerspectiveData\\Tb9isCCGAqAKbwcb.jpeg",
-    "FileSize": "770195",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00",
-    "time": "17/12/2021 17:46:06"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\icudtl.dat",
+    "FileTarget": "G:\\destination\\UX\\icudtl.dat",
+    "FileSize": "10326064",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
   },
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\.vpprefdata\\LayoutPerspectiveData\\Tb9isCCGAqAKbwcb.lod",
-    "FileTarget": "C:\\destination\\.vpprefdata\\LayoutPerspectiveData\\Tb9isCCGAqAKbwcb.lod",
-    "FileSize": "6323",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00",
-    "time": "17/12/2021 17:46:06"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\libcef.dll",
+    "FileTarget": "G:\\destination\\UX\\libcef.dll",
+    "FileSize": "93489664",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
   },
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\.vpprefdata\\LayoutPerspectiveData\\Tb9isCCGAqAKbwcbM.lod",
-    "FileTarget": "C:\\destination\\.vpprefdata\\LayoutPerspectiveData\\Tb9isCCGAqAKbwcbM.lod",
-    "FileSize": "1931",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00",
-    "time": "17/12/2021 17:46:06"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\libEGL.dll",
+    "FileTarget": "G:\\destination\\UX\\libEGL.dll",
+    "FileSize": "110592",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
   },
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\.vpprefdata\\LayoutPerspectiveData\\_C4AVxKD.AACAQOE.jpeg",
-    "FileTarget": "C:\\destination\\.vpprefdata\\LayoutPerspectiveData\\_C4AVxKD.AACAQOE.jpeg",
-    "FileSize": "88535",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00",
-    "time": "17/12/2021 17:46:06"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\libGLESv2.dll",
+    "FileTarget": "G:\\destination\\UX\\libGLESv2.dll",
+    "FileSize": "4717056",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
   },
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\.vpprefdata\\LayoutPerspectiveData\\_C4AVxKD.AACAQOE.lod",
-    "FileTarget": "C:\\destination\\.vpprefdata\\LayoutPerspectiveData\\_C4AVxKD.AACAQOE.lod",
-    "FileSize": "4957",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00",
-    "time": "17/12/2021 17:46:06"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\natives_blob.bin",
+    "FileTarget": "G:\\destination\\UX\\natives_blob.bin",
+    "FileSize": "83217",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
   },
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\.vpprefdata\\LayoutPerspectiveData\\_C4AVxKD.AACAQOEC.lod",
-    "FileTarget": "C:\\destination\\.vpprefdata\\LayoutPerspectiveData\\_C4AVxKD.AACAQOEC.lod",
-    "FileSize": "4957",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00",
-    "time": "17/12/2021 17:46:06"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\RiotClientUx.exe",
+    "FileTarget": "G:\\destination\\UX\\RiotClientUx.exe",
+    "FileSize": "5287296",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
   },
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\.vpprefdata\\LayoutPerspectiveData\\_C4AVxKD.AACAQOEM.lod",
-    "FileTarget": "C:\\destination\\.vpprefdata\\LayoutPerspectiveData\\_C4AVxKD.AACAQOEM.lod",
-    "FileSize": "1867",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00",
-    "time": "17/12/2021 17:46:06"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\RiotClientUxRender.exe",
+    "FileTarget": "G:\\destination\\UX\\RiotClientUxRender.exe",
+    "FileSize": "4333280",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
   },
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\.vpprefdata\\LayoutPerspectiveData\\_C4AVxKD.AACAQOEMC.lod",
-    "FileTarget": "C:\\destination\\.vpprefdata\\LayoutPerspectiveData\\_C4AVxKD.AACAQOEMC.lod",
-    "FileSize": "1867",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00",
-    "time": "17/12/2021 17:46:06"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\snapshot_blob.bin",
+    "FileTarget": "G:\\destination\\UX\\snapshot_blob.bin",
+    "FileSize": "285908",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
   },
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\.vpprefdata\\nicknames\\NickNameIndexing.xml",
-    "FileTarget": "C:\\destination\\.vpprefdata\\nicknames\\NickNameIndexing.xml",
-    "FileSize": "260",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00",
-    "time": "17/12/2021 17:46:06"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\v8_context_snapshot.bin",
+    "FileTarget": "G:\\destination\\UX\\v8_context_snapshot.bin",
+    "FileSize": "609888",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
   },
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\.vpprefdata\\nicknames\\w84pI76GAqACNQWt",
-    "FileTarget": "C:\\destination\\.vpprefdata\\nicknames\\w84pI76GAqACNQWt",
-    "FileSize": "215",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00.0776635",
-    "time": "17/12/2021 17:46:06"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\views_mus_resources.pak",
+    "FileTarget": "G:\\destination\\UX\\views_mus_resources.pak",
+    "FileSize": "96116",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
   },
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\.vpprefdata\\processfroms\\ProjectProcessFromIndexing.xml",
-    "FileTarget": "C:\\destination\\.vpprefdata\\processfroms\\ProjectProcessFromIndexing.xml",
-    "FileSize": "60",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00.0776635",
-    "time": "17/12/2021 17:46:06"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\am.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\am.pak",
+    "FileSize": "314448",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
   },
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\.vpprefdata\\projectsViewInfo\\0rTTQr6GAqACcQkI",
-    "FileTarget": "C:\\destination\\.vpprefdata\\projectsViewInfo\\0rTTQr6GAqACcQkI",
-    "FileSize": "559",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00.0854235",
-    "time": "17/12/2021 17:46:06"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\ar.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\ar.pak",
+    "FileSize": "315053",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
   },
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\.vpprefdata\\sideComponents\\Indexing.xml",
-    "FileTarget": "C:\\destination\\.vpprefdata\\sideComponents\\Indexing.xml",
-    "FileSize": "233",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00.0854235",
-    "time": "17/12/2021 17:46:06"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\bg.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\bg.pak",
+    "FileSize": "362060",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
   },
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\.vpprefdata\\treestates\\ProjectTreeStateIndexing.xml",
-    "FileTarget": "C:\\destination\\.vpprefdata\\treestates\\ProjectTreeStateIndexing.xml",
-    "FileSize": "260",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00.0854235",
-    "time": "17/12/2021 17:46:06"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\bn.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\bn.pak",
+    "FileSize": "467103",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
   },
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\.vpprefdata\\treestates\\U84pI76GAqACNQWu",
-    "FileTarget": "C:\\destination\\.vpprefdata\\treestates\\U84pI76GAqACNQWu",
-    "FileSize": "491",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00.0922139",
-    "time": "17/12/2021 17:46:06"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\ca.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\ca.pak",
+    "FileSize": "224643",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
   },
   {
-    "Name": "badi",
-    "FileSource": "C:\\maryam\\.vpprefdata\\webdiagramstates\\ProjectWebDiagramStateIndexing.xml",
-    "FileTarget": "C:\\destination\\.vpprefdata\\webdiagramstates\\ProjectWebDiagramStateIndexing.xml",
-    "FileSize": "54",
-    "FileTransferTime": "00:00:00.0336796",
-    "TimeToCrypt": "00:00:00.0922139",
-    "time": "17/12/2021 17:46:06"
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\cs.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\cs.pak",
+    "FileSize": "228150",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\da.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\da.pak",
+    "FileSize": "204754",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\de.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\de.pak",
+    "FileSize": "223214",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\el.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\el.pak",
+    "FileSize": "396704",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\en-GB.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\en-GB.pak",
+    "FileSize": "183659",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:50"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\en-US.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\en-US.pak",
+    "FileSize": "185090",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\es-419.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\es-419.pak",
+    "FileSize": "220764",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\es.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\es.pak",
+    "FileSize": "224140",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\et.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\et.pak",
+    "FileSize": "199921",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\fa.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\fa.pak",
+    "FileSize": "317594",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\fi.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\fi.pak",
+    "FileSize": "206125",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\fil.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\fil.pak",
+    "FileSize": "226979",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\fr.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\fr.pak",
+    "FileSize": "239622",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\gu.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\gu.pak",
+    "FileSize": "444053",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\he.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\he.pak",
+    "FileSize": "268510",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\hi.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\hi.pak",
+    "FileSize": "456292",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\hr.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\hr.pak",
+    "FileSize": "216276",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\hu.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\hu.pak",
+    "FileSize": "235681",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\id.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\id.pak",
+    "FileSize": "198224",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\it.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\it.pak",
+    "FileSize": "216353",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\ja.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\ja.pak",
+    "FileSize": "268987",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\kn.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\kn.pak",
+    "FileSize": "517629",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\ko.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\ko.pak",
+    "FileSize": "225809",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\lt.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\lt.pak",
+    "FileSize": "232209",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\lv.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\lv.pak",
+    "FileSize": "231033",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\ml.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\ml.pak",
+    "FileSize": "556723",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\mr.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\mr.pak",
+    "FileSize": "450943",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\ms.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\ms.pak",
+    "FileSize": "204927",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\nb.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\nb.pak",
+    "FileSize": "201815",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\nl.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\nl.pak",
+    "FileSize": "210980",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\pl.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\pl.pak",
+    "FileSize": "224402",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\pt-BR.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\pt-BR.pak",
+    "FileSize": "217734",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\pt-PT.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\pt-PT.pak",
+    "FileSize": "219947",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\ro.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\ro.pak",
+    "FileSize": "225389",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\ru.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\ru.pak",
+    "FileSize": "350023",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\sk.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\sk.pak",
+    "FileSize": "231395",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\sl.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\sl.pak",
+    "FileSize": "217553",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\sr.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\sr.pak",
+    "FileSize": "338848",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\sv.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\sv.pak",
+    "FileSize": "203076",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\sw.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\sw.pak",
+    "FileSize": "207909",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\ta.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\ta.pak",
+    "FileSize": "525312",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\te.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\te.pak",
+    "FileSize": "498318",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\th.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\th.pak",
+    "FileSize": "423628",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\tr.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\tr.pak",
+    "FileSize": "217133",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\uk.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\uk.pak",
+    "FileSize": "354530",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\vi.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\vi.pak",
+    "FileSize": "251195",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\zh-CN.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\zh-CN.pak",
+    "FileSize": "187627",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\locales\\zh-TW.pak",
+    "FileTarget": "G:\\destination\\UX\\locales\\zh-TW.pak",
+    "FileSize": "187941",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\Plugins\\plugin-manifest.json",
+    "FileTarget": "G:\\destination\\UX\\Plugins\\plugin-manifest.json",
+    "FileSize": "284",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\swiftshader\\libEGL.dll",
+    "FileTarget": "G:\\destination\\UX\\swiftshader\\libEGL.dll",
+    "FileSize": "112640",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\swiftshader\\libGLESv2.dll",
+    "FileTarget": "G:\\destination\\UX\\swiftshader\\libGLESv2.dll",
+    "FileSize": "2249216",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:51"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\Plugins\\rcp-fe-keystone-react\\assets.wad",
+    "FileTarget": "G:\\destination\\UX\\Plugins\\rcp-fe-keystone-react\\assets.wad",
+    "FileSize": "114864566",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:57"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\Plugins\\rcp-fe-keystone-react\\description.json",
+    "FileTarget": "G:\\destination\\UX\\Plugins\\rcp-fe-keystone-react\\description.json",
+    "FileSize": "285",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:57"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\Plugins\\rcp-fe-plugin-runner\\assets.wad",
+    "FileTarget": "G:\\destination\\UX\\Plugins\\rcp-fe-plugin-runner\\assets.wad",
+    "FileSize": "93124",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:57"
+  },
+  {
+    "Name": "benna",
+    "FileSource": "D:\\Riot Games\\Riot Client\\UX\\Plugins\\rcp-fe-plugin-runner\\description.json",
+    "FileTarget": "G:\\destination\\UX\\Plugins\\rcp-fe-plugin-runner\\description.json",
+    "FileSize": "293",
+    "FileTransferTime": "00:00:00.1838067",
+    "TimeToCrypt": "00:00:00.1066112",
+    "time": "18-12-2021 21:06:57"
   }
 ]

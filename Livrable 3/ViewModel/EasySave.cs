@@ -8,22 +8,24 @@ using System.Linq;
 using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Collections.ObjectModel;
 
 namespace Projet.ViewModel
 {
     class EasySave
     {
         private static Object _locker = new Object();
+        Dictionary<string, Thread> threadList = new Dictionary<string, Thread>();
         // a method that will allow to create a backupwork
         public void addWork(long filesize, int countfile, string theName, string theRepS, string theRepC, string theType)
         {
-            Model.Etat verifyName = new Model.Etat();
-            var nameStateList = verifyName.readOnlyState();
+            Model.Work verifyName = new Model.Work();
+            var nameStateList = verifyName.readOnlyWork();
 
             bool nameExist = false;
             for (int i = 0; i < nameStateList.Count; i++)
             {
-                if (nameStateList[i].Name == theName)
+                if (nameStateList[i].name == theName)
                 {
                     nameExist = true;
                     break;
@@ -75,6 +77,28 @@ namespace Projet.ViewModel
             var workList = Works.readOnlyWork();
 
             return workList;
+        }//
+        public ObservableCollection<Model.Etat> displayWorksState() // a method that will allow to display all our backupwork
+        {
+            Model.Etat Works = new Model.Etat();
+            ObservableCollection<Model.Etat> stateList = Works.readOnlyStateDynamic();
+
+            return stateList;
+        }
+
+        public void pause()
+        {
+
+        }
+        public void play()
+        {
+
+        }
+        public void Execute(int inputUtilisateur, bool paral)
+        {
+            string threadname = "thread" + inputUtilisateur.ToString();
+            threadList.Add(threadname, new Thread(() => ExecuteWork(inputUtilisateur, false)));
+            threadList[threadname].Start();
         }
         public void ExecuteWork(int inputUtilisateur, bool paral) // a method that will allow to execute a backupwork created
         {
@@ -112,16 +136,6 @@ namespace Projet.ViewModel
                     Model.DifferentialBackup SD = new Model.DifferentialBackup();
                     SD.Sauvegarde(sourceDir, backupDir, true, indexState, filesNum, inputUtilisateur, workName);
 
-                    if (!paral)
-                    {
-
-                        var workListDelete = Works.readOnlyWork();
-
-                        workListDelete.Remove(workListDelete[inputUtilisateur]);
-
-                        Works.writeOnlyWork(workListDelete);
-                    }
-
                 }
                 else
                 {
@@ -132,16 +146,6 @@ namespace Projet.ViewModel
                     // complete backup
                     Model.FullBackup SD = new Model.FullBackup();
                     SD.Sauvegarde(sourceDir, backupDir, true, indexState, filesNum, inputUtilisateur, workName);
-
-                    if (!paral)
-                    {
-
-                        var workListDelete = Works.readOnlyWork();
-
-                        workListDelete.Remove(workListDelete[inputUtilisateur]);
-
-                        Works.writeOnlyWork(workListDelete);
-                    }
 
                 }
 
@@ -159,13 +163,26 @@ namespace Projet.ViewModel
                 }
             }
         }
+        public void deleteWork(int index)
+        {
+            Model.Work delWork = new Model.Work();
+            Model.Etat delState = new Model.Etat();
+            //
+            var workList = delWork.readOnlyWork();
+            workList.Remove(workList[index]);
+            delWork.writeOnlyWork(workList);
+
+            var stateList = delState.readOnlyState();
+            stateList.Remove(stateList[index]);
+            delState.writeOnlyState(stateList);
+
+        }
         public void ExecuteAllWork()
         {
             Model.Work Works = new Model.Work();
             List<Model.Work> workList = Works.readOnlyWork();
-            Dictionary<string, Thread> threadList = new Dictionary<string, Thread>(workList.Count);
 
-            for (int i = 0; i < workList.Count; i++)
+            for (int i = 1; i <= workList.Count; i++)
             {
                 int index = workList.Count - i;
                 string threadname = "thread" + index.ToString();
@@ -173,16 +190,7 @@ namespace Projet.ViewModel
                 threadList[threadname].Start();
             }
 
-            while (threadList.All(x => x.Value.IsAlive) && threadList.Count == workList.Count) { }
-
-            for (int i = 0; i < workList.Count; i++)
-            {
-                var workListDelete = Works.readOnlyWork();
-
-                workListDelete.Remove(workListDelete[0]);
-
-                Works.writeOnlyWork(workListDelete);
-            }
+            
 
 
 

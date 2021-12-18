@@ -148,3 +148,34 @@ C:\Users\Nazim GAOUA\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp
 C:\Users\Nazim GAOUA\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\View\MainWindow.baml
 C:\Users\Nazim GAOUA\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\View\Settings.baml
 C:\Users\Nazim GAOUA\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\Projet.g.resources
+C:\Users\Zizou\Source\Repos\Groupe2-Projet\Livrable 3\bin\Debug\netcoreapp3.1\Projet.exe
+C:\Users\Zizou\Source\Repos\Groupe2-Projet\Livrable 3\bin\Debug\netcoreapp3.1\Projet.deps.json
+C:\Users\Zizou\Source\Repos\Groupe2-Projet\Livrable 3\bin\Debug\netcoreapp3.1\Projet.runtimeconfig.json
+C:\Users\Zizou\Source\Repos\Groupe2-Projet\Livrable 3\bin\Debug\netcoreapp3.1\Projet.runtimeconfig.dev.json
+C:\Users\Zizou\Source\Repos\Groupe2-Projet\Livrable 3\bin\Debug\netcoreapp3.1\Projet.dll
+C:\Users\Zizou\Source\Repos\Groupe2-Projet\Livrable 3\bin\Debug\netcoreapp3.1\Projet.pdb
+C:\Users\Zizou\Source\Repos\Groupe2-Projet\Livrable 3\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Zizou\Source\Repos\Groupe2-Projet\Livrable 3\bin\Debug\netcoreapp3.1\Ookii.Dialogs.Wpf.dll
+C:\Users\Zizou\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\Projet.csproj.AssemblyReference.cache
+C:\Users\Zizou\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\Projet.csproj.ResolveComReference.cache
+C:\Users\Zizou\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\View\addWork.g.cs
+C:\Users\Zizou\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\View\executeWork.g.cs
+C:\Users\Zizou\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\View\MainWindow.g.cs
+C:\Users\Zizou\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\View\Settings.g.cs
+C:\Users\Zizou\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Zizou\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\Projet_MarkupCompile.cache
+C:\Users\Zizou\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\Projet_MarkupCompile.lref
+C:\Users\Zizou\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\App.baml
+C:\Users\Zizou\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\View\addWork.baml
+C:\Users\Zizou\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\View\executeWork.baml
+C:\Users\Zizou\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\View\MainWindow.baml
+C:\Users\Zizou\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\View\Settings.baml
+C:\Users\Zizou\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\Projet.g.resources
+C:\Users\Zizou\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\Projet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Zizou\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\Projet.AssemblyInfoInputs.cache
+C:\Users\Zizou\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\Projet.AssemblyInfo.cs
+C:\Users\Zizou\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\Projet.csproj.CoreCompileInputs.cache
+C:\Users\Zizou\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\Projet.csproj.CopyComplete
+C:\Users\Zizou\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\Projet.dll
+C:\Users\Zizou\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\Projet.pdb
+C:\Users\Zizou\Source\Repos\Groupe2-Projet\Livrable 3\obj\Debug\netcoreapp3.1\Projet.genruntimeconfig.cache

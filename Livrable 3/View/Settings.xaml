@@ -7,15 +7,10 @@
         mc:Ignorable="d"
         Title="Settings" Height="350" Width="500" ResizeMode="NoResize" Loaded="Window_Loaded" Background="#404040">
     <Grid>
-        <ComboBox x:Name="lang"  HorizontalAlignment="Center" Margin="0,95,0,0" VerticalAlignment="Top" Width="156" Height="32" SelectionChanged="lang_SelectionChanged" >
-
-            <Label Content="Francais"/>
-            <Label Content="English"/>
-        </ComboBox>
-        <Label x:Name="langLabel" HorizontalAlignment="Center" Margin="0,59,0,0" VerticalAlignment="Top" Foreground="Orange" FontSize="15" RenderTransformOrigin="0.8,-1.496" />
-        <Button x:Name="saveLabel" Style="{StaticResource btnHover}" Background="Orange"  HorizontalAlignment="Center" Margin="0,257,0,0" VerticalAlignment="Top" Height="32" Width="156" Click="Button_Click"  Foreground="#404040" />
-        <Button x:Name="changeExt" Style="{StaticResource btnHover}" Content="" HorizontalAlignment="Center" VerticalAlignment="Top" Height="34" Width="250" Click="changeExt_Click" Margin="0,167,0,0"/>
-        <Button x:Name="changeExtPrio" Style="{StaticResource btnHover}" Content="" HorizontalAlignment="Center" VerticalAlignment="Top" Height="34" Width="250" Click="changeExtPrio_Click" Margin="0,206,0,0"/>
+        <Button x:Name="changeExt" Style="{StaticResource btnHover}" Content="" HorizontalAlignment="Center" VerticalAlignment="Top" Height="34" Width="250" Click="changeExt_Click" Margin="0,165,0,0"/>
+        <Button x:Name="changeExtPrio" Style="{StaticResource btnHover}" Content="" HorizontalAlignment="Center" VerticalAlignment="Top" Height="34" Width="250" Click="changeExtPrio_Click" Margin="0,204,0,0"/>
+        <Button x:Name="sizeMax" Style="{StaticResource btnHover}" Content="" HorizontalAlignment="Center" VerticalAlignment="Top" Height="34" Width="250" Margin="0,125,0,0" Click="sizeMax_Click"/>
+        <Button x:Name="bussSoftware" Style="{StaticResource btnHover}" Content="" HorizontalAlignment="Center" VerticalAlignment="Top" Height="34" Width="250" Margin="0,86,0,0" Click="bussSoftware_Click"/>
 
     </Grid>
 </Window>

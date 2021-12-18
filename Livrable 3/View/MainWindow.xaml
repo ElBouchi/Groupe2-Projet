@@ -17,5 +17,11 @@
         <Button x:Name="addButton" HorizontalAlignment="Left" Style="{StaticResource btnHover}" Margin="32,158,0,0" VerticalAlignment="Top" FontSize="18" Height="280" Width="412" Click="Button_Click"  />
         <Button x:Name="execButton" HorizontalAlignment="Left" Margin="27,158,0,0" Style="{StaticResource btnHover}" VerticalAlignment="Top" FontSize="18" Height="280" Width="412"  Click="Button_Click_1" Grid.Column="1"/>
         <Button x:Name="settings" HorizontalAlignment="Left" Margin="236,51,0,0" Style="{StaticResource btnHover}" Background="orange" Foreground="#404040" VerticalAlignment="Top" Height="60" Width="192" FontSize="20" Click="Button_Click_2" Grid.Column="1"/>
+        <ComboBox x:Name="lang"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="156" Height="32" Margin="397,21,0,0" Grid.ColumnSpan="2" SelectionChanged="lang_SelectionChanged" >
+
+            <Label Content="Francais"/>
+            <Label Content="English"/>
+        </ComboBox>
+        <Button x:Name="changeLG" HorizontalAlignment="Left" Margin="99,24,0,0" Style="{StaticResource btnHover}" Background="orange" Foreground="#404040" VerticalAlignment="Top" Height="26" Width="30" FontSize="20" Click="changeLG_Click" Grid.Column="1"/>
     </Grid>
 </Window>

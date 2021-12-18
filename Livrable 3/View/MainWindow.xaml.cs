@@ -25,7 +25,11 @@ namespace Projet.View
     {
         public MainWindow()
         {
-            InitializeComponent();
+            try
+            {
+                InitializeComponent();
+            }
+            catch { }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -46,11 +50,10 @@ namespace Projet.View
             set.Show();
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        public void Window_Loaded(object sender, RoutedEventArgs e)
         {
             var jsonDataWork = File.ReadAllText(Model.Language.filePath); //Read the JSON file
             var lg = JsonConvert.DeserializeObject<List<Model.Language>>(jsonDataWork) ?? new List<Model.Language>(); //convert a string into an object for JSON
-
 
             if (lg[0].language == "English" || lg[0].language == "")
             {
@@ -64,7 +67,38 @@ namespace Projet.View
                 Model.Language.verifLg = lg[0].language;
                 addButton.Content = "Ajouter un travail de  sauvegarde";
                 execButton.Content = "Executer des travaux de saveugardes";
-                settings.Content = "Réglages";
+                settings.Content = "RÃ©glages";
+            }
+        }
+
+        private void lang_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void changeLG_Click(object sender, RoutedEventArgs e)
+        {
+            if (lang.Text != "")
+            {
+                var jsonDataWork = File.ReadAllText(Model.Language.filePath); //Read the JSON file
+                var changLg = JsonConvert.DeserializeObject<List<Model.Language>>(jsonDataWork) ?? new List<Model.Language>(); //convert a string into an object for JSON
+
+                if (changLg.Count == 0)
+                {
+                    Model.Language.verifLg = lang.Text;
+                    changLg.Add(new Model.Language() //parameter that the JSON file will contains
+                    {
+                        language = lang.Text
+                    });
+                }
+                else
+                {
+                    Model.Language.verifLg = changLg[0].language;
+                    changLg[0].language = lang.Text;
+                    string strResultJsonState = JsonConvert.SerializeObject(changLg, Formatting.Indented);  //convert an object into a string for JSON
+                    File.WriteAllText(Model.Language.filePath, strResultJsonState);
+                    this.Window_Loaded(sender, e);
+                }
             }
         }
     }

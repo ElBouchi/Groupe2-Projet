@@ -22,6 +22,7 @@ namespace Projet.Model
         private static Mutex mutex = new Mutex();
         Etat state = new Etat();
         Log log = new Log();
+        Work work = new Work();
         // a method that will be used for the full backup
         public void Sauvegarde(string sourcePATH, string destPATH, bool copyDirs, int getStateIndex, long fileCount, int getIndex, string getName)
         {
@@ -42,10 +43,6 @@ namespace Projet.Model
                 CreateDirs(destPATH, dir.GetDirectories());
             }
 
-            var json = File.ReadAllText(Settings.filePathCryptExtensions);
-            var List = JsonConvert.DeserializeObject<List<Settings>>(json) ?? new List<Settings>();
-            string[] extensions = new string[] { List[0].extensionsAccepted };
-            extensions = extensions[0].Split(',', ' ');
 
             FileInfo[] files = copyDirs ? dir.GetFiles("*", SearchOption.AllDirectories) : dir.GetFiles();
             files = OrderFiles(files.ToList()).ToArray();
@@ -57,7 +54,7 @@ namespace Projet.Model
                 if (_state == "Active") mre.Set();
                 mre.WaitOne();
 
-                if (extensions.Contains(file.Extension))
+                if (extPrio().Contains(file.Extension))
                 {
                     var p = new Process();
                     p.StartInfo.FileName = @"..\..\..\CryptoSoft\CryptoSoft.exe";
@@ -69,9 +66,20 @@ namespace Projet.Model
                 }
                 else
                 {
-                    mutex.WaitOne();
-                    file.CopyTo(file.FullName.Replace(sourcePATH, destPATH), true); //Copies an existing file to a new file.
-                    mutex.ReleaseMutex();
+                    if (file.Length < sizeMax())
+                    {
+                        mutex.WaitOne();
+                        file.CopyTo(file.FullName.Replace(sourcePATH, destPATH), true); //Copies an existing file to a new file.
+                        mutex.ReleaseMutex();
+                    }
+                    else
+                    {
+                        lock (_locker)
+                        {
+                            
+                            file.CopyTo(file.FullName.Replace(sourcePATH, destPATH), true); //Copies an existing file to a new file.
+                        }
+                    }
 
                     stopWatchTimer.Stop();
                 }
@@ -98,6 +106,7 @@ namespace Projet.Model
             modifyStateList[getStateIndex].State = "END";
 
             state.writeOnlyState(modifyStateList);
+
         }
 
         private void play()
@@ -117,15 +126,36 @@ namespace Projet.Model
         }
         private List<FileInfo> OrderFiles(List<FileInfo> l)
         {
+            List<FileInfo> lp = l.Where(el => cryptExt().Contains(el.Extension)).ToList();
+            foreach (var t in lp) l.Remove(t);
+            lp.AddRange(l);
+            return new List<FileInfo>(lp);
+        }
+        private string[] extPrio()
+        {
+            var json = File.ReadAllText(Settings.filePathCryptExtensions);
+            var List = JsonConvert.DeserializeObject<List<Settings>>(json) ?? new List<Settings>();
+            string[] extensions = new string[] { List[0].extensionsAccepted };
+            extensions = extensions[0].Split(',', ' ');
+
+            return extensions;
+        }
+        private string[] cryptExt()
+        {
             var json = File.ReadAllText(Settings.filePathPriorityExtensions);
             var List = JsonConvert.DeserializeObject<List<Settings>>(json) ?? new List<Settings>();
             string[] extensions = new string[] { List[0].extensionsAccepted };
             extensions = extensions[0].Split(',', ' ');
 
-            List<FileInfo> lp = l.Where(el => extensions.Contains(el.Extension)).ToList();
-            foreach (var t in lp) l.Remove(t);
-            lp.AddRange(l);
-            return new List<FileInfo>(lp);
+            return extensions;
+        }
+        private long sizeMax()
+        {
+            var json = File.ReadAllText(SizeMax.filepathSizeMax);
+            var List = JsonConvert.DeserializeObject<List<SizeMax>>(json) ?? new List<SizeMax>();
+            long taile = long.Parse(List[0].Size);
+
+            return taile;
         }
         private void CreateDirs(string path, DirectoryInfo[] dirs)
         {
