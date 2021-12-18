@@ -4,23 +4,5 @@
     "repS": "D:\\Riot Games\\Riot Client",
     "repC": "G:\\destination",
     "type": "Full"
-  },
-  {
-    "name": "benito",
-    "repS": "D:\\Riot Games\\Riot Client",
-    "repC": "G:\\destination",
-    "type": "Differential"
-  },
-  {
-    "name": "benatofull",
-    "repS": "D:\\Riot Games\\Riot Client",
-    "repC": "G:\\destination",
-    "type": "Full"
-  },
-  {
-    "name": "diff",
-    "repS": "D:\\Riot Games\\Riot Client",
-    "repC": "G:\\destination",
-    "type": "Differential"
   }
 ]

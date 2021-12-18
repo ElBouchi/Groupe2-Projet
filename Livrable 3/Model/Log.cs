@@ -24,9 +24,48 @@ namespace Projet.Model
         public string TimeToCrypt { get; set; }
         public string time { get; set; }
 
+        public void writeXML(string theName, string theRepS, string theRepC, string theSize, string theFileTransferTime, string theTimeToCrypt, string theTime)
+        {
+            mutex.WaitOne();
+
+            string xml = File.ReadAllText(filePathXML);
+            XmlRootAttribute xRoot = new XmlRootAttribute();
+            xRoot.ElementName = "Log";
+            xRoot.IsNullable = true;
+
+            
+            XmlSerializer serializer = new XmlSerializer(typeof(List<Log>), xRoot);
+
+            TextReader textReader = new StringReader(xml);
+
+            List<Log> worklist = (List<Log>)serializer.Deserialize(textReader);
 
 
-        
+
+            worklist.Add(new Log()
+            {
+                Name = theName,
+                FileSource = theRepS,
+                FileTarget = theRepC,
+                FileSize = theSize,
+                FileTransferTime = theFileTransferTime,
+                TimeToCrypt = theTimeToCrypt,
+                time = theTime
+            });
+
+
+
+
+            var writer1 = new StringWriter();
+            serializer.Serialize(writer1, worklist);
+            var xml1 = writer1.ToString();
+            File.WriteAllText(filePathXML, xml1);
+
+
+            mutex.ReleaseMutex();
+        }
+
+
 
         public void writeLog(string theName, string theRepS, string theRepC, string theSize, string theFileTransferTime, string theTimeToCrypt, string theTime)
         {

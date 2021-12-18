@@ -132,7 +132,7 @@ namespace Projet.Model
                 string theTime = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
 
                 log.writeLog(getName, file.FullName, file.FullName.Replace(sourcePATH, destPATH), file.Length.ToString(), stopWatchTimer.Elapsed.ToString(), crpytTimer.Elapsed.ToString(), theTime);
-                
+                log.writeXML(getName, file.FullName, file.FullName.Replace(sourcePATH, destPATH), file.Length.ToString(), stopWatchTimer.Elapsed.ToString(), crpytTimer.Elapsed.ToString(), theTime);
             }
             List<Etat> modifyStateList = state.readOnlyState();
 
