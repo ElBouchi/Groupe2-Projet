@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Log xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Log>
+    <Name>benna</Name>
+    <FileSource>G:\destination</FileSource>
+    <FileTarget>D:\Riot Games\Riot Client</FileTarget>
+    <FileSize>394780411</FileSize>
+    <FileTransferTime>00:00:00.52</FileTransferTime>
+    <time>18-12-2021 23:13:24</time>
+  </Log>
+</Log>

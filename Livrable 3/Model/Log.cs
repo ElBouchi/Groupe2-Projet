@@ -4,14 +4,18 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Threading;
+using System.Xml.Linq;
+using System.Xml.Serialization;
+
 
 namespace Projet.Model
 {
-    class Log
+    public class Log
     {
         private static Mutex mutex = new Mutex();
 
         public static string filePath = @"..\..\..\log.json";
+        public static string filePathXML = @"..\..\..\Log.xml";
         public string Name { get; set; }
         public string FileSource { get; set; }
         public string FileTarget { get; set; }
@@ -20,6 +24,9 @@ namespace Projet.Model
         public string TimeToCrypt { get; set; }
         public string time { get; set; }
 
+
+
+        
 
         public void writeLog(string theName, string theRepS, string theRepC, string theSize, string theFileTransferTime, string theTimeToCrypt, string theTime)
         {
