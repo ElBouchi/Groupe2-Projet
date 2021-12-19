@@ -1,0 +1,57 @@
+C:\Users\DELL\Desktop\Exia\Exia A3\Bloc 2\Prosit 07\cer_07_ludovicBrieulle\client\bin\Debug\netcoreapp3.0\client.exe
+C:\Users\DELL\Desktop\Exia\Exia A3\Bloc 2\Prosit 07\cer_07_ludovicBrieulle\client\bin\Debug\netcoreapp3.0\client.deps.json
+C:\Users\DELL\Desktop\Exia\Exia A3\Bloc 2\Prosit 07\cer_07_ludovicBrieulle\client\bin\Debug\netcoreapp3.0\client.runtimeconfig.json
+C:\Users\DELL\Desktop\Exia\Exia A3\Bloc 2\Prosit 07\cer_07_ludovicBrieulle\client\bin\Debug\netcoreapp3.0\client.runtimeconfig.dev.json
+C:\Users\DELL\Desktop\Exia\Exia A3\Bloc 2\Prosit 07\cer_07_ludovicBrieulle\client\bin\Debug\netcoreapp3.0\client.dll
+C:\Users\DELL\Desktop\Exia\Exia A3\Bloc 2\Prosit 07\cer_07_ludovicBrieulle\client\bin\Debug\netcoreapp3.0\client.pdb
+C:\Users\DELL\Desktop\Exia\Exia A3\Bloc 2\Prosit 07\cer_07_ludovicBrieulle\client\obj\Debug\netcoreapp3.0\client.csprojAssemblyReference.cache
+C:\Users\DELL\Desktop\Exia\Exia A3\Bloc 2\Prosit 07\cer_07_ludovicBrieulle\client\obj\Debug\netcoreapp3.0\MainWindow.g.cs
+C:\Users\DELL\Desktop\Exia\Exia A3\Bloc 2\Prosit 07\cer_07_ludovicBrieulle\client\obj\Debug\netcoreapp3.0\App.g.cs
+C:\Users\DELL\Desktop\Exia\Exia A3\Bloc 2\Prosit 07\cer_07_ludovicBrieulle\client\obj\Debug\netcoreapp3.0\client_MarkupCompile.cache
+C:\Users\DELL\Desktop\Exia\Exia A3\Bloc 2\Prosit 07\cer_07_ludovicBrieulle\client\obj\Debug\netcoreapp3.0\client_MarkupCompile.lref
+C:\Users\DELL\Desktop\Exia\Exia A3\Bloc 2\Prosit 07\cer_07_ludovicBrieulle\client\obj\Debug\netcoreapp3.0\MainWindow.baml
+C:\Users\DELL\Desktop\Exia\Exia A3\Bloc 2\Prosit 07\cer_07_ludovicBrieulle\client\obj\Debug\netcoreapp3.0\client.g.resources
+C:\Users\DELL\Desktop\Exia\Exia A3\Bloc 2\Prosit 07\cer_07_ludovicBrieulle\client\obj\Debug\netcoreapp3.0\client.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\Exia\Exia A3\Bloc 2\Prosit 07\cer_07_ludovicBrieulle\client\obj\Debug\netcoreapp3.0\client.AssemblyInfo.cs
+C:\Users\DELL\Desktop\Exia\Exia A3\Bloc 2\Prosit 07\cer_07_ludovicBrieulle\client\obj\Debug\netcoreapp3.0\client.dll
+C:\Users\DELL\Desktop\Exia\Exia A3\Bloc 2\Prosit 07\cer_07_ludovicBrieulle\client\obj\Debug\netcoreapp3.0\client.pdb
+C:\Users\deada\Desktop\clientOpt\client\bin\Debug\netcoreapp3.0\client.exe
+C:\Users\deada\Desktop\clientOpt\client\bin\Debug\netcoreapp3.0\client.deps.json
+C:\Users\deada\Desktop\clientOpt\client\bin\Debug\netcoreapp3.0\client.runtimeconfig.json
+C:\Users\deada\Desktop\clientOpt\client\bin\Debug\netcoreapp3.0\client.runtimeconfig.dev.json
+C:\Users\deada\Desktop\clientOpt\client\bin\Debug\netcoreapp3.0\client.dll
+C:\Users\deada\Desktop\clientOpt\client\bin\Debug\netcoreapp3.0\client.pdb
+C:\Users\deada\Desktop\clientOpt\client\obj\Debug\netcoreapp3.0\client.csproj.AssemblyReference.cache
+C:\Users\deada\Desktop\clientOpt\client\obj\Debug\netcoreapp3.0\MainWindow.g.cs
+C:\Users\deada\Desktop\clientOpt\client\obj\Debug\netcoreapp3.0\App.g.cs
+C:\Users\deada\Desktop\clientOpt\client\obj\Debug\netcoreapp3.0\client_MarkupCompile.cache
+C:\Users\deada\Desktop\clientOpt\client\obj\Debug\netcoreapp3.0\client_MarkupCompile.lref
+C:\Users\deada\Desktop\clientOpt\client\obj\Debug\netcoreapp3.0\MainWindow.baml
+C:\Users\deada\Desktop\clientOpt\client\obj\Debug\netcoreapp3.0\client.g.resources
+C:\Users\deada\Desktop\clientOpt\client\obj\Debug\netcoreapp3.0\client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\deada\Desktop\clientOpt\client\obj\Debug\netcoreapp3.0\client.AssemblyInfoInputs.cache
+C:\Users\deada\Desktop\clientOpt\client\obj\Debug\netcoreapp3.0\client.AssemblyInfo.cs
+C:\Users\deada\Desktop\clientOpt\client\obj\Debug\netcoreapp3.0\client.csproj.CoreCompileInputs.cache
+C:\Users\deada\Desktop\clientOpt\client\obj\Debug\netcoreapp3.0\client.dll
+C:\Users\deada\Desktop\clientOpt\client\obj\Debug\netcoreapp3.0\client.pdb
+C:\Users\deada\Desktop\clientOpt\client\obj\Debug\netcoreapp3.0\client.genruntimeconfig.cache
+C:\Users\Zizou\source\repos\Groupe2-Projet\Livrable 3 - client\bin\Debug\netcoreapp3.0\client.exe
+C:\Users\Zizou\source\repos\Groupe2-Projet\Livrable 3 - client\bin\Debug\netcoreapp3.0\client.deps.json
+C:\Users\Zizou\source\repos\Groupe2-Projet\Livrable 3 - client\bin\Debug\netcoreapp3.0\client.runtimeconfig.json
+C:\Users\Zizou\source\repos\Groupe2-Projet\Livrable 3 - client\bin\Debug\netcoreapp3.0\client.runtimeconfig.dev.json
+C:\Users\Zizou\source\repos\Groupe2-Projet\Livrable 3 - client\bin\Debug\netcoreapp3.0\client.dll
+C:\Users\Zizou\source\repos\Groupe2-Projet\Livrable 3 - client\bin\Debug\netcoreapp3.0\client.pdb
+C:\Users\Zizou\source\repos\Groupe2-Projet\Livrable 3 - client\obj\Debug\netcoreapp3.0\client.csproj.AssemblyReference.cache
+C:\Users\Zizou\source\repos\Groupe2-Projet\Livrable 3 - client\obj\Debug\netcoreapp3.0\MainWindow.g.cs
+C:\Users\Zizou\source\repos\Groupe2-Projet\Livrable 3 - client\obj\Debug\netcoreapp3.0\App.g.cs
+C:\Users\Zizou\source\repos\Groupe2-Projet\Livrable 3 - client\obj\Debug\netcoreapp3.0\client_MarkupCompile.cache
+C:\Users\Zizou\source\repos\Groupe2-Projet\Livrable 3 - client\obj\Debug\netcoreapp3.0\client_MarkupCompile.lref
+C:\Users\Zizou\source\repos\Groupe2-Projet\Livrable 3 - client\obj\Debug\netcoreapp3.0\MainWindow.baml
+C:\Users\Zizou\source\repos\Groupe2-Projet\Livrable 3 - client\obj\Debug\netcoreapp3.0\client.g.resources
+C:\Users\Zizou\source\repos\Groupe2-Projet\Livrable 3 - client\obj\Debug\netcoreapp3.0\client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Zizou\source\repos\Groupe2-Projet\Livrable 3 - client\obj\Debug\netcoreapp3.0\client.AssemblyInfoInputs.cache
+C:\Users\Zizou\source\repos\Groupe2-Projet\Livrable 3 - client\obj\Debug\netcoreapp3.0\client.AssemblyInfo.cs
+C:\Users\Zizou\source\repos\Groupe2-Projet\Livrable 3 - client\obj\Debug\netcoreapp3.0\client.csproj.CoreCompileInputs.cache
+C:\Users\Zizou\source\repos\Groupe2-Projet\Livrable 3 - client\obj\Debug\netcoreapp3.0\client.dll
+C:\Users\Zizou\source\repos\Groupe2-Projet\Livrable 3 - client\obj\Debug\netcoreapp3.0\client.pdb
+C:\Users\Zizou\source\repos\Groupe2-Projet\Livrable 3 - client\obj\Debug\netcoreapp3.0\client.genruntimeconfig.cache

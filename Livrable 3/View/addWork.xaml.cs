@@ -48,7 +48,7 @@ namespace Projet.View
                 else
                 {
                     MessageBox.Show("Le répertoire source précisé est vide");
-                }        
+                }
             }
         }
 
@@ -123,7 +123,7 @@ namespace Projet.View
                 else
                 {
                     MessageBox.Show("Veuillez remplir tout les champs");
-                }  
+                }
             }
         }
 

@@ -62,7 +62,7 @@ namespace Projet.View
         {
             Process.Start("notepad.exe", @"..\..\..\BussSoftware.json");
         }
-        
+        //
         private void sizeMax_Click(object sender, RoutedEventArgs e)
         {
             Process.Start("notepad.exe", @"..\..\..\sizeMax.json");

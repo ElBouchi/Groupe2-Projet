@@ -4,9 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Threading;
-using System.Xml.Linq;
 using System.Xml.Serialization;
-
 
 namespace Projet.Model
 {
@@ -33,7 +31,7 @@ namespace Projet.Model
             xRoot.ElementName = "Log";
             xRoot.IsNullable = true;
 
-            
+
             XmlSerializer serializer = new XmlSerializer(typeof(List<Log>), xRoot);
 
             TextReader textReader = new StringReader(xml);
@@ -64,9 +62,6 @@ namespace Projet.Model
 
             mutex.ReleaseMutex();
         }
-
-
-
         public void writeLog(string theName, string theRepS, string theRepC, string theSize, string theFileTransferTime, string theTimeToCrypt, string theTime)
         {
             mutex.WaitOne();

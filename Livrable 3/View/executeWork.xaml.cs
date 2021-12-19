@@ -18,6 +18,8 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Collections.Specialized;
 using System.Data;
+using Projet.Model;
+using System.Diagnostics;
 
 namespace Projet.View
 {
@@ -28,12 +30,55 @@ namespace Projet.View
     {
         private ObservableCollection<Model.Etat> worksState;
         private int inputUser = -1;
+        private string progression = "";
+        private string stateWork = "";
+        public static List<(string Nom, Thread t)> ls_thread = new List<(string Nom, Thread t)>();
 
         public executeWork()
         {
             InitializeComponent();
             Thread Recup_Etat = new Thread(Suivit_Loaded);
             Recup_Etat.Start();
+            Thread th = new Thread(serverEcoute);
+            th.Start();
+        }
+        public void serverEcoute()
+        {
+            Server server = new Server();
+            server.SeConnecter("127.0.0.1", 80);
+            server.AccepterConnection();
+            MessageBox.Show("Le client est connecté");
+            string dataReceive = "";
+            while (true)
+            {
+                dataReceive = server.EcouterReseau();
+                Debug.WriteLine(dataReceive);
+                if (dataReceive == "demande d info")
+                {
+                    server.envoiData(progression.ToString());
+                }
+                else if (dataReceive == "pause")
+                {
+                    ViewModel.EasySave exec = ViewModel.EasySave.Getinstance();
+                    exec.fullB[inputUser].pause(inputUser);
+                    //
+                    server.envoiData("0");
+                }
+                else if (dataReceive == "play")
+                {
+                    ViewModel.EasySave exec = ViewModel.EasySave.Getinstance();
+                    exec.fullB[inputUser].play(inputUser);
+                    //
+                    server.envoiData("0");
+                }
+                else if (dataReceive == "stop")
+                {
+                    ViewModel.EasySave exec = ViewModel.EasySave.Getinstance();
+                    exec.fullB[inputUser].stop(inputUser);
+                    //
+                    server.envoiData("0");
+                }
+            }
         }
         private void Suivit_Loaded()
         {
@@ -44,6 +89,7 @@ namespace Projet.View
                 {
                     ViewModel.EasySave watch = new ViewModel.EasySave();
                     worksState = watch.displayWorksState();
+                    progression = worksState[0].Progression.Replace("%", "");
                     Works.ItemsSource = worksState;
 
                 }));
@@ -59,7 +105,6 @@ namespace Projet.View
             if (Model.Language.verifLg == "English" || Model.Language.verifLg == "")
             {
                 uniqueExec.Content = "Running a single backup job";
-                sequentialExec.Content = "Sequential execution";
                 Play.Content = "Play";
                 Pause.Content = "Pause";
                 Stop.Content = "Stop";
@@ -68,7 +113,6 @@ namespace Projet.View
             else
             {
                 uniqueExec.Content = "Executer un travail de sauvegarde";
-                sequentialExec.Content = "Execution séquentielle";
                 Play.Content = "Lancer";
                 Pause.Content = "Pause";
                 Stop.Content = "Arrêtez";
@@ -78,13 +122,33 @@ namespace Projet.View
 
         private void uniqueExec_Click(object sender, RoutedEventArgs e)
         {
+
             if (inputUser != -1 && inputUser <= Works.Items.Count)
             {
+                Model.Etat obj = new Model.Etat();
+                var workList = obj.readOnlyState();
+                stateWork = workList[inputUser].State;
+                if (stateWork != "Active")
+                {
+                    ViewModel.EasySave execWork = ViewModel.EasySave.Getinstance();
+                    Thread th_Exe_Work = new Thread(() => execWork.ExecuteWork(inputUser, false));
+                    string nm = "thread" + inputUser;
+                    th_Exe_Work.Name = nm;
+                    th_Exe_Work.Start();
+                    ls_thread.Add((nm, th_Exe_Work));
+                }
+                else
+                {
+                    if (Model.Language.verifLg == "English" || Model.Language.verifLg == "")
+                    {
+                        MessageBox.Show("Backup work already in execution");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Travail de sauvegarde en cours d'execution");
+                    }
+                }
 
-                ViewModel.EasySave execWork = new ViewModel.EasySave();
-                execWork.Execute(inputUser, false);
-
-                executeWork_Loaded(sender, e);
 
             }
             else
@@ -101,22 +165,6 @@ namespace Projet.View
 
 
         }
-
-        private void sequentialExec_Click(object sender, RoutedEventArgs e)
-        {
-            string workNumbers = Convert.ToString(Works.Items.Count - 1);
-
-            ViewModel.EasySave execAllWork = new ViewModel.EasySave();
-            execAllWork.ExecuteAllWork();
-
-            executeWork_Loaded(sender, e);
-        }
-
-        private void Works_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            //
-        }
-
         private void Works_SelectedCellsChanged(object sender, SelectedCellsChangedEventArgs e)
         {
             if (Works.SelectedIndex != -1)
@@ -124,11 +172,42 @@ namespace Projet.View
                 inputUser = Works.SelectedIndex;
             }
         }
-
-        private void Pause_Click(object sender, RoutedEventArgs e)
+        public void Pause_Click(object sender, RoutedEventArgs e)
         {
-            ViewModel.EasySave pause = new ViewModel.EasySave();
-            pause.pause();
+            Model.Etat obj = new Model.Etat();
+            var workList = obj.readOnlyState();
+            stateWork = workList[inputUser].State;
+
+            if (inputUser != -1 && inputUser <= Works.Items.Count)
+            {
+                if (stateWork == "Active")
+                {
+                    ViewModel.EasySave exec = ViewModel.EasySave.Getinstance();
+                    exec.fullB[inputUser].pause(inputUser);
+                }
+                else
+                {
+                    if (Model.Language.verifLg == "English" || Model.Language.verifLg == "")
+                    {
+                        MessageBox.Show("Backup work not in execution");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Travail de sauvegarde pas en execution");
+                    }
+                }
+            }
+            else
+            {
+                if (Model.Language.verifLg == "English" || Model.Language.verifLg == "")
+                {
+                    MessageBox.Show("Please select the row of a backup work");
+                }
+                else
+                {
+                    MessageBox.Show("Sélectionnez la ligne du travail de sauvegarde souhaité");
+                }
+            }
         }
 
         private void Delete_Click(object sender, RoutedEventArgs e)
@@ -137,6 +216,82 @@ namespace Projet.View
             {
                 ViewModel.EasySave del = new ViewModel.EasySave();
                 del.deleteWork(inputUser);
+            }
+            else
+            {
+                if (Model.Language.verifLg == "English" || Model.Language.verifLg == "")
+                {
+                    MessageBox.Show("Please select the row of a backup work");
+                }
+                else
+                {
+                    MessageBox.Show("Sélectionnez la ligne du travail de sauvegarde souhaité");
+                }
+            }
+        }
+
+        private void Play_Click(object sender, RoutedEventArgs e)
+        {
+            Model.Etat obj = new Model.Etat();
+            var workList = obj.readOnlyState();
+            stateWork = workList[inputUser].State;
+
+            if (inputUser != -1 && inputUser <= Works.Items.Count)
+            {
+                if (stateWork == "Pause")
+                {
+                    ViewModel.EasySave exec = ViewModel.EasySave.Getinstance();
+                    exec.fullB[inputUser].play(inputUser);
+                }
+                else
+                {
+                    if (Model.Language.verifLg == "English" || Model.Language.verifLg == "")
+                    {
+                        MessageBox.Show("Please select the row of a backup work");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Sélectionnez la ligne du travail de sauvegarde souhaité");
+                    }
+                }
+            }
+            else
+            {
+                if (Model.Language.verifLg == "English" || Model.Language.verifLg == "")
+                {
+                    MessageBox.Show("Backup work not in pause");
+                }
+                else
+                {
+                    MessageBox.Show("Travail de sauvegarde pas en pause");
+                }
+            }
+        }
+
+        private void Stop_Click(object sender, RoutedEventArgs e)
+        {
+            Model.Etat obj = new Model.Etat();
+            var workList = obj.readOnlyState();
+            stateWork = workList[inputUser].State;
+
+            if (inputUser != -1 && inputUser <= Works.Items.Count)
+            {
+                if (stateWork != "Interrupted")
+                {
+                    ViewModel.EasySave exec = ViewModel.EasySave.Getinstance();
+                    exec.fullB[inputUser].stop(inputUser);
+                }
+                else
+                {
+                    if (Model.Language.verifLg == "English" || Model.Language.verifLg == "")
+                    {
+                        MessageBox.Show("Backup work not in pause");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Travail de sauvegarde pas en pause");
+                    }
+                }
             }
             else
             {

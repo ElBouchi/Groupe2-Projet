@@ -14,8 +14,19 @@ namespace Projet.ViewModel
 {
     class EasySave
     {
+        private static EasySave instance = null;
+        public static EasySave Getinstance()
+        {
+            if (instance == null)
+            {
+                instance = new EasySave();
+            }
+            return instance;
+        }
+
         private static Object _locker = new Object();
-        Dictionary<string, Thread> threadList = new Dictionary<string, Thread>();
+        public List<Model.FullBackup> fullB = new List<Model.FullBackup>();
+        public List<Model.DifferentialBackup> diffB = new List<Model.DifferentialBackup>();
         // a method that will allow to create a backupwork
         public void addWork(long filesize, int countfile, string theName, string theRepS, string theRepC, string theType)
         {
@@ -85,81 +96,85 @@ namespace Projet.ViewModel
 
             return stateList;
         }
-
-        public void pause()
-        {
-
-        }
-        public void play()
-        {
-
-        }
-        public void Execute(int inputUtilisateur, bool paral)
-        {
-            string threadname = "thread" + inputUtilisateur.ToString();
-            threadList.Add(threadname, new Thread(() => ExecuteWork(inputUtilisateur, false)));
-            threadList[threadname].Start();
-        }
         public void ExecuteWork(int inputUtilisateur, bool paral) // a method that will allow to execute a backupwork created
         {
-            Model.Work Works = new Model.Work();
-            var workList = Works.readOnlyWork();
+            var json = File.ReadAllText(Model.BussSoftware.filepathBussSoftware);
+            var List = JsonConvert.DeserializeObject<List<Model.BussSoftware>>(json) ?? new List<Model.BussSoftware>();
+            string Business = List[0].bussSoftware;
 
-            if (workList.Count >= inputUtilisateur) //this condition allow to the user to choose the exact row in order to execute the backupwork chosen
+            if (Process.GetProcessesByName(Business).Length == 0)
             {
+                Model.Work Works = new Model.Work();
+                var workList = Works.readOnlyWork();
 
-                string workName = workList.ElementAt(inputUtilisateur).name;
-                string sourceDir = workList.ElementAt(inputUtilisateur).repS;
-                string backupDir = workList.ElementAt(inputUtilisateur).repC;
-                long filesNum = Directory.GetFiles(sourceDir, "*", SearchOption.AllDirectories).Length;
-
-                Model.Etat state = new Model.Etat();
-                var stateList = state.readOnlyState();
-
-                int indexState = 0;
-                for (int i = 0; i < stateList.Count; i++)
+                if (workList.Count >= inputUtilisateur) //this condition allow to the user to choose the exact row in order to execute the backupwork chosen
                 {
-                    if (stateList[i].Name == workList[inputUtilisateur].name)
+
+                    string workName = workList.ElementAt(inputUtilisateur).name;
+                    string sourceDir = workList.ElementAt(inputUtilisateur).repS;
+                    string backupDir = workList.ElementAt(inputUtilisateur).repC;
+                    long filesNum = Directory.GetFiles(sourceDir, "*", SearchOption.AllDirectories).Length;
+
+                    Model.Etat state = new Model.Etat();
+                    var stateList = state.readOnlyState();
+
+                    int indexState = 0;
+                    for (int i = 0; i < stateList.Count; i++)
                     {
-                        indexState = i;
-                        break;
+                        if (stateList[i].Name == workList[inputUtilisateur].name)
+                        {
+                            indexState = i;
+                            break;
+                        }
                     }
-                }
 
-                //this condition is used to execute the type of backup chosen in the creation 
-                if (workList.ElementAt(inputUtilisateur).type == "Differential")
-                {
-                    stateList[indexState].State = "Active";
+                    //this condition is used to execute the type of backup chosen in the creation 
+                    if (workList.ElementAt(inputUtilisateur).type == "Differential")
+                    {
+                        stateList[indexState].State = "Active";
 
-                    state.writeOnlyState(stateList);
-                    // differential backup
-                    Model.DifferentialBackup SD = new Model.DifferentialBackup();
-                    SD.Sauvegarde(sourceDir, backupDir, true, indexState, filesNum, inputUtilisateur, workName);
+                        state.writeOnlyState(stateList);
+                        // differential backup
+                        Model.DifferentialBackup diff = new Model.DifferentialBackup();
+                        diff.Sauvegarde(sourceDir, backupDir, true, indexState, filesNum, inputUtilisateur, workName);
+
+                    }
+                    else
+                    {
+                        stateList[inputUtilisateur].State = "Active";
+
+                        state.writeOnlyState(stateList);
+                        // complete backup
+
+                        fullB.Add(new Model.FullBackup());
+                        fullB[fullB.Count - 1].Sauvegarde(sourceDir, backupDir, true, indexState, filesNum, inputUtilisateur, workName);
+
+                    }
 
                 }
                 else
-                {
+                {   // Switch the language of the outpoot according to the choice of the user when he started the program
 
-                    stateList[indexState].State = "Active";
-
-                    state.writeOnlyState(stateList);
-                    // complete backup
-                    Model.FullBackup SD = new Model.FullBackup();
-                    SD.Sauvegarde(sourceDir, backupDir, true, indexState, filesNum, inputUtilisateur, workName);
-
+                    if (Model.Language.verifLg == "English" || Model.Language.verifLg == "")
+                    {
+                        MessageBox.Show("No backup job with entry " + inputUtilisateur + " found !");
+                    }
+                    else
+                    {
+                        MessageBox.Show("La ligne " + inputUtilisateur + " ne contient aucun travail de sauvegarde !");
+                    }
                 }
-
             }
             else
-            {   // Switch the language of the outpoot according to the choice of the user when he started the program
+            {
 
                 if (Model.Language.verifLg == "English" || Model.Language.verifLg == "")
                 {
-                    MessageBox.Show("No backup job with entry " + inputUtilisateur + " found !");
+                    MessageBox.Show("Cant launch back work because a business software is detected");
                 }
                 else
                 {
-                    MessageBox.Show("La ligne " + inputUtilisateur + " ne contient aucun travail de sauvegarde !");
+                    MessageBox.Show("Impossible de lancer un travail sauvegarde, logiciel métier detecté");
                 }
             }
         }
@@ -178,23 +193,7 @@ namespace Projet.ViewModel
 
         }
         public void ExecuteAllWork()
-        {
-            Model.Work Works = new Model.Work();
-            List<Model.Work> workList = Works.readOnlyWork();
-
-            for (int i = 1; i <= workList.Count; i++)
-            {
-                int index = workList.Count - i;
-                string threadname = "thread" + index.ToString();
-                threadList.Add(threadname, new Thread(() => ExecuteWork(index, true)));
-                threadList[threadname].Start();
-            }
-
-            
-
-
-
-        }
+        { }
         public long GetFileSizeSumFromDirectory(string searchDirectory) //a method that allow to calculate the size of a directory (subdirrectory included)
         {
             var files = Directory.EnumerateFiles(searchDirectory);

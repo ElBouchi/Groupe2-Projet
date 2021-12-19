@@ -14,6 +14,8 @@ namespace Projet.Model
 
     class DifferentialBackup : IBackup
     {
+        private string _state = "";
+        private EventWaitHandle mre = new ManualResetEvent(false);
         Stopwatch crpytTimer = new Stopwatch();
         Stopwatch stopWatchTimer = new Stopwatch();
         private static Object _locker = new Object();
@@ -23,6 +25,7 @@ namespace Projet.Model
         // a method that will be used for the differential backup
         public void Sauvegarde(string sourcePATH, string destPATH, bool copyDirs, int getStateIndex, long fileCount, int getIndex, string getName)
         {
+            _state = "Active";
             //Initialize a timer which determine the backup time
             Stopwatch stopWatch = new Stopwatch();
             stopWatch.Start();
@@ -48,6 +51,15 @@ namespace Projet.Model
             var i = 0;
             foreach (var file in files)
             {
+                if (Process.GetProcessesByName(bussSoftware()).Length != 0)
+                {
+                    MessageBox.Show("logiciel metier détecté");
+                    pause(getStateIndex);
+                }
+                if (_state == "Interrupted") return;
+                if (_state == "Active") mre.Set();
+                mre.WaitOne();
+
                 if (File.Exists(file.FullName.Replace(sourcePATH, destPATH)))
                 {
                     using (var sourcef = File.OpenRead(file.FullName))
@@ -141,6 +153,37 @@ namespace Projet.Model
 
             state.writeOnlyState(modifyStateList);
         }
+
+        public void play(int index)
+        {
+            _state = "Active";
+            mre.Set();
+
+            Etat obj = new Etat();
+            var stateList = obj.readOnlyState();
+            stateList[index].State = "Active";
+            obj.writeOnlyState(stateList);
+        }
+        public void pause(int index)
+        {
+            _state = "Pause";
+            mre.Reset();
+
+            Etat obj = new Etat();
+            var stateList = obj.readOnlyState();
+            stateList[index].State = "Pause";
+            obj.writeOnlyState(stateList);
+        }
+        public void stop(int index)
+        {
+            _state = "Interrupted";
+            mre.Reset();
+
+            Etat obj = new Etat();
+            var stateList = obj.readOnlyState();
+            stateList[index].State = "Interrupted";
+            obj.writeOnlyState(stateList);
+        }
         private List<FileInfo> OrderFiles(List<FileInfo> l)
         {
 
@@ -148,6 +191,14 @@ namespace Projet.Model
             foreach (var t in lp) l.Remove(t);
             lp.AddRange(l);
             return new List<FileInfo>(lp);
+        }
+        private string bussSoftware()
+        {
+            var json = File.ReadAllText(BussSoftware.filepathBussSoftware);
+            var List = JsonConvert.DeserializeObject<List<BussSoftware>>(json) ?? new List<BussSoftware>();
+            string Business = List[0].bussSoftware;
+
+            return Business;
         }
         private string[] extPrio()
         {

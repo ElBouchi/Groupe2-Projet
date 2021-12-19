@@ -1,10 +1,21 @@
 [
   {
-    "Name": "benna",
+    "Name": "bina",
     "SourceFilePath": "D:\\Riot Games\\Riot Client",
     "TargetFilePath": "G:\\destination",
-    "Time": "18-12-2021 23:19:47",
+    "Time": "19-12-2021 07:09:23",
     "State": "END",
+    "TotalFilesToCopy": "91",
+    "TotalFilesSize": "394780411",
+    "NbFilesLeftToDo": "0",
+    "Progression": "100%"
+  },
+  {
+    "Name": "diff",
+    "SourceFilePath": "D:\\Riot Games\\Riot Client",
+    "TargetFilePath": "G:\\destination2",
+    "Time": "19-12-2021 07:06:32",
+    "State": "INACTIVE",
     "TotalFilesToCopy": "91",
     "TotalFilesSize": "394780411",
     "NbFilesLeftToDo": "0",

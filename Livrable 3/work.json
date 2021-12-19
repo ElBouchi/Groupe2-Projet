@@ -1,8 +1,14 @@
 [
   {
-    "name": "benna",
+    "name": "bina",
     "repS": "D:\\Riot Games\\Riot Client",
     "repC": "G:\\destination",
     "type": "Full"
+  },
+  {
+    "name": "diff",
+    "repS": "D:\\Riot Games\\Riot Client",
+    "repC": "G:\\destination2",
+    "type": "Differential"
   }
 ]

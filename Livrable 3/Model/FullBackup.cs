@@ -22,7 +22,6 @@ namespace Projet.Model
         private static Mutex mutex = new Mutex();
         Etat state = new Etat();
         Log log = new Log();
-        Work work = new Work();
         // a method that will be used for the full backup
         public void Sauvegarde(string sourcePATH, string destPATH, bool copyDirs, int getStateIndex, long fileCount, int getIndex, string getName)
         {
@@ -51,6 +50,12 @@ namespace Projet.Model
 
             foreach (FileInfo file in files)
             {
+                if (Process.GetProcessesByName(bussSoftware()).Length != 0)
+                {
+                    MessageBox.Show("logiciel metier détecté");
+                    pause(getStateIndex);
+                }
+                if (_state == "Interrupted") return;
                 if (_state == "Active") mre.Set();
                 mre.WaitOne();
 
@@ -61,7 +66,20 @@ namespace Projet.Model
                     p.StartInfo.Arguments = $"{file.FullName} {file.FullName.Replace(sourcePATH, destPATH)}";
 
                     crpytTimer.Start();
-                    p.Start();
+
+                    if (file.Length < sizeMax())
+                    {
+                        mutex.WaitOne();
+                        p.Start();
+                        mutex.ReleaseMutex();
+                    }
+                    else
+                    {
+                        lock (_locker)
+                        {
+                            p.Start();
+                        }
+                    }
                     crpytTimer.Stop();
                 }
                 else
@@ -76,7 +94,6 @@ namespace Projet.Model
                     {
                         lock (_locker)
                         {
-                            
                             file.CopyTo(file.FullName.Replace(sourcePATH, destPATH), true); //Copies an existing file to a new file.
                         }
                     }
@@ -110,20 +127,47 @@ namespace Projet.Model
 
         }
 
-        private void play()
+        public void play(int index)
         {
-            _state = "Active";
-            mre.Set();
+            Etat obj = new Etat();
+            var stateList = obj.readOnlyState();
+
+            if (stateList[index].State != "Interrupted")
+            {
+                _state = "Active";
+                mre.Set();
+
+                Etat obj1 = new Etat();
+                var stateList1 = obj.readOnlyState();
+                stateList[index].State = "Active";
+                obj.writeOnlyState(stateList);
+            }
         }
-        private void pause()
+        public void pause(int index)
         {
-            _state = "Pause";
-            mre.Reset();
+            Etat obj = new Etat();
+            var stateList = obj.readOnlyState();
+
+            if (stateList[index].State != "Interrupted")
+            {
+                _state = "Pause";
+                mre.Reset();
+
+                Etat obj1 = new Etat();
+                var stateList1 = obj.readOnlyState();
+                stateList[index].State = "Pause";
+                obj.writeOnlyState(stateList);
+            }
         }
-        private void stop()
+        public void stop(int index)
         {
-            _state = "Inactive";
+            _state = "Interrupted";
             mre.Reset();
+
+            Etat obj = new Etat();
+            var stateList = obj.readOnlyState();
+            stateList[index].State = "Interrupted";
+            obj.writeOnlyState(stateList);
         }
         private List<FileInfo> OrderFiles(List<FileInfo> l)
         {
@@ -131,6 +175,14 @@ namespace Projet.Model
             foreach (var t in lp) l.Remove(t);
             lp.AddRange(l);
             return new List<FileInfo>(lp);
+        }
+        private string bussSoftware()
+        {
+            var json = File.ReadAllText(BussSoftware.filepathBussSoftware);
+            var List = JsonConvert.DeserializeObject<List<BussSoftware>>(json) ?? new List<BussSoftware>();
+            string Business = List[0].bussSoftware;
+
+            return Business;
         }
         private string[] extPrio()
         {

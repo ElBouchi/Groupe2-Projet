@@ -25,7 +25,7 @@ namespace Projet
             if (!OpenApp)
             {
                 //app is already running! Exiting the application
-                MessageBox.Show("App is already running !");
+                MessageBox.Show("App is already running my dude !");
                 Application.Current.Shutdown();
             }
             base.OnStartup(e);

@@ -1,0 +1,39 @@
+C:\Users\nhamour\source\repos\Progression_Fabrication\p7\bin\Debug\netcoreapp3.1\Server.exe
+C:\Users\nhamour\source\repos\Progression_Fabrication\p7\bin\Debug\netcoreapp3.1\Server.deps.json
+C:\Users\nhamour\source\repos\Progression_Fabrication\p7\bin\Debug\netcoreapp3.1\Server.runtimeconfig.json
+C:\Users\nhamour\source\repos\Progression_Fabrication\p7\bin\Debug\netcoreapp3.1\Server.runtimeconfig.dev.json
+C:\Users\nhamour\source\repos\Progression_Fabrication\p7\bin\Debug\netcoreapp3.1\Server.dll
+C:\Users\nhamour\source\repos\Progression_Fabrication\p7\bin\Debug\netcoreapp3.1\Server.pdb
+C:\Users\nhamour\source\repos\Progression_Fabrication\p7\obj\Debug\netcoreapp3.1\Server.csprojAssemblyReference.cache
+C:\Users\nhamour\source\repos\Progression_Fabrication\p7\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\nhamour\source\repos\Progression_Fabrication\p7\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\nhamour\source\repos\Progression_Fabrication\p7\obj\Debug\netcoreapp3.1\Server_MarkupCompile.cache
+C:\Users\nhamour\source\repos\Progression_Fabrication\p7\obj\Debug\netcoreapp3.1\Server_MarkupCompile.lref
+C:\Users\nhamour\source\repos\Progression_Fabrication\p7\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\nhamour\source\repos\Progression_Fabrication\p7\obj\Debug\netcoreapp3.1\Server.g.resources
+C:\Users\nhamour\source\repos\Progression_Fabrication\p7\obj\Debug\netcoreapp3.1\Server.AssemblyInfoInputs.cache
+C:\Users\nhamour\source\repos\Progression_Fabrication\p7\obj\Debug\netcoreapp3.1\Server.AssemblyInfo.cs
+C:\Users\nhamour\source\repos\Progression_Fabrication\p7\obj\Debug\netcoreapp3.1\Server.csproj.CoreCompileInputs.cache
+C:\Users\nhamour\source\repos\Progression_Fabrication\p7\obj\Debug\netcoreapp3.1\Server.dll
+C:\Users\nhamour\source\repos\Progression_Fabrication\p7\obj\Debug\netcoreapp3.1\Server.pdb
+C:\Users\nhamour\source\repos\Progression_Fabrication\p7\obj\Debug\netcoreapp3.1\Server.genruntimeconfig.cache
+D:\A3\Programmation systeme\Progression_Fabrication\p7\bin\Debug\netcoreapp3.1\Server.exe
+D:\A3\Programmation systeme\Progression_Fabrication\p7\bin\Debug\netcoreapp3.1\Server.deps.json
+D:\A3\Programmation systeme\Progression_Fabrication\p7\bin\Debug\netcoreapp3.1\Server.runtimeconfig.json
+D:\A3\Programmation systeme\Progression_Fabrication\p7\bin\Debug\netcoreapp3.1\Server.runtimeconfig.dev.json
+D:\A3\Programmation systeme\Progression_Fabrication\p7\bin\Debug\netcoreapp3.1\Server.dll
+D:\A3\Programmation systeme\Progression_Fabrication\p7\bin\Debug\netcoreapp3.1\Server.pdb
+D:\A3\Programmation systeme\Progression_Fabrication\p7\obj\Debug\netcoreapp3.1\Server.csproj.AssemblyReference.cache
+D:\A3\Programmation systeme\Progression_Fabrication\p7\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+D:\A3\Programmation systeme\Progression_Fabrication\p7\obj\Debug\netcoreapp3.1\App.g.cs
+D:\A3\Programmation systeme\Progression_Fabrication\p7\obj\Debug\netcoreapp3.1\Server_MarkupCompile.cache
+D:\A3\Programmation systeme\Progression_Fabrication\p7\obj\Debug\netcoreapp3.1\Server_MarkupCompile.lref
+D:\A3\Programmation systeme\Progression_Fabrication\p7\obj\Debug\netcoreapp3.1\MainWindow.baml
+D:\A3\Programmation systeme\Progression_Fabrication\p7\obj\Debug\netcoreapp3.1\Server.g.resources
+D:\A3\Programmation systeme\Progression_Fabrication\p7\obj\Debug\netcoreapp3.1\Server.GeneratedMSBuildEditorConfig.editorconfig
+D:\A3\Programmation systeme\Progression_Fabrication\p7\obj\Debug\netcoreapp3.1\Server.AssemblyInfoInputs.cache
+D:\A3\Programmation systeme\Progression_Fabrication\p7\obj\Debug\netcoreapp3.1\Server.AssemblyInfo.cs
+D:\A3\Programmation systeme\Progression_Fabrication\p7\obj\Debug\netcoreapp3.1\Server.csproj.CoreCompileInputs.cache
+D:\A3\Programmation systeme\Progression_Fabrication\p7\obj\Debug\netcoreapp3.1\Server.dll
+D:\A3\Programmation systeme\Progression_Fabrication\p7\obj\Debug\netcoreapp3.1\Server.pdb
+D:\A3\Programmation systeme\Progression_Fabrication\p7\obj\Debug\netcoreapp3.1\Server.genruntimeconfig.cache

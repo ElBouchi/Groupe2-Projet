@@ -1,822 +1,822 @@
 <?xml version="1.0" encoding="utf-16"?>
 <Log xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\GPUCache\data_0</FileSource>
     <FileTarget>G:\destination\UX\GPUCache\data_0</FileTarget>
     <FileSize>8192</FileSize>
-    <FileTransferTime>00:00:00.0364655</FileTransferTime>
-    <TimeToCrypt>00:00:00.0145608</TimeToCrypt>
-    <time>18-12-2021 23:19:43</time>
+    <FileTransferTime>00:00:00.0573516</FileTransferTime>
+    <TimeToCrypt>00:00:00.0170851</TimeToCrypt>
+    <time>19-12-2021 07:09:10</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\GPUCache\data_1</FileSource>
     <FileTarget>G:\destination\UX\GPUCache\data_1</FileTarget>
     <FileSize>270336</FileSize>
-    <FileTransferTime>00:00:00.1569556</FileTransferTime>
-    <TimeToCrypt>00:00:00.0334239</TimeToCrypt>
-    <time>18-12-2021 23:19:43</time>
+    <FileTransferTime>00:00:00.1977544</FileTransferTime>
+    <TimeToCrypt>00:00:00.0308654</TimeToCrypt>
+    <time>19-12-2021 07:09:10</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\GPUCache\data_2</FileSource>
     <FileTarget>G:\destination\UX\GPUCache\data_2</FileTarget>
     <FileSize>8192</FileSize>
-    <FileTransferTime>00:00:00.2365148</FileTransferTime>
-    <TimeToCrypt>00:00:00.0507764</TimeToCrypt>
-    <time>18-12-2021 23:19:43</time>
+    <FileTransferTime>00:00:00.3423942</FileTransferTime>
+    <TimeToCrypt>00:00:00.0834674</TimeToCrypt>
+    <time>19-12-2021 07:09:10</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\GPUCache\data_3</FileSource>
     <FileTarget>G:\destination\UX\GPUCache\data_3</FileTarget>
     <FileSize>8192</FileSize>
-    <FileTransferTime>00:00:00.4139843</FileTransferTime>
-    <TimeToCrypt>00:00:00.0827017</TimeToCrypt>
-    <time>18-12-2021 23:19:43</time>
+    <FileTransferTime>00:00:00.5383271</FileTransferTime>
+    <TimeToCrypt>00:00:00.1340339</TimeToCrypt>
+    <time>19-12-2021 07:09:11</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\GPUCache\index</FileSource>
     <FileTarget>G:\destination\UX\GPUCache\index</FileTarget>
     <FileSize>262512</FileSize>
-    <FileTransferTime>00:00:00.5852307</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:43</time>
+    <FileTransferTime>00:00:00.7000467</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:11</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\RiotClientCrashHandler.exe</FileSource>
     <FileTarget>G:\destination\RiotClientCrashHandler.exe</FileTarget>
     <FileSize>1947648</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:43</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:11</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\RiotClientFoundation.dll</FileSource>
     <FileTarget>G:\destination\RiotClientFoundation.dll</FileTarget>
     <FileSize>9330456</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:43</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:11</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\RiotClientServices.exe</FileSource>
     <FileTarget>G:\destination\RiotClientServices.exe</FileTarget>
     <FileSize>69263064</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:43</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:12</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\RiotGamesApi.dll</FileSource>
     <FileTarget>G:\destination\RiotGamesApi.dll</FileTarget>
     <FileSize>28820072</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:43</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:12</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\system.yaml</FileSource>
     <FileTarget>G:\destination\system.yaml</FileTarget>
     <FileSize>12491</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:44</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:12</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\vgrl.dll</FileSource>
     <FileTarget>G:\destination\vgrl.dll</FileTarget>
     <FileSize>3518336</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:44</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:12</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\vivoxsdk.dll</FileSource>
     <FileTarget>G:\destination\vivoxsdk.dll</FileTarget>
     <FileSize>10899560</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:44</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:12</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\Resources\icon.ico</FileSource>
     <FileTarget>G:\destination\Resources\icon.ico</FileTarget>
     <FileSize>28746</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:44</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:12</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\cef.pak</FileSource>
     <FileTarget>G:\destination\UX\cef.pak</FileTarget>
     <FileSize>3677354</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:44</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:13</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\cef_100_percent.pak</FileSource>
     <FileTarget>G:\destination\UX\cef_100_percent.pak</FileTarget>
     <FileSize>742152</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:44</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:13</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\cef_200_percent.pak</FileSource>
     <FileTarget>G:\destination\UX\cef_200_percent.pak</FileTarget>
     <FileSize>872802</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:44</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:13</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\cef_extensions.pak</FileSource>
     <FileTarget>G:\destination\UX\cef_extensions.pak</FileTarget>
     <FileSize>1833343</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:44</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:13</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\chrome_elf.dll</FileSource>
     <FileTarget>G:\destination\UX\chrome_elf.dll</FileTarget>
     <FileSize>707072</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:44</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:13</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\d3dcompiler_47.dll</FileSource>
     <FileTarget>G:\destination\UX\d3dcompiler_47.dll</FileTarget>
     <FileSize>3705472</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:44</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:13</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\devtools_resources.pak</FileSource>
     <FileTarget>G:\destination\UX\devtools_resources.pak</FileTarget>
     <FileSize>6014631</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:44</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:13</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\ffmpeg.dll</FileSource>
     <FileTarget>G:\destination\UX\ffmpeg.dll</FileTarget>
     <FileSize>1231872</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:44</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:13</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\icudtl.dat</FileSource>
     <FileTarget>G:\destination\UX\icudtl.dat</FileTarget>
     <FileSize>10326064</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:44</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:13</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\libcef.dll</FileSource>
     <FileTarget>G:\destination\UX\libcef.dll</FileTarget>
     <FileSize>93489664</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:44</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:14</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\libEGL.dll</FileSource>
     <FileTarget>G:\destination\UX\libEGL.dll</FileTarget>
     <FileSize>110592</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:44</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:14</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\libGLESv2.dll</FileSource>
     <FileTarget>G:\destination\UX\libGLESv2.dll</FileTarget>
     <FileSize>4717056</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:44</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:14</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\natives_blob.bin</FileSource>
     <FileTarget>G:\destination\UX\natives_blob.bin</FileTarget>
     <FileSize>83217</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:44</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:14</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\RiotClientUx.exe</FileSource>
     <FileTarget>G:\destination\UX\RiotClientUx.exe</FileTarget>
     <FileSize>5287296</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:44</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:14</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\RiotClientUxRender.exe</FileSource>
     <FileTarget>G:\destination\UX\RiotClientUxRender.exe</FileTarget>
     <FileSize>4333280</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:44</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:14</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\snapshot_blob.bin</FileSource>
     <FileTarget>G:\destination\UX\snapshot_blob.bin</FileTarget>
     <FileSize>285908</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:44</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:14</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\v8_context_snapshot.bin</FileSource>
     <FileTarget>G:\destination\UX\v8_context_snapshot.bin</FileTarget>
     <FileSize>609888</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:44</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:14</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\views_mus_resources.pak</FileSource>
     <FileTarget>G:\destination\UX\views_mus_resources.pak</FileTarget>
     <FileSize>96116</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:44</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:14</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\am.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\am.pak</FileTarget>
     <FileSize>314448</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:44</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:14</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\ar.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\ar.pak</FileTarget>
     <FileSize>315053</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:44</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:15</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\bg.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\bg.pak</FileTarget>
     <FileSize>362060</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:44</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:15</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\bn.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\bn.pak</FileTarget>
     <FileSize>467103</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:44</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:15</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\ca.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\ca.pak</FileTarget>
     <FileSize>224643</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:44</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:15</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\cs.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\cs.pak</FileTarget>
     <FileSize>228150</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:45</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:15</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\da.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\da.pak</FileTarget>
     <FileSize>204754</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:45</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:15</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\de.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\de.pak</FileTarget>
     <FileSize>223214</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:45</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:15</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\el.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\el.pak</FileTarget>
     <FileSize>396704</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:45</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:15</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\en-GB.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\en-GB.pak</FileTarget>
     <FileSize>183659</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:45</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:15</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\en-US.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\en-US.pak</FileTarget>
     <FileSize>185090</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:45</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:15</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\es-419.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\es-419.pak</FileTarget>
     <FileSize>220764</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:45</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:15</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\es.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\es.pak</FileTarget>
     <FileSize>224140</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:45</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:15</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\et.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\et.pak</FileTarget>
     <FileSize>199921</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:45</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:15</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\fa.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\fa.pak</FileTarget>
     <FileSize>317594</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:45</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:15</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\fi.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\fi.pak</FileTarget>
     <FileSize>206125</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:45</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:15</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\fil.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\fil.pak</FileTarget>
     <FileSize>226979</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:45</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:15</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\fr.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\fr.pak</FileTarget>
     <FileSize>239622</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:45</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:15</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\gu.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\gu.pak</FileTarget>
     <FileSize>444053</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:45</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:15</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\he.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\he.pak</FileTarget>
     <FileSize>268510</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:45</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:15</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\hi.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\hi.pak</FileTarget>
     <FileSize>456292</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:45</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:15</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\hr.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\hr.pak</FileTarget>
     <FileSize>216276</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:45</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:15</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\hu.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\hu.pak</FileTarget>
     <FileSize>235681</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:45</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:15</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\id.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\id.pak</FileTarget>
     <FileSize>198224</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:45</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:15</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\it.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\it.pak</FileTarget>
     <FileSize>216353</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:45</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:15</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\ja.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\ja.pak</FileTarget>
     <FileSize>268987</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:45</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:16</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\kn.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\kn.pak</FileTarget>
     <FileSize>517629</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:45</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:16</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\ko.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\ko.pak</FileTarget>
     <FileSize>225809</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:45</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:16</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\lt.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\lt.pak</FileTarget>
     <FileSize>232209</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:45</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:16</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\lv.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\lv.pak</FileTarget>
     <FileSize>231033</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:45</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:16</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\ml.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\ml.pak</FileTarget>
     <FileSize>556723</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:45</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:16</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\mr.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\mr.pak</FileTarget>
     <FileSize>450943</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:45</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:16</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\ms.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\ms.pak</FileTarget>
     <FileSize>204927</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:46</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:16</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\nb.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\nb.pak</FileTarget>
     <FileSize>201815</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:46</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:16</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\nl.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\nl.pak</FileTarget>
     <FileSize>210980</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:46</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:16</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\pl.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\pl.pak</FileTarget>
     <FileSize>224402</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:46</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:16</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\pt-BR.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\pt-BR.pak</FileTarget>
     <FileSize>217734</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:46</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:16</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\pt-PT.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\pt-PT.pak</FileTarget>
     <FileSize>219947</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:46</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:21</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\ro.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\ro.pak</FileTarget>
     <FileSize>225389</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:46</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:21</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\ru.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\ru.pak</FileTarget>
     <FileSize>350023</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:46</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:21</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\sk.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\sk.pak</FileTarget>
     <FileSize>231395</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:46</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:21</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\sl.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\sl.pak</FileTarget>
     <FileSize>217553</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:46</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:22</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\sr.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\sr.pak</FileTarget>
     <FileSize>338848</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:46</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:22</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\sv.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\sv.pak</FileTarget>
     <FileSize>203076</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:46</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:22</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\sw.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\sw.pak</FileTarget>
     <FileSize>207909</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:46</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:22</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\ta.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\ta.pak</FileTarget>
     <FileSize>525312</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:46</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:22</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\te.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\te.pak</FileTarget>
     <FileSize>498318</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:46</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:22</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\th.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\th.pak</FileTarget>
     <FileSize>423628</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:46</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:22</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\tr.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\tr.pak</FileTarget>
     <FileSize>217133</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:46</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:22</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\uk.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\uk.pak</FileTarget>
     <FileSize>354530</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:46</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:22</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\vi.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\vi.pak</FileTarget>
     <FileSize>251195</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:46</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:22</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\zh-CN.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\zh-CN.pak</FileTarget>
     <FileSize>187627</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:46</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:22</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\locales\zh-TW.pak</FileSource>
     <FileTarget>G:\destination\UX\locales\zh-TW.pak</FileTarget>
     <FileSize>187941</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:46</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:22</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\Plugins\plugin-manifest.json</FileSource>
     <FileTarget>G:\destination\UX\Plugins\plugin-manifest.json</FileTarget>
     <FileSize>284</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:46</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:22</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\swiftshader\libEGL.dll</FileSource>
     <FileTarget>G:\destination\UX\swiftshader\libEGL.dll</FileTarget>
     <FileSize>112640</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:46</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:22</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\swiftshader\libGLESv2.dll</FileSource>
     <FileTarget>G:\destination\UX\swiftshader\libGLESv2.dll</FileTarget>
     <FileSize>2249216</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:46</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:22</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\Plugins\rcp-fe-keystone-react\assets.wad</FileSource>
     <FileTarget>G:\destination\UX\Plugins\rcp-fe-keystone-react\assets.wad</FileTarget>
     <FileSize>114864566</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:46</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:23</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\Plugins\rcp-fe-keystone-react\description.json</FileSource>
     <FileTarget>G:\destination\UX\Plugins\rcp-fe-keystone-react\description.json</FileTarget>
     <FileSize>285</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:46</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:23</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\Plugins\rcp-fe-plugin-runner\assets.wad</FileSource>
     <FileTarget>G:\destination\UX\Plugins\rcp-fe-plugin-runner\assets.wad</FileTarget>
     <FileSize>93124</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:46</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:23</time>
   </Log>
   <Log>
-    <Name>benna</Name>
+    <Name>bina</Name>
     <FileSource>D:\Riot Games\Riot Client\UX\Plugins\rcp-fe-plugin-runner\description.json</FileSource>
     <FileTarget>G:\destination\UX\Plugins\rcp-fe-plugin-runner\description.json</FileTarget>
     <FileSize>293</FileSize>
-    <FileTransferTime>00:00:00.6721756</FileTransferTime>
-    <TimeToCrypt>00:00:00.1161781</TimeToCrypt>
-    <time>18-12-2021 23:19:47</time>
+    <FileTransferTime>00:00:00.8138220</FileTransferTime>
+    <TimeToCrypt>00:00:00.1528013</TimeToCrypt>
+    <time>19-12-2021 07:09:23</time>
   </Log>
 </Log>
